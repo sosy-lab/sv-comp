@@ -12,7 +12,7 @@
   
   <rundefinition name="sv-comp16"></rundefinition>
 
-  <option>--cex=error-witness.graphml</option>
+  <option name="--cex=error-witness.graphml"/>
 
   <tasks name="ArraysReach">
     <includesfile>../sv-benchmarks/c/ArraysReach.set</includesfile>
@@ -25,7 +25,7 @@
   </tasks>
   <tasks name="BitVectorsOverflows">
     <includesfile>../sv-benchmarks/c/BitVectorsOverflows.set</includesfile>
-    <option>-m64</option>
+    <option name="-m64"/>
   </tasks>
   <tasks name="HeapReach">
     <includesfile>../sv-benchmarks/c/HeapReach.set</includesfile>
@@ -59,18 +59,18 @@
   </tasks>
   <tasks name="Termination">
     <includesfile>../sv-benchmarks/c/Termination.set</includesfile>
-    <option>-m64</option>
+    <option name="-m64"/>
   </tasks>
   <tasks name="Concurrency">
     <includesfile>../sv-benchmarks/c/Concurrency.set</includesfile>
   </tasks>
   <tasks name="DeviceDrivers64">
     <includesfile>../sv-benchmarks/c/DeviceDriversLinux64.set</includesfile>
-    <option>-m64</option>
+    <option name="-m64"/>
   </tasks>
   <tasks name="BusyBox">
     <includesfile>../sv-benchmarks/c/BusyBox.set</includesfile>
-    <option>-m64</option>
+    <option name="-m64"/>
   </tasks>
 
 </benchmark>

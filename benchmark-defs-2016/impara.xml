@@ -12,7 +12,7 @@
   
   <rundefinition name="sv-comp16"></rundefinition>
 
-  <option>--eager</option>
+  <option name="--eager"/>
   <option name="--graphml-cex">error-witness.graphml</option>
 
   <tasks name="BitVectorsReach">
@@ -20,7 +20,7 @@
   </tasks>
   <tasks name="BitVectorsOverflows">
     <includesfile>../sv-benchmarks/c/BitVectorsOverflows.set</includesfile>
-    <option>-64</option>
+    <option name="-64"/>
   </tasks>
   <tasks name="Floats">
     <includesfile>../sv-benchmarks/c/Floats.set</includesfile>

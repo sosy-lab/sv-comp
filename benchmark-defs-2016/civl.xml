@@ -12,7 +12,7 @@
   
   <rundefinition name="sv-comp16"></rundefinition>
 
-  <option>-svcomp16</option>
+  <option name="-svcomp16"/>
 
   <tasks name="Concurrency">
     <includesfile>../sv-benchmarks/c/Concurrency.set</includesfile>

@@ -12,9 +12,9 @@
   
   <rundefinition name="sv-comp16"></rundefinition>
 
-  <option>--svcomp</option>
-  <option>--csdr</option>
-  <option>--opt=-Oz</option>
+  <option name="--svcomp"/>
+  <option name="--csdr"/>
+  <option name="--opt=-Oz"/>
 
   <tasks name="Concurrency">
     <includesfile>../sv-benchmarks/c/Concurrency.set</includesfile>

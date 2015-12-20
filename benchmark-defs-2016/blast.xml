@@ -13,13 +13,13 @@
   <rundefinition name="sv-comp16"></rundefinition>
 
   <option name="-alias">empty</option>
-  <option>-enable-recursion</option>
-  <option>-noprofile</option>
-  <option>-cref</option>
-  <option>-sv-comp</option>
-  <option>-lattice</option>
+  <option name="-enable-recursion"/>
+  <option name="-noprofile"/>
+  <option name="-cref"/>
+  <option name="-sv-comp"/>
+  <option name="-lattice"/>
   <option name="-include-lattice">symb</option>
-  <option>-nosserr</option>
+  <option name="-nosserr"/>
   <option name="-svcomp-witness">error-witness.graphml</option>
   
   <tasks name="ControlFlow">
