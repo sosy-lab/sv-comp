@@ -8,7 +8,7 @@
 
   <propertyfile>${inputfile_path}/ALL.prp</propertyfile>
 
-  <resultfiles>**.*</resultfiles>
+  <resultfiles>*</resultfiles>
   
   <rundefinition name="sv-comp16"></rundefinition>
 
