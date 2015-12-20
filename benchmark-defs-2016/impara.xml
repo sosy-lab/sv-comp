@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!DOCTYPE benchmark PUBLIC "+//IDN sosy-lab.org//DTD BenchExec benchmark 1.0//EN" "http://www.sosy-lab.org/benchexec/benchmark-1.0.dtd">
+<benchmark tool="impara" timelimit="900" hardtimelimit="930" memlimit="15000" cpuCores="4">
+  
+  
+
+  <propertyfile>${inputfile_path}/ALL.prp</propertyfile>
+
+  <resultfiles>**.*</resultfiles>
+  
+  <rundefinition name="sv-comp16"></rundefinition>
+
+  <option>--eager</option>
+  <option name="--graphml-cex">error-witness.graphml</option>
+
+  <tasks name="BitVectorsReach">
+    <includesfile>../sv-benchmarks/c/BitVectorsReach.set</includesfile>
+  </tasks>
+  <tasks name="BitVectorsOverflows">
+    <includesfile>../sv-benchmarks/c/BitVectorsOverflows.set</includesfile>
+    <option>-64</option>
+  </tasks>
+  <tasks name="Floats">
+    <includesfile>../sv-benchmarks/c/Floats.set</includesfile>
+  </tasks>
+  <tasks name="ControlFlow">
+    <includesfile>../sv-benchmarks/c/ControlFlow.set</includesfile>
+  </tasks>
+  <tasks name="Simple">
+    <includesfile>../sv-benchmarks/c/Simple.set</includesfile>
+  </tasks>
+  <tasks name="ECA">
+    <includesfile>../sv-benchmarks/c/ECA.set</includesfile>
+  </tasks>
+  <tasks name="Loops">
+    <includesfile>../sv-benchmarks/c/Loops.set</includesfile>
+  </tasks>
+  <tasks name="Recursive">
+    <includesfile>../sv-benchmarks/c/Recursive.set</includesfile>
+  </tasks>
+  <tasks name="ProductLines">
+    <includesfile>../sv-benchmarks/c/ProductLines.set</includesfile>
+  </tasks>
+  <tasks name="Sequentialized">
+    <includesfile>../sv-benchmarks/c/Sequentialized.set</includesfile>
+  </tasks>
+  <tasks name="Concurrency">
+    <includesfile>../sv-benchmarks/c/Concurrency.set</includesfile>
+  </tasks>
+
+</benchmark>

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE benchmark PUBLIC "+//IDN sosy-lab.org//DTD BenchExec benchmark 1.0//EN" "http://www.sosy-lab.org/benchexec/benchmark-1.0.dtd">
+<benchmark tool="forester" timelimit="900" hardtimelimit="930" memlimit="15000" cpuCores="4">
+  
+  
+
+  <propertyfile>${inputfile_path}/ALL.prp</propertyfile>
+
+  <resultfiles>**.*</resultfiles>
+  
+  <rundefinition name="sv-comp16"></rundefinition>
+
+  <option name="--trace">error-witness.graphml</option>
+
+  <tasks name="HeapReach">
+    <includesfile>../sv-benchmarks/c/HeapReach.set</includesfile>
+  </tasks>
+  <tasks name="HeapMemSafety">
+    <includesfile>../sv-benchmarks/c/HeapMemSafety.set</includesfile>
+  </tasks>
+
+</benchmark>

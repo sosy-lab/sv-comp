@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE benchmark PUBLIC "+//IDN sosy-lab.org//DTD BenchExec benchmark 1.0//EN" "http://www.sosy-lab.org/benchexec/benchmark-1.0.dtd">
+<benchmark tool="aprove" timelimit="900" hardtimelimit="930" memlimit="15000" cpuCores="4">
+  
+  
+
+  <propertyfile>${inputfile_path}/ALL.prp</propertyfile>
+
+  <resultfiles>**.*</resultfiles>
+  
+  <rundefinition name="sv-comp16"></rundefinition>
+
+  <tasks name="Termination">
+    <includesfile>../sv-benchmarks/c/Termination.set</includesfile>
+  </tasks>
+
+</benchmark>

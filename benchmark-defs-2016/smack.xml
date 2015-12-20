@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<!DOCTYPE benchmark PUBLIC "+//IDN sosy-lab.org//DTD BenchExec benchmark 1.0//EN" "http://www.sosy-lab.org/benchexec/benchmark-1.0.dtd">
+<benchmark tool="smack" timelimit="900" hardtimelimit="930" memlimit="15000" cpuCores="4">
+
+  
+
+  <propertyfile>${inputfile_path}/ALL.prp</propertyfile>
+
+  <resultfiles>**.[!b]*</resultfiles>
+  <!-- bpl-files are big (summed up over 40G). pbl-files contain formulas, we do not need them, so we ignore them in VCloud -->
+  
+  <rundefinition name="sv-comp15"></rundefinition>
+
+  <option name="-w">witness.graphml</option>
+
+  <tasks name="ArraysReach">
+    <includesfile>../sv-benchmarks/c/ArraysReach.set</includesfile>
+    <option>--clang-options=-m32</option>
+  </tasks>
+  <tasks name="ArraysMemSafety">
+    <includesfile>../sv-benchmarks/c/ArraysMemSafety.set</includesfile>
+    <option>--clang-options=-m32</option>
+  </tasks>
+  <tasks name="BitVectorsReach">
+    <includesfile>../sv-benchmarks/c/BitVectorsReach.set</includesfile>
+    <option>--clang-options=-m32</option>
+  </tasks>
+  <tasks name="BitVectorsOverflows">
+    <includesfile>../sv-benchmarks/c/BitVectorsOverflows.set</includesfile>
+    <option>--clang-options=-m64</option>
+  </tasks>
+  <tasks name="HeapReach">
+    <includesfile>../sv-benchmarks/c/HeapReach.set</includesfile>
+    <option>--clang-options=-m32</option>
+  </tasks>
+  <tasks name="HeapMemSafety">
+    <includesfile>../sv-benchmarks/c/HeapMemSafety.set</includesfile>
+    <option>--clang-options=-m32</option>
+  </tasks>
+  <tasks name="Floats">
+    <includesfile>../sv-benchmarks/c/Floats.set</includesfile>
+    <option>--clang-options=-m32</option>
+  </tasks>
+  <tasks name="ControlFlow">
+    <includesfile>../sv-benchmarks/c/ControlFlow.set</includesfile>
+    <option>--clang-options=-m32</option>
+  </tasks>
+  <tasks name="Simple">
+    <includesfile>../sv-benchmarks/c/Simple.set</includesfile>
+    <option>--clang-options=-m32</option>
+  </tasks>
+  <tasks name="ECA">
+    <includesfile>../sv-benchmarks/c/ECA.set</includesfile>
+    <option>--clang-options=-m32</option>
+  </tasks>
+  <tasks name="Loops">
+    <includesfile>../sv-benchmarks/c/Loops.set</includesfile>
+    <option>--clang-options=-m32</option>
+  </tasks>
+  <tasks name="Recursive">
+    <includesfile>../sv-benchmarks/c/Recursive.set</includesfile>
+    <option>--clang-options=-m32</option>
+  </tasks>
+  <tasks name="ProductLines">
+    <includesfile>../sv-benchmarks/c/ProductLines.set</includesfile>
+    <option>--clang-options=-m32</option>
+  </tasks>
+  <tasks name="Sequentialized">
+    <includesfile>../sv-benchmarks/c/Sequentialized.set</includesfile>
+    <option>--clang-options=-m32</option>
+  </tasks>
+  <tasks name="Termination">
+    <includesfile>../sv-benchmarks/c/Termination.set</includesfile>
+    <option>--clang-options=-m64</option>
+  </tasks>
+  <tasks name="Concurrency">
+    <includesfile>../sv-benchmarks/c/Concurrency.set</includesfile>
+    <option>--clang-options=-m32</option>
+  </tasks>
+  <tasks name="DeviceDrivers64">
+    <includesfile>../sv-benchmarks/c/DeviceDriversLinux64.set</includesfile>
+    <option>--clang-options=-m64</option>
+  </tasks>
+  <tasks name="BusyBox">
+    <includesfile>../sv-benchmarks/c/BusyBox.set</includesfile>
+    <option>--clang-options=-m64</option>
+  </tasks>
+
+</benchmark>
