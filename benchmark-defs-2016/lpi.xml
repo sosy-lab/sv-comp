@@ -15,7 +15,7 @@
   <option name="-lpi-svcomp16"/>
   <option name="-disable-java-assertions"/>
   <option name="-heap">10000m</option>
-  <option name="-setprop">cpa.arg.errorPath.graphml=witness.graphml</option>
+  <option name="-setprop">cpa.arg.errorPath.graphml=error-witness.graphml</option>
 
   <tasks name="ControlFlow">
     <includesfile>../sv-benchmarks/c/ControlFlow.set</includesfile>

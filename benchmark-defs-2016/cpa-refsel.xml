@@ -15,7 +15,7 @@
   <option name="-sv-comp16--refsel"/>
   <option name="-disable-java-assertions"/>
   <option name="-heap">12500m</option>
-  <option name="-setprop">cpa.arg.errorPath.graphml=witness.graphml</option>
+  <option name="-setprop">cpa.arg.errorPath.graphml=error-witness.graphml</option>
 
   <tasks name="ArraysReach">
     <includesfile>../sv-benchmarks/c/ArraysReach.set</includesfile>
