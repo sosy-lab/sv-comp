@@ -12,9 +12,10 @@
   
   <rundefinition name="sv-comp16"></rundefinition>
 
-  <option name="--svcomp"/>
-  <option name="--csdr"/>
-  <option name="--opt=-Oz"/>
+  <option name="--fix">volatile</option>
+  <option name="--fix">inline</option>
+  <option name="--silent"/>
+  <option name="-Os"/>
 
   <tasks name="Concurrency">
     <includesfile>../sv-benchmarks/c/Concurrency.set</includesfile>
