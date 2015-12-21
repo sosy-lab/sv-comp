@@ -8,12 +8,11 @@
 
   <propertyfile>${inputfile_path}/ALL.prp</propertyfile>
 
-  <resultfiles>error-witness.graphml*.[!b]*</resultfiles>
-  <!-- bpl-files are big (summed up over 40G). pbl-files contain formulas, we do not need them, so we ignore them in VCloud -->
+  <resultfiles>**.graphml</resultfiles>
   
   <rundefinition name="sv-comp15"></rundefinition>
 
-  <option name="-w">witness.graphml</option>
+  <option name="-w">error-witness.graphml</option>
 
   <tasks name="ArraysReach">
     <includesfile>../sv-benchmarks/c/ArraysReach.set</includesfile>
