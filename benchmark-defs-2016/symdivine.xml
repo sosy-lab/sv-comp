@@ -12,8 +12,8 @@
   
   <rundefinition name="sv-comp16"></rundefinition>
 
-  <option name="--fix">volatile</option>
-  <option name="--fix">inline</option>
+  <option name="--fix_volatile"/>
+  <option name="--fix_inline"/>
   <option name="--silent"/>
   <option name="-Os"/>
 
