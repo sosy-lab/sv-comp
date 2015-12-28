@@ -55,7 +55,7 @@
     <includesfile>../sv-benchmarks/c/Sequentialized.set</includesfile>
   </tasks>
   <tasks name="Termination">
-    <includesfile>../sv-benchmarks/c/Termination-crafted.set</includesfile>
+    <includesfile>../sv-benchmarks/c/Termination.set</includesfile>
   </tasks>
   <tasks name="Concurrency">
     <includesfile>../sv-benchmarks/c/Concurrency.set</includesfile>
