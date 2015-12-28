@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <!DOCTYPE benchmark PUBLIC "+//IDN sosy-lab.org//DTD BenchExec benchmark 1.4//EN" "http://www.sosy-lab.org/benchexec/benchmark-1.4.dtd">
-<benchmark tool="cpachecker" timelimit="900 s" memlimit="15 GB" cpuCores="2">
+<benchmark tool="cpachecker" timelimit="90 s" memlimit="15 GB" cpuCores="2">
 
 <require cpuModel="Intel Xeon E5-2650 v2" cpuCores="2"/>
   
-  <requiredfiles>../results/cpa-seq.logfiles/sv-comp16.*.files/witness.graphml</requiredfiles> 
+  <requiredfiles>../results-final/LOGDIR/sv-comp16.*.files/error-witness.graphml</requiredfiles> 
 
   <propertyfile>${inputfile_path}/ALL.prp</propertyfile>
 
@@ -16,7 +16,7 @@
   <option name="-disable-java-assertions"/>
   <option name="-heap">10000m</option>
   <option name="-setprop">cpa.arg.errorPath.graphml=error-witness.graphml</option>
-  <option name="-spec">../results/cpa-seq.logfiles/sv-comp16.${inputfile_name}.files/witness.graphml</option>
+  <option name="-spec">../../results-final/LOGDIR/sv-comp16.${inputfile_name}.files/error-witness.graphml</option>
 
   <tasks name="ArraysReach">
     <includesfile>../sv-benchmarks/c/ArraysReach.set</includesfile>
