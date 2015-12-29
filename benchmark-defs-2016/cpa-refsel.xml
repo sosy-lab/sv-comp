@@ -67,7 +67,7 @@
   <tasks name="Concurrency">
     <includesfile>../sv-benchmarks/c/Concurrency.set</includesfile>
   </tasks>
-  <tasks name="DeviceDrivers64">
+  <tasks name="DeviceDriversLinux64">
     <includesfile>../sv-benchmarks/c/DeviceDriversLinux64.set</includesfile>
     <option name="-64"/>
   </tasks>

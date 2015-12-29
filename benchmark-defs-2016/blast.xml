@@ -43,7 +43,7 @@
   <tasks name="Sequentialized">
     <includesfile>../sv-benchmarks/c/Sequentialized.set</includesfile>
   </tasks>
-  <tasks name="DeviceDrivers64">
+  <tasks name="DeviceDriversLinux64">
     <includesfile>../sv-benchmarks/c/DeviceDriversLinux64.set</includesfile>
   </tasks>
   <tasks name="BusyBox">
