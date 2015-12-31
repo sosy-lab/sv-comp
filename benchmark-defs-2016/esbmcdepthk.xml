@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!DOCTYPE benchmark PUBLIC "+//IDN sosy-lab.org//DTD BenchExec benchmark 1.4//EN" "http://www.sosy-lab.org/benchexec/benchmark-1.4.dtd">
-<benchmark tool="esbmcdepthk" timelimit="900 s" memlimit="15 GB" cpuCores="8">
+<benchmark tool="depthk" timelimit="900 s" memlimit="15 GB" cpuCores="8">
 
 <require cpuModel="Intel Xeon E5-2650 v2" cpuCores="8"/>
   
@@ -11,15 +11,6 @@
   <resultfiles>**.graphml</resultfiles>
   
   <rundefinition name="sv-comp16"></rundefinition>
-  <option name="--debug"/>
-  <option name="--disable-counter-example"/>
-  <option name="--force-check-base-case"/>
-  <option name="--solver">z3</option>
-  <option name="--context-switch">4</option>
-  <option name="--memlimit">15g</option>
-  <option name="--no-bounds-check"/>
-  <option name="--no-pointer-check"/>
-  <option name="--no-div-by-zero-check"/>
 
   <tasks name="ArraysReach">
     <includesfile>../sv-benchmarks/c/ArraysReach.set</includesfile>
