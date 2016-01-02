@@ -12,7 +12,7 @@
   
   <rundefinition name="sv-comp16-witness"></rundefinition>
 
-  <option name="">../../results-final/LOGDIR/sv-comp16.${inputfile_name}.files/error-witness.graphml</option>
+  <option>../../results-final/LOGDIR/sv-comp16.${inputfile_name}.files/error-witness.graphml</option>
 
   <tasks name="ArraysReach">
     <includesfile>../sv-benchmarks/c/ArraysReach.set</includesfile>
