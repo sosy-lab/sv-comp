@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<!DOCTYPE benchmark PUBLIC "+//IDN sosy-lab.org//DTD BenchExec benchmark 1.4//EN" "http://www.sosy-lab.org/benchexec/benchmark-1.4.dtd">
+<benchmark tool="ultimateautomizer" timelimit="90 s" memlimit="15 GB" cpuCores="2">
+
+<require cpuModel="Intel Xeon E5-2650 v2" cpuCores="2"/>
+ 
+  <requiredfiles>../results-final/LOGDIR/sv-comp16.*.files/error-witness.graphml</requiredfiles> 
+
+  <propertyfile>${inputfile_path}/ALL.prp</propertyfile>
+
+  <resultfiles>**.graphml</resultfiles>
+  
+  <rundefinition name="sv-comp16-witness"></rundefinition>
+
+  <option name="">../../results-final/LOGDIR/sv-comp16.${inputfile_name}.files/error-witness.graphml</option>
+
+  <tasks name="ArraysReach">
+    <includesfile>../sv-benchmarks/c/ArraysReach.set</includesfile>
+    <option name="32bit"/>
+    <option name="precise"/>
+  </tasks>
+  <tasks name="ArraysMemSafety">
+    <includesfile>../sv-benchmarks/c/ArraysMemSafety.set</includesfile>
+    <option name="32bit"/>
+    <option name="precise"/>
+  </tasks>
+  <tasks name="BitVectorsReach">
+    <includesfile>../sv-benchmarks/c/BitVectorsReach.set</includesfile>
+    <option name="32bit"/>
+    <option name="precise"/>
+  </tasks>
+  <tasks name="BitVectorsOverflows">
+    <includesfile>../sv-benchmarks/c/BitVectorsOverflows.set</includesfile>
+    <option name="64bit"/>
+    <option name="precise"/>
+  </tasks>
+  <tasks name="HeapReach">
+    <includesfile>../sv-benchmarks/c/HeapReach.set</includesfile>
+    <option name="32bit"/>
+    <option name="precise"/>
+  </tasks>
+  <tasks name="HeapMemSafety">
+    <includesfile>../sv-benchmarks/c/HeapMemSafety.set</includesfile>
+    <option name="32bit"/>
+    <option name="precise"/>
+  </tasks>
+  <tasks name="Floats">
+    <includesfile>../sv-benchmarks/c/Floats.set</includesfile>
+    <option name="32bit"/>
+    <option name="simple"/>
+  </tasks>
+  <tasks name="ControlFlow">
+    <includesfile>../sv-benchmarks/c/ControlFlow.set</includesfile>
+    <option name="32bit"/>
+    <option name="precise"/>
+  </tasks>
+  <tasks name="Simple">
+    <includesfile>../sv-benchmarks/c/Simple.set</includesfile>
+    <option name="32bit"/>
+    <option name="simple"/>
+  </tasks>
+  <tasks name="ECA">
+    <includesfile>../sv-benchmarks/c/ECA.set</includesfile>
+    <option name="32bit"/>
+    <option name="precise"/>
+  </tasks>
+  <tasks name="Loops">
+    <includesfile>../sv-benchmarks/c/Loops.set</includesfile>
+    <option name="32bit"/>
+    <option name="precise"/>
+  </tasks>
+  <tasks name="Recursive">
+    <includesfile>../sv-benchmarks/c/Recursive.set</includesfile>
+    <option name="32bit"/>
+    <option name="precise"/>
+  </tasks>
+  <tasks name="ProductLines">
+    <includesfile>../sv-benchmarks/c/ProductLines.set</includesfile>
+    <option name="32bit"/>
+    <option name="precise"/>
+  </tasks>
+  <tasks name="Sequentialized">
+    <includesfile>../sv-benchmarks/c/Sequentialized.set</includesfile>
+    <option name="32bit"/>
+    <option name="precise"/>
+  </tasks>
+  <tasks name="Termination">
+    <includesfile>../sv-benchmarks/c/Termination.set</includesfile>
+    <option name="64bit"/>
+    <option name="simple"/>
+  </tasks>
+  <tasks name="Concurrency">
+    <includesfile>../sv-benchmarks/c/Concurrency.set</includesfile>
+    <option name="32bit"/>
+    <option name="precise"/>
+  </tasks>
+  <tasks name="DeviceDriversLinux64">
+    <includesfile>../sv-benchmarks/c/DeviceDriversLinux64.set</includesfile>
+    <option name="64bit"/>
+    <option name="simple"/>
+  </tasks>
+  <tasks name="BusyBox">
+    <includesfile>../sv-benchmarks/c/BusyBox.set</includesfile>
+    <option name="64bit"/>
+    <option name="precise"/>
+  </tasks>
+
+</benchmark>
