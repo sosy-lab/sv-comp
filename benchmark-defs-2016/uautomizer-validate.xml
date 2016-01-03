@@ -12,7 +12,7 @@
   
   <rundefinition name="sv-comp16-witness"></rundefinition>
 
-  <option>../../results-final/LOGDIR/sv-comp16.${inputfile_name}.files/error-witness.graphml</option>
+  <option name="../../results-final/LOGDIR/sv-comp16.${inputfile_name}.files/error-witness.graphml"/>
 
   <tasks name="BitVectorsReach">
     <includesfile>../sv-benchmarks/c/BitVectorsReach-validate.set</includesfile>
