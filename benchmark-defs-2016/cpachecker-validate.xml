@@ -39,6 +39,7 @@
   </tasks>
   <tasks name="Recursive">
     <includesfile>../sv-benchmarks/c/Recursive-validate.set</includesfile>
+    <option name="-setprop">cpa.callstack.skipVoidRecursion=false</option>
   </tasks>
   <tasks name="ProductLines">
     <includesfile>../sv-benchmarks/c/ProductLines-validate.set</includesfile>
