@@ -9,14 +9,14 @@
   <resultfiles>**.graphml</resultfiles>
   
   <rundefinition name="sv-comp16-witness">
-    <requiredfiles>../results-final/LOGDIR/sv-comp16.${inputfile_name}.files/error-witness.graphml</requiredfiles> 
+    <requiredfiles>../results-verified/LOGDIR/sv-comp16.${inputfile_name}.files/error-witness.graphml</requiredfiles> 
   </rundefinition>
 
   <option name="-witness-check"/>
   <option name="-disable-java-assertions"/>
   <option name="-heap">10000m</option>
   <option name="-setprop">cpa.arg.errorPath.graphml=error-witness.graphml</option>
-  <option name="-spec">../../results-final/LOGDIR/sv-comp16.${inputfile_name}.files/error-witness.graphml</option>
+  <option name="-spec">../../results-verified/LOGDIR/sv-comp16.${inputfile_name}.files/error-witness.graphml</option>
 
   <tasks name="BitVectorsReach">
     <includesfile>../sv-benchmarks/c/BitVectorsReach-validate.set</includesfile>

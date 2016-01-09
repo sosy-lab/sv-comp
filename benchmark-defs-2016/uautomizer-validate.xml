@@ -9,10 +9,10 @@
   <resultfiles>**.graphml</resultfiles>
   
   <rundefinition name="sv-comp16-witness">
-    <requiredfiles>../results-final/LOGDIR/sv-comp16.${inputfile_name}.files/error-witness.graphml</requiredfiles> 
+    <requiredfiles>../results-verified/LOGDIR/sv-comp16.${inputfile_name}.files/error-witness.graphml</requiredfiles> 
   </rundefinition>
 
-  <option name="../../results-final/LOGDIR/sv-comp16.${inputfile_name}.files/error-witness.graphml"/>
+  <option name="../../results-verified/LOGDIR/sv-comp16.${inputfile_name}.files/error-witness.graphml"/>
 
   <tasks name="ArraysReach">
     <includesfile>../sv-benchmarks/c/ArraysReach-validate.set</includesfile>
