@@ -14,6 +14,16 @@
 
   <option name="../../results-final/LOGDIR/sv-comp16.${inputfile_name}.files/error-witness.graphml"/>
 
+  <tasks name="ArraysReach">
+    <includesfile>../sv-benchmarks/c/ArraysReach-validate.set</includesfile>
+    <option name="32bit"/>
+    <option name="precise"/>
+  </tasks>
+  <tasks name="ArraysMemSafety">
+    <includesfile>../sv-benchmarks/c/ArraysMemSafety-validate.set</includesfile>
+    <option name="32bit"/>
+    <option name="precise"/>
+  </tasks>
   <tasks name="BitVectorsReach">
     <includesfile>../sv-benchmarks/c/BitVectorsReach-validate.set</includesfile>
     <option name="32bit"/>
@@ -23,6 +33,21 @@
     <includesfile>../sv-benchmarks/c/BitVectorsOverflows-validate.set</includesfile>
     <option name="64bit"/>
     <option name="precise"/>
+  </tasks>
+  <tasks name="HeapReach">
+    <includesfile>../sv-benchmarks/c/HeapReach-validate.set</includesfile>
+    <option name="32bit"/>
+    <option name="precise"/>
+  </tasks>
+  <tasks name="HeapMemSafety">
+    <includesfile>../sv-benchmarks/c/HeapMemSafety-validate.set</includesfile>
+    <option name="32bit"/>
+    <option name="precise"/>
+  </tasks>
+  <tasks name="Floats">
+    <includesfile>../sv-benchmarks/c/Floats-validate.set</includesfile>
+    <option name="32bit"/>
+    <option name="simple"/>
   </tasks>
   <tasks name="ControlFlow">
     <includesfile>../sv-benchmarks/c/ControlFlow-validate.set</includesfile>
