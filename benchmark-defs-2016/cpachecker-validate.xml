@@ -25,6 +25,15 @@
     <includesfile>../sv-benchmarks/c/BitVectorsOverflows-validate.set</includesfile>
     <option name="-64"/>
   </tasks>
+    <tasks name="HeapReach">
+    <includesfile>../programs/benchmarks/HeapReach-validate.set</includesfile>
+  </tasks>
+  <tasks name="HeapMemSafety">
+    <includesfile>../programs/benchmarks/HeapMemSafety-validate.set</includesfile>
+  </tasks>
+  <tasks name="Floats">
+    <includesfile>../programs/benchmarks/Floats-validate.set</includesfile>
+  </tasks>
   <tasks name="ControlFlow">
     <includesfile>../sv-benchmarks/c/ControlFlow-validate.set</includesfile>
   </tasks>
