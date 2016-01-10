@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!DOCTYPE benchmark PUBLIC "+//IDN sosy-lab.org//DTD BenchExec benchmark 1.4//EN" "http://www.sosy-lab.org/benchexec/benchmark-1.4.dtd">
-<benchmark tool="ultimateautomizer" timelimit="90 s" memlimit="15 GB" cpuCores="2">
+<benchmark tool="ultimateautomizer" timelimit="90 s" memlimit="7 GB" cpuCores="2">
 
 <require cpuModel="Intel Xeon E5-2650 v2" cpuCores="2"/>
  
