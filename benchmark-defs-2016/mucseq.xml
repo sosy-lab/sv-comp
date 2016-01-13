@@ -9,7 +9,6 @@
   <propertyfile>${inputfile_path}/ALL.prp</propertyfile>
 
   <resultfiles>**.graphml</resultfiles>
-  <resultfiles>**_cs_*</resultfiles>
   
   <rundefinition name="sv-comp16"></rundefinition>
 
