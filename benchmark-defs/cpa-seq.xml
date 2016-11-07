@@ -1,79 +1,92 @@
 <?xml version="1.0"?>
 <!DOCTYPE benchmark PUBLIC "+//IDN sosy-lab.org//DTD BenchExec benchmark 1.4//EN" "http://www.sosy-lab.org/benchexec/benchmark-1.4.dtd">
-<benchmark tool="cpachecker" timelimit="900 s" memlimit="15 GB" cpuCores="8">
+<benchmark tool="cpachecker" timelimit="900 s" hardtimelimit="960 s" memlimit="15 GB" cpuCores="8">
 
 <require cpuModel="Intel Xeon E5-2650 v2" cpuCores="16"/>
-  
-  
-
-  <propertyfile>${inputfile_path}/ALL.prp</propertyfile>
 
   <resultfiles>**.graphml</resultfiles>
-  
-  <rundefinition name="sv-comp16"></rundefinition>
 
-  <option name="-sv-comp16"/>
+  <rundefinition name="sv-comp17"></rundefinition>
+
+  <option name="-sv-comp17"/>
+  <option name="-heap">10000M</option>
   <option name="-disable-java-assertions"/>
-  <option name="-heap">10000m</option>
-  <option name="-setprop">cpa.arg.errorPath.graphml=error-witness.graphml</option>
 
   <tasks name="ArraysReach">
-    <includesfile>../sv-benchmarks/c/ArraysReach.set</includesfile>
+    <includesfile>../programs/benchmarks/ArraysReach.set</includesfile>
+    <propertyfile>../programs/benchmarks/ArraysReach.prp</propertyfile>
   </tasks>
   <tasks name="ArraysMemSafety">
-    <includesfile>../sv-benchmarks/c/ArraysMemSafety.set</includesfile>
+    <includesfile>../programs/benchmarks/ArraysMemSafety.set</includesfile>
+    <propertyfile>../programs/benchmarks/ArraysMemSafety.prp</propertyfile>
   </tasks>
   <tasks name="BitVectorsReach">
-    <includesfile>../sv-benchmarks/c/BitVectorsReach.set</includesfile>
+    <includesfile>../programs/benchmarks/BitVectorsReach.set</includesfile>
+    <propertyfile>../programs/benchmarks/BitVectorsReach.prp</propertyfile>
   </tasks>
   <tasks name="BitVectorsOverflows">
-    <includesfile>../sv-benchmarks/c/BitVectorsOverflows.set</includesfile>
+    <includesfile>../programs/benchmarks/BitVectorsOverflows.set</includesfile>
+    <propertyfile>../programs/benchmarks/BitVectorsOverflows.prp</propertyfile>
     <option name="-64"/>
   </tasks>
   <tasks name="HeapReach">
-    <includesfile>../sv-benchmarks/c/HeapReach.set</includesfile>
+    <includesfile>../programs/benchmarks/HeapReach.set</includesfile>
+    <propertyfile>../programs/benchmarks/HeapReach.prp</propertyfile>
   </tasks>
   <tasks name="HeapMemSafety">
-    <includesfile>../sv-benchmarks/c/HeapMemSafety.set</includesfile>
+    <includesfile>../programs/benchmarks/HeapMemSafety.set</includesfile>
+    <propertyfile>../programs/benchmarks/HeapMemSafety.prp</propertyfile>
   </tasks>
   <tasks name="Floats">
-    <includesfile>../sv-benchmarks/c/Floats.set</includesfile>
+    <includesfile>../programs/benchmarks/Floats.set</includesfile>
+    <propertyfile>../programs/benchmarks/Floats.prp</propertyfile>
   </tasks>
   <tasks name="ControlFlow">
-    <includesfile>../sv-benchmarks/c/ControlFlow.set</includesfile>
+    <includesfile>../programs/benchmarks/ControlFlow.set</includesfile>
+    <propertyfile>../programs/benchmarks/ControlFlow.prp</propertyfile>
   </tasks>
   <tasks name="Simple">
-    <includesfile>../sv-benchmarks/c/Simple.set</includesfile>
+    <includesfile>../programs/benchmarks/Simple.set</includesfile>
+    <propertyfile>../programs/benchmarks/Simple.prp</propertyfile>
   </tasks>
   <tasks name="ECA">
-    <includesfile>../sv-benchmarks/c/ECA.set</includesfile>
+    <includesfile>../programs/benchmarks/ECA.set</includesfile>
+    <propertyfile>../programs/benchmarks/ECA.prp</propertyfile>
   </tasks>
   <tasks name="Loops">
-    <includesfile>../sv-benchmarks/c/Loops.set</includesfile>
+    <includesfile>../programs/benchmarks/Loops.set</includesfile>
+    <propertyfile>../programs/benchmarks/Loops.prp</propertyfile>
   </tasks>
   <tasks name="Recursive">
-    <includesfile>../sv-benchmarks/c/Recursive.set</includesfile>
+    <includesfile>../programs/benchmarks/Recursive.set</includesfile>
+    <propertyfile>../programs/benchmarks/Recursive.prp</propertyfile>
   </tasks>
   <tasks name="ProductLines">
-    <includesfile>../sv-benchmarks/c/ProductLines.set</includesfile>
+    <includesfile>../programs/benchmarks/ProductLines.set</includesfile>
+    <propertyfile>../programs/benchmarks/ProductLines.prp</propertyfile>
   </tasks>
   <tasks name="Sequentialized">
-    <includesfile>../sv-benchmarks/c/Sequentialized.set</includesfile>
-  </tasks>
-  <tasks name="Termination">
-    <includesfile>../sv-benchmarks/c/Termination.set</includesfile>
-    <option name="-64"/>
+    <includesfile>../programs/benchmarks/Sequentialized.set</includesfile>
+    <propertyfile>../programs/benchmarks/Sequentialized.prp</propertyfile>
   </tasks>
   <tasks name="Concurrency">
-    <includesfile>../sv-benchmarks/c/Concurrency.set</includesfile>
+    <includesfile>../programs/benchmarks/Concurrency.set</includesfile>
+    <propertyfile>../programs/benchmarks/Concurrency.prp</propertyfile>
   </tasks>
   <tasks name="DeviceDriversLinux64">
-    <includesfile>../sv-benchmarks/c/DeviceDriversLinux64.set</includesfile>
+    <includesfile>../programs/benchmarks/DeviceDriversLinux64.set</includesfile>
+    <propertyfile>../programs/benchmarks/DeviceDriversLinux64.prp</propertyfile>
     <option name="-64"/>
   </tasks>
   <tasks name="BusyBox">
-    <includesfile>../sv-benchmarks/c/BusyBox.set</includesfile>
+    <includesfile>../programs/benchmarks/BusyBox.set</includesfile>
+    <propertyfile>../programs/benchmarks/BusyBox.prp</propertyfile>
     <option name="-64"/>
+  </tasks>
+  <tasks name="Termination">
+    <includesfile>../programs/benchmarks/Termination.set</includesfile>
+    <propertyfile>../programs/benchmarks/Termination.prp</propertyfile>
+    <option name="-64" />
   </tasks>
 
 </benchmark>
