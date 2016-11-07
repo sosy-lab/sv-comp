@@ -33,5 +33,11 @@
   <tasks name="Sequentialized">
     <includesfile>../sv-benchmarks/c/Sequentialized.set</includesfile>
   </tasks>
+  <tasks name="BitVectorsReach">
+      <includesfile>../sv-benchmarks/c/BitVectorsReach.set</includesfile>
+      <option name="-i">bit</option>
+  </tasks>
+
+
 
 </benchmark>
