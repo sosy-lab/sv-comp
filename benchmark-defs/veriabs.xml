@@ -1,0 +1,30 @@
+<!DOCTYPE benchmark PUBLIC "+//IDN sosy-lab.org//DTD BenchExec benchmark 1.4//EN" "http://www.sosy-lab.org/benchexec/benchmark-1.4.dtd">
+<!-- Example file for benchmark definition for BenchExec,
+          using tool "VeriAbs" with a CPU time limit of 900s,
+     To use this file, 'veriabs/scripts' needs to be on PATH
+     and C programs from SV-COMP need to be available in current directory. -->
+<benchmark tool="veriabs" timelimit="900 s">
+<rundefinition/>
+  <!-- <rundefinition> defines tool configurations to benchmark. -->
+
+<resultfiles>**.graphml</resultfiles>
+  <tasks name="Integers and Control Flow">
+    <includesfile>ControlFlow.set</includesfile>
+    <includesfile>Simple.set</includesfile>
+    <includesfile>ECA.set</includesfile>
+    <includesfile>Loops.set</includesfile>
+    <includesfile>Recursive.set</includesfile>	
+    <includesfile>ProductLines.set</includesfile>	
+    <includesfile>Sequentialized.set</includesfile>
+  </tasks>
+  
+  <tasks name="ArraysReach">
+    <includesfile>ArraysReach.set</includesfile>
+  </tasks>
+
+
+  <!-- Use an SV-COMP property file as specification
+           (file PropertyUnreachCall.prp in the same directory as each set file). -->
+  <propertyfile>PropertyUnreachCall.prp</propertyfile>
+</benchmark>
+
