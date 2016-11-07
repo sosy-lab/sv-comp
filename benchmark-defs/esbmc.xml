@@ -23,6 +23,7 @@
   </tasks>
   <tasks name="BitVectorsOverflows">
     <includesfile>../sv-benchmarks/c/BitVectorsOverflows.set</includesfile>
+    <option name="--arch">64</option>
   </tasks>
   <tasks name="HeapReach">
     <includesfile>../sv-benchmarks/c/HeapReach.set</includesfile>
@@ -56,15 +57,18 @@
   </tasks>
   <tasks name="Termination">
     <includesfile>../sv-benchmarks/c/Termination.set</includesfile>
+    <option name="--arch">64</option>
   </tasks>
   <tasks name="Concurrency">
     <includesfile>../sv-benchmarks/c/Concurrency.set</includesfile>
   </tasks>
   <tasks name="DeviceDriversLinux64">
     <includesfile>../sv-benchmarks/c/DeviceDriversLinux64.set</includesfile>
+    <option name="--arch">64</option>
   </tasks>
   <tasks name="BusyBox">
     <includesfile>../sv-benchmarks/c/BusyBox.set</includesfile>
+    <option name="--arch">64</option>
   </tasks>
 
 </benchmark>
