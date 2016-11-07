@@ -12,7 +12,7 @@
   
   <rundefinition name="sv-comp16"></rundefinition>
 
-  <option name="-s">fixed</option>
+  <option name="-s">incr</option>
 
   <tasks name="ArraysReach">
     <includesfile>../sv-benchmarks/c/ArraysReach.set</includesfile>
