@@ -7,6 +7,8 @@
      (or input files need to be changed). -->
 <benchmark tool="consequence" timelimit="900 s">
 <rundefinition/>
+
+  <resultfiles>**.graphml</resultfiles> 
  
   <tasks name="Concurrency examples">
 	  <includesfile>Concurrency.set</includesfile>
