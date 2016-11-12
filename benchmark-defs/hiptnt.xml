@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE benchmark PUBLIC "+//IDN sosy-lab.org//DTD BenchExec benchmark 1.4//EN" "http://www.sosy-lab.org/benchexec/benchmark-1.4.dtd">
+<benchmark tool="hiptnt" timelimit="900 s" hardtimelimit="960 s" memlimit="15 GB" cpuCores="2">
+
+<require cpuModel="Intel Core i7-6700" cpuCores="2"/>
+
+  <resultfiles>**.graphml</resultfiles>
+
+  <rundefinition name="sv-comp17"></rundefinition>
+
+  <tasks name="Termination">
+    <includesfile>../sv-benchmarks/c/Termination.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/Termination.prp</propertyfile>
+    <option name="-64" />
+  </tasks>
+
+</benchmark>
