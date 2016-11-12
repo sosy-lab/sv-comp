@@ -6,7 +6,7 @@
 
   <resultfiles>**.graphml</resultfiles>
   
-  <rundefinition name="sv-comp16"></rundefinition>
+  <rundefinition name="sv-comp17"></rundefinition>
 
   <tasks name="BitVectorsReach">
     <includesfile>../sv-benchmarks/c/BitVectorsReach.set</includesfile>
