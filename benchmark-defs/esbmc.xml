@@ -3,10 +3,6 @@
 <benchmark tool="esbmc" timelimit="900 s" memlimit="15 GB" cpuCores="2">
 
 <require cpuModel="Intel Core i7-6700" cpuCores="2"/>
-  
-  
-
-  <propertyfile>${inputfile_path}/ALL.prp</propertyfile>
 
   <resultfiles>**.graphml</resultfiles>
   
@@ -16,60 +12,78 @@
 
   <tasks name="ArraysReach">
     <includesfile>../sv-benchmarks/c/ArraysReach.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/ArraysReach.prp</propertyfile>
   </tasks>
   <tasks name="ArraysMemSafety">
     <includesfile>../sv-benchmarks/c/ArraysMemSafety.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/ArraysMemSafety.prp</propertyfile>
   </tasks>
   <tasks name="BitVectorsReach">
     <includesfile>../sv-benchmarks/c/BitVectorsReach.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/BitVectorsReach.prp</propertyfile>
   </tasks>
   <tasks name="BitVectorsOverflows">
     <includesfile>../sv-benchmarks/c/BitVectorsOverflows.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/BitVectorsOverflows.prp</propertyfile>
     <option name="--arch">64</option>
   </tasks>
   <tasks name="HeapReach">
     <includesfile>../sv-benchmarks/c/HeapReach.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/HeapReach.prp</propertyfile>
   </tasks>
   <tasks name="HeapMemSafety">
     <includesfile>../sv-benchmarks/c/HeapMemSafety.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/HeapMemSafety.prp</propertyfile>
   </tasks>
   <tasks name="Floats">
     <includesfile>../sv-benchmarks/c/Floats.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/Floats.prp</propertyfile>
   </tasks>
   <tasks name="ControlFlow">
     <includesfile>../sv-benchmarks/c/ControlFlow.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/ControlFlow.prp</propertyfile>
   </tasks>
   <tasks name="Simple">
     <includesfile>../sv-benchmarks/c/Simple.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/Simple.prp</propertyfile>
   </tasks>
   <tasks name="ECA">
     <includesfile>../sv-benchmarks/c/ECA.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/ECA.prp</propertyfile>
   </tasks>
   <tasks name="Loops">
     <includesfile>../sv-benchmarks/c/Loops.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/Loops.prp</propertyfile>
   </tasks>
   <tasks name="Recursive">
     <includesfile>../sv-benchmarks/c/Recursive.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/Recursive.prp</propertyfile>
   </tasks>
   <tasks name="ProductLines">
     <includesfile>../sv-benchmarks/c/ProductLines.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/ProductLines.prp</propertyfile>
   </tasks>
   <tasks name="Sequentialized">
     <includesfile>../sv-benchmarks/c/Sequentialized.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/Sequentialized.prp</propertyfile>
   </tasks>
   <tasks name="Termination">
     <includesfile>../sv-benchmarks/c/Termination.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/Termination.prp</propertyfile>
     <option name="--arch">64</option>
   </tasks>
   <tasks name="Concurrency">
     <includesfile>../sv-benchmarks/c/Concurrency.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/Concurrency.prp</propertyfile>
   </tasks>
   <tasks name="DeviceDriversLinux64">
     <includesfile>../sv-benchmarks/c/DeviceDriversLinux64.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/DeviceDriversLinux64.prp</propertyfile>
     <option name="--arch">64</option>
   </tasks>
   <tasks name="BusyBox">
     <includesfile>../sv-benchmarks/c/BusyBox.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/BusyBox.prp</propertyfile>
     <option name="--arch">64</option>
   </tasks>
 

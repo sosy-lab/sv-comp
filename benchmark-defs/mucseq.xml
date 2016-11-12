@@ -3,10 +3,6 @@
 <benchmark tool="mucseq" timelimit="900 s" memlimit="15 GB" cpuCores="2">
 
 <require cpuModel="Intel Core i7-6700" cpuCores="2"/>
-  
-  
-
-  <propertyfile>${inputfile_path}/ALL.prp</propertyfile>
 
   <resultfiles>**.graphml</resultfiles>
   
@@ -14,6 +10,7 @@
 
   <tasks name="Concurrency">
     <includesfile>../sv-benchmarks/c/Concurrency.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/Concurrency.prp</propertyfile>
   </tasks>
 
 </benchmark>

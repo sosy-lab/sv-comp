@@ -3,10 +3,6 @@
 <benchmark tool="predatorhp" timelimit="900 s" memlimit="15 GB" cpuCores="2">
 
 <require cpuModel="Intel Core i7-6700" cpuCores="2"/>
-  
-  
-
-  <propertyfile>${inputfile_path}/ALL.prp</propertyfile>
 
   <resultfiles>**.graphml</resultfiles>
   
@@ -16,9 +12,11 @@
 
   <tasks name="HeapReach">
     <includesfile>../sv-benchmarks/c/HeapReach.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/HeapReach.prp</propertyfile>
   </tasks>
   <tasks name="HeapMemSafety">
     <includesfile>../sv-benchmarks/c/HeapMemSafety.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/HeapMemSafety.prp</propertyfile>
   </tasks>
 
 </benchmark>
