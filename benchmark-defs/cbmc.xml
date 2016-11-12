@@ -80,6 +80,11 @@
     <propertyfile>../sv-benchmarks/c/Sequentialized.prp</propertyfile>
     <option name="--32"/>
   </tasks>
+  <tasks name="Termination">
+    <includesfile>../sv-benchmarks/c/Termination.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/Termination.prp</propertyfile>
+    <option name="--64" />
+  </tasks>
   <tasks name="Concurrency">
     <includesfile>../sv-benchmarks/c/Concurrency.set</includesfile>
     <propertyfile>../sv-benchmarks/c/Concurrency.prp</propertyfile>
@@ -94,11 +99,6 @@
     <includesfile>../sv-benchmarks/c/BusyBox.set</includesfile>
     <propertyfile>../sv-benchmarks/c/BusyBox.prp</propertyfile>
     <option name="--64"/>
-  </tasks>
-  <tasks name="Termination">
-    <includesfile>../sv-benchmarks/c/Termination.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/Termination.prp</propertyfile>
-    <option name="--64" />
   </tasks>
 
 </benchmark>
