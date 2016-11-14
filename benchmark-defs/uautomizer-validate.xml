@@ -6,11 +6,11 @@
 
   <resultfiles>**.graphml</resultfiles>
   
-  <rundefinition name="sv-comp17-witness">
-    <requiredfiles>../results-verified/LOGDIR/sv-comp17.${inputfile_name}.files/error-witness.graphml</requiredfiles> 
+  <rundefinition name="sv-comp17-violation-witness">
+    <requiredfiles>../results-verified/LOGDIR/sv-comp17.${inputfile_name}.files/violation-witness.graphml</requiredfiles> 
   </rundefinition>
 
-  <option name="../../results-verified/LOGDIR/sv-comp17.${inputfile_name}.files/error-witness.graphml"/>
+  <option name="../../results-verified/LOGDIR/sv-comp17.${inputfile_name}.files/violation-witness.graphml"/>
 
   <tasks name="ArraysReach">
     <includesfile>../sv-benchmarks/c/ArraysReach.set</includesfile>
