@@ -8,10 +8,9 @@
   
   <rundefinition name="sv-comp17"></rundefinition>
 
-  <option name="-ldv-bam"/>
+  <option name="-sv-comp17-bam-bnb"/>
   <option name="-disable-java-assertions"/>
   <option name="-heap">10000m</option>
-  <option name="-setprop">cpa.predicate.useMemoryRegions=true</option>
 
   <tasks name="ArraysReach">
     <includesfile>../sv-benchmarks/c/ArraysReach.set</includesfile>
