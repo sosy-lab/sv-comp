@@ -1,22 +1,15 @@
 <!DOCTYPE benchmark PUBLIC "+//IDN sosy-lab.org//DTD BenchExec benchmark 1.4//EN" "http://www.sosy-lab.org/benchexec/benchmark-1.4.dtd">
-<!-- Example file for benchmark definition for BenchExec,
-          using tool "cbmc" with a CPU time limit of 60s,
-     1000 MB of RAM, and 1 CPU core.
-     To use this file, CBMC needs to be on PATH
-     and C programs from SV-COMP need to be available in directory programs/
-     (or input files need to be changed). -->
-<benchmark tool="consequence" timelimit="900 s">
-<rundefinition/>
+<benchmark tool="consequence" timelimit="900 s" hardtimelimit="960 s" memlimit="15 GB" cpuCores="2">
 
-  <resultfiles>**.graphml</resultfiles> 
- 
-  <tasks name="Concurrency examples">
-	  <includesfile>Concurrency.set</includesfile>
+<require cpuModel="Intel Core i7-6700" cpuCores="2"/>
+
+  <resultfiles>**.graphml</resultfiles>
+
+  <rundefinition name="sv-comp17"></rundefinition>
+
+  <tasks name="Concurrency">
+    <includesfile>../sv-benchmarks/c/Concurrency.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/Concurrency.prp</propertyfile>
   </tasks>
-  
-  <!-- Use an SV-COMP property file as specification
-           (file ALL.prp in the same directory as each source file). -->
-  <propertyfile>Concurrency.prp</propertyfile>
+
 </benchmark>
-
-
