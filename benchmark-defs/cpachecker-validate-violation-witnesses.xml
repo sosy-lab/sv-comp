@@ -13,64 +13,78 @@
   <option name="-witness-validation"/>
   <option name="-disable-java-assertions"/>
   <option name="-heap">10000m</option>
-  <option name="-setprop">cpa.arg.errorPath.graphml=witness.graphml</option>
+  <option name="-setprop">cpa.arg.errorPath.graphml=violation-witness.graphml</option>
   <option name="-spec">../../results-verified/LOGDIR/sv-comp17.${inputfile_name}.files/violation-witness.graphml</option>
 
   <tasks name="BitVectorsReach">
+    <exclude>../sv-benchmarks/c/*/*_true-unreach-call*</exclude>
     <includesfile>../sv-benchmarks/c/BitVectorsReach.set</includesfile>
     <propertyfile>../sv-benchmarks/c/BitVectorsReach.prp</propertyfile>
   </tasks>
   <tasks name="BitVectorsOverflows">
+    <exclude>../sv-benchmarks/c/*/*_true-no-overflow*</exclude>
     <includesfile>../sv-benchmarks/c/BitVectorsOverflows.set</includesfile>
     <propertyfile>../sv-benchmarks/c/BitVectorsOverflows.prp</propertyfile>
     <option name="-64"/>
   </tasks>
   <tasks name="HeapReach">
+    <exclude>../sv-benchmarks/c/*/*_true-unreach-call*</exclude>
     <includesfile>../sv-benchmarks/c/HeapReach.set</includesfile>
     <propertyfile>../sv-benchmarks/c/HeapReach.prp</propertyfile>
   </tasks>
   <tasks name="HeapMemSafety">
+    <exclude>../sv-benchmarks/c/*/*_true-valid-memsafety*</exclude>
     <includesfile>../sv-benchmarks/c/HeapMemSafety.set</includesfile>
     <propertyfile>../sv-benchmarks/c/HeapMemSafety.prp</propertyfile>
   </tasks>
   <tasks name="Floats">
+    <exclude>../sv-benchmarks/c/*/*_true-unreach-call*</exclude>
     <includesfile>../sv-benchmarks/c/Floats.set</includesfile>
     <propertyfile>../sv-benchmarks/c/Floats.prp</propertyfile>
   </tasks>
   <tasks name="ControlFlow">
+    <exclude>../sv-benchmarks/c/*/*_true-unreach-call*</exclude>
     <includesfile>../sv-benchmarks/c/ControlFlow.set</includesfile>
     <propertyfile>../sv-benchmarks/c/ControlFlow.prp</propertyfile>
   </tasks>
   <tasks name="Simple">
+    <exclude>../sv-benchmarks/c/*/*_true-unreach-call*</exclude>
     <includesfile>../sv-benchmarks/c/Simple.set</includesfile>
     <propertyfile>../sv-benchmarks/c/Simple.prp</propertyfile>
   </tasks>
   <tasks name="ECA">
+    <exclude>../sv-benchmarks/c/*/*_true-unreach-call*</exclude>
     <includesfile>../sv-benchmarks/c/ECA.set</includesfile>
     <propertyfile>../sv-benchmarks/c/ECA.prp</propertyfile>
   </tasks>
   <tasks name="Loops">
+    <exclude>../sv-benchmarks/c/*/*_true-unreach-call*</exclude>
     <includesfile>../sv-benchmarks/c/Loops.set</includesfile>
     <propertyfile>../sv-benchmarks/c/Loops.prp</propertyfile>
   </tasks>
   <tasks name="Recursive">
+    <exclude>../sv-benchmarks/c/*/*_true-unreach-call*</exclude>
     <includesfile>../sv-benchmarks/c/Recursive.set</includesfile>
     <propertyfile>../sv-benchmarks/c/Recursive.prp</propertyfile>
   </tasks>
   <tasks name="ProductLines">
+    <exclude>../sv-benchmarks/c/*/*_true-unreach-call*</exclude>
     <includesfile>../sv-benchmarks/c/ProductLines.set</includesfile>
     <propertyfile>../sv-benchmarks/c/ProductLines.prp</propertyfile>
   </tasks>
   <tasks name="Sequentialized">
+    <exclude>../sv-benchmarks/c/*/*_true-unreach-call*</exclude>
     <includesfile>../sv-benchmarks/c/Sequentialized.set</includesfile>
     <propertyfile>../sv-benchmarks/c/Sequentialized.prp</propertyfile>
   </tasks>
   <tasks name="DeviceDriversLinux64">
+    <exclude>../sv-benchmarks/c/*/*_true-unreach-call*</exclude>
     <includesfile>../sv-benchmarks/c/DeviceDriversLinux64.set</includesfile>
     <propertyfile>../sv-benchmarks/c/DeviceDriversLinux64.prp</propertyfile>
     <option name="-64"/>
   </tasks>
   <tasks name="BusyBox">
+    <exclude>../sv-benchmarks/c/*/*_true-unreach-call*</exclude>
     <includesfile>../sv-benchmarks/c/BusyBox.set</includesfile>
     <propertyfile>../sv-benchmarks/c/BusyBox.prp</propertyfile>
     <option name="-64"/>
