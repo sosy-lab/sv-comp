@@ -8,7 +8,7 @@
 
   <propertyfile>${inputfile_path}/ALL.prp</propertyfile>
 
-  <resultfiles>**.graphml</resultfiles>
+  <resultfiles>**/*.graphml</resultfiles>
   
   <rundefinition name="sv-comp17"></rundefinition>
 
