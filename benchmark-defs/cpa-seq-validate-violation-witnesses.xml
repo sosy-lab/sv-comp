@@ -5,9 +5,9 @@
 <require cpuModel="Intel Core i7-6700" cpuCores="2"/>
 
   <resultfiles>**/*.graphml</resultfiles>
-  
+
   <rundefinition name="sv-comp17-violation-witness">
-    <requiredfiles>../results-verified/LOGDIR/sv-comp17.${inputfile_name}.files/violation-witness.graphml</requiredfiles> 
+    <requiredfiles>../results-verified/LOGDIR/sv-comp17.${inputfile_name}.files/violation-witness.graphml</requiredfiles>
   </rundefinition>
 
   <option name="-witness-validation"/>
