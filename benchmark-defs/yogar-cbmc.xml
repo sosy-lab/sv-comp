@@ -4,8 +4,6 @@
 
 <require cpuModel="Intel Core i7-6700" cpuCores="2"/>
     
-  <propertyfile>${inputfile_path}/ALL.prp</propertyfile>
-   
   <resultfiles>counterexample.witness</resultfiles>
    
   <rundefinition name="sv-comp17">
