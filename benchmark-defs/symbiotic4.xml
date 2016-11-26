@@ -8,6 +8,8 @@
   
   <rundefinition name="sv-comp17"></rundefinition>
 
+  <option name="--witness">witness.graphml</option>
+
   <tasks name="ArraysReach">
     <includesfile>../sv-benchmarks/c/ArraysReach.set</includesfile>
     <propertyfile>../sv-benchmarks/c/ArraysReach.prp</propertyfile>
