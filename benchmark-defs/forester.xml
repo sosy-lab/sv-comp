@@ -9,6 +9,7 @@
   <rundefinition name="sv-comp17"></rundefinition>
 
   <option name="--trace">error-witness.graphml</option>
+  <option name="--debug"/>
 
   <tasks name="HeapReach">
     <includesfile>../sv-benchmarks/c/HeapReach.set</includesfile>
