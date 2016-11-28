@@ -3,7 +3,7 @@
 
 <require cpuModel="Intel Core i7-6700" cpuCores="2"/>
 
-  <resultfiles>**/*.graphml</resultfiles>
+  <resultfiles>**.graphml</resultfiles>
 
   <rundefinition name="sv-comp17"></rundefinition>
 
