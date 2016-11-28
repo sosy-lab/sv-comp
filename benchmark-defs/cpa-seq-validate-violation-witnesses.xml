@@ -47,11 +47,6 @@
     <includesfile>../sv-benchmarks/c/ControlFlow.set</includesfile>
     <propertyfile>../sv-benchmarks/c/ControlFlow.prp</propertyfile>
   </tasks>
-  <tasks name="Simple">
-    <exclude>../sv-benchmarks/c/*/*_true-unreach-call*</exclude>
-    <includesfile>../sv-benchmarks/c/Simple.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/Simple.prp</propertyfile>
-  </tasks>
   <tasks name="ECA">
     <exclude>../sv-benchmarks/c/*/*_true-unreach-call*</exclude>
     <includesfile>../sv-benchmarks/c/ECA.set</includesfile>

@@ -47,10 +47,6 @@
     <includesfile>../sv-benchmarks/c/ControlFlow.set</includesfile>
     <propertyfile>../sv-benchmarks/c/ControlFlow.prp</propertyfile>
   </tasks>
-  <tasks name="Simple">
-    <includesfile>../sv-benchmarks/c/Simple.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/Simple.prp</propertyfile>
-  </tasks>
   <tasks name="ECA">
     <includesfile>../sv-benchmarks/c/ECA.set</includesfile>
     <propertyfile>../sv-benchmarks/c/ECA.prp</propertyfile>

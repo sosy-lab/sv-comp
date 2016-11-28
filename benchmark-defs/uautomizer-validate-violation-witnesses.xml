@@ -61,12 +61,6 @@
     <propertyfile>../sv-benchmarks/c/ControlFlow.prp</propertyfile>
     <option name="32bit"/>
   </tasks>
-  <tasks name="Simple">
-    <exclude>../sv-benchmarks/c/*/*_true-unreach-call*</exclude>
-    <includesfile>../sv-benchmarks/c/Simple.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/Simple.prp</propertyfile>
-    <option name="32bit"/>
-  </tasks>
   <tasks name="ECA">
     <exclude>../sv-benchmarks/c/*/*_true-unreach-call*</exclude>
     <includesfile>../sv-benchmarks/c/ECA.set</includesfile>
