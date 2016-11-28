@@ -7,14 +7,14 @@
   <resultfiles>**/*.graphml</resultfiles>
 
   <rundefinition name="sv-comp17-correctness-witness">
-    <requiredfiles>../results-verified/LOGDIR/sv-comp17.${inputfile_name}.files/correctness-witness.graphml</requiredfiles>
+    <requiredfiles>../results-verified/LOGDIR/sv-comp17.${inputfile_name}.files/witness.graphml</requiredfiles>
   </rundefinition>
 
   <option name="-correctness-witnesses-k-induction"/>
   <option name="-disable-java-assertions"/>
   <option name="-heap">10000m</option>
   <option name="-setprop">cpa.arg.errorPath.graphml=correctness-witness.graphml</option>
-  <option name="-spec">../../results-verified/LOGDIR/sv-comp17.${inputfile_name}.files/correctness-witness.graphml</option>
+  <option name="-spec">../../results-verified/LOGDIR/sv-comp17.${inputfile_name}.files/witness.graphml</option>
 
   <tasks name="BitVectorsReach">
     <exclude>../sv-benchmarks/c/*/*_false-unreach-call*</exclude>

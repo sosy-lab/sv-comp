@@ -7,10 +7,10 @@
   <resultfiles>**/*.graphml</resultfiles>
   
   <rundefinition name="sv-comp17-violation-witness">
-    <requiredfiles>../results-verified/LOGDIR/sv-comp17.${inputfile_name}.files/violation-witness.graphml</requiredfiles> 
+    <requiredfiles>../results-verified/LOGDIR/sv-comp17.${inputfile_name}.files/witness.graphml</requiredfiles> 
   </rundefinition>
 
-  <option name="../../results-verified/LOGDIR/sv-comp17.${inputfile_name}.files/violation-witness.graphml"/>
+  <option name="../../results-verified/LOGDIR/sv-comp17.${inputfile_name}.files/witness.graphml"/>
 
   <tasks name="ArraysReach">
     <exclude>../sv-benchmarks/c/*/*_true-unreach-call*</exclude>
