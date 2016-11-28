@@ -92,7 +92,7 @@
     <propertyfile>../sv-benchmarks/c/Sequentialized.prp</propertyfile>
     <option name="32bit"/>
   </tasks>
-  <tasks name="Termination">
+  <tasks name="Termination-Main">
     <exclude>../sv-benchmarks/c/*/*_false-termination*</exclude>
     <includesfile>../sv-benchmarks/c/Termination-Main.set</includesfile>
     <propertyfile>../sv-benchmarks/c/Termination.prp</propertyfile>

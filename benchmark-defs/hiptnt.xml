@@ -8,7 +8,7 @@
 
   <rundefinition name="sv-comp17"></rundefinition>
 
-  <tasks name="Termination">
+  <tasks name="Termination-Main">
     <includesfile>../sv-benchmarks/c/Termination-Main.set</includesfile>
     <propertyfile>../sv-benchmarks/c/Termination.prp</propertyfile>
   </tasks>

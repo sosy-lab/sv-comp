@@ -65,7 +65,7 @@
     <includesfile>../sv-benchmarks/c/Sequentialized.set</includesfile>
     <propertyfile>../sv-benchmarks/c/Sequentialized.prp</propertyfile>
   </tasks>
-  <tasks name="Termination">
+  <tasks name="Termination-Main">
     <includesfile>../sv-benchmarks/c/Termination-Main.set</includesfile>
     <propertyfile>../sv-benchmarks/c/Termination.prp</propertyfile>
     <option name="-64"/>
