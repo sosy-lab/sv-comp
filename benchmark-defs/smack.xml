@@ -76,7 +76,7 @@
     <option name="--clang-options=-m32"/>
   </tasks>
   <tasks name="Termination">
-    <includesfile>../sv-benchmarks/c/Termination.set</includesfile>
+    <includesfile>../sv-benchmarks/c/Termination-Main.set</includesfile>
     <propertyfile>../sv-benchmarks/c/Termination.prp</propertyfile>
     <option name="--clang-options=-m64"/>
   </tasks>

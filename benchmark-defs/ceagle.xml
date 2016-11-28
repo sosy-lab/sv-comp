@@ -76,7 +76,7 @@
     <option name="--mem">32</option>
   </tasks>
   <tasks name="Termination">
-    <includesfile>../sv-benchmarks/c/Termination.set</includesfile>
+    <includesfile>../sv-benchmarks/c/Termination-Main.set</includesfile>
     <propertyfile>../sv-benchmarks/c/Termination.prp</propertyfile>
     <option name="--mem">64</option>
   </tasks>

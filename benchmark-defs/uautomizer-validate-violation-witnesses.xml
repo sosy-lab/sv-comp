@@ -93,7 +93,7 @@
   </tasks>
   <tasks name="Termination">
     <exclude>../sv-benchmarks/c/*/*_true-termination*</exclude>
-    <includesfile>../sv-benchmarks/c/Termination.set</includesfile>
+    <includesfile>../sv-benchmarks/c/Termination-Main.set</includesfile>
     <propertyfile>../sv-benchmarks/c/Termination.prp</propertyfile>
     <option name="64bit"/>
   </tasks>
