@@ -10,11 +10,11 @@
     <requiredfiles>../results-verified/LOGDIR/sv-comp17.${inputfile_name}.files/witness.graphml</requiredfiles>
   </rundefinition>
 
-  <option name="-correctness-witness-validation"/>
+  <option name="-witnessValidation"/>
   <option name="-disable-java-assertions"/>
   <option name="-heap">10000m</option>
   <option name="-setprop">cpa.arg.errorPath.graphml=correctness-witness.graphml</option>
-  <option name="-spec">../../results-verified/LOGDIR/sv-comp17.${inputfile_name}.files/witness.graphml</option>
+  <option name="-witness">../../results-verified/LOGDIR/sv-comp17.${inputfile_name}.files/witness.graphml</option>
 
   <tasks name="BitVectorsReach">
     <exclude>../sv-benchmarks/c/*/*_false-unreach-call*</exclude>
