@@ -13,7 +13,6 @@
   <option name="-witnessValidation"/>
   <option name="-disable-java-assertions"/>
   <option name="-heap">10000m</option>
-  <option name="-setprop">cpa.arg.errorPath.graphml=violation-witness.graphml</option>
   <option name="-witness">../../results-verified/LOGDIR/sv-comp17.${inputfile_name}.files/witness.graphml</option>
 
   <tasks name="BitVectorsReach">
