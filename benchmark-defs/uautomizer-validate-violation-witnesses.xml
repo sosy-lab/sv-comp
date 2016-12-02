@@ -10,7 +10,7 @@
     <requiredfiles>../results-verified/LOGDIR/sv-comp17.${inputfile_name}.files/witness.graphml</requiredfiles> 
   </rundefinition>
 
-  <option name="../../results-verified/LOGDIR/sv-comp17.${inputfile_name}.files/witness.graphml"/>
+  <option name="--validate">../../results-verified/LOGDIR/sv-comp17.${inputfile_name}.files/witness.graphml</option>
 
   <tasks name="ArraysReach">
     <exclude>../sv-benchmarks/c/*/*_true-unreach-call*</exclude>
