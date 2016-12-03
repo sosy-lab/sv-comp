@@ -17,7 +17,6 @@
     <includesfile>../sv-benchmarks/c/ArraysReach.set</includesfile>
     <propertyfile>../sv-benchmarks/c/ArraysReach.prp</propertyfile>
     <option name="32bit"/>
-    <option name="precise"/>
   </tasks>
   <tasks name="ArraysMemSafety">
     <exclude>../sv-benchmarks/c/*/*_true-valid-memsafety*</exclude>
