@@ -8,7 +8,7 @@
   
   <rundefinition name="sv-comp17"></rundefinition>
 
-  <option name="--graphml-witness">error-witness.graphml</option>
+  <option name="--graphml-witness">witness.graphml</option>
 
   <tasks name="ArraysReach">
     <includesfile>../sv-benchmarks/c/ArraysReach.set</includesfile>
