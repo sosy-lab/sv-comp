@@ -8,9 +8,7 @@
   
   <rundefinition name="sv-comp17"></rundefinition>
 
-  <option name="--k-induction"/>
-  <option name="--competition-mode"/>
-  <option name="--graphml-cex">error-witness.graphml</option>
+  <option name="--graphml-witness">witness.graphml</option>
 
   <tasks name="ArraysReach">
     <includesfile>../sv-benchmarks/c/ArraysReach.set</includesfile>
