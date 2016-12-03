@@ -11,6 +11,7 @@
   <tasks name="BitVectorsReach">
     <includesfile>../sv-benchmarks/c/BitVectorsReach.set</includesfile>
     <propertyfile>../sv-benchmarks/c/BitVectorsReach.prp</propertyfile>
+    <option name="-i">bit</option>
   </tasks>
   <tasks name="ControlFlow">
     <includesfile>../sv-benchmarks/c/ControlFlow.set</includesfile>
