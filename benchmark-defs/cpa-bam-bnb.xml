@@ -68,7 +68,7 @@
   <tasks name="Termination-Main">
     <includesfile>../sv-benchmarks/c/Termination-Main.set</includesfile>
     <propertyfile>../sv-benchmarks/c/Termination.prp</propertyfile>
-    <option name="-64" />
+    <option name="-64"/>
   </tasks>
   <tasks name="Concurrency">
     <includesfile>../sv-benchmarks/c/Concurrency.set</includesfile>
