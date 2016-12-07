@@ -52,9 +52,4 @@
     <option name="--64"/>
   </tasks>
 
-  <tasks name="Concurrency">
-    <includesfile>../sv-benchmarks/c/Concurrency.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/Concurrency.prp</propertyfile>
-  </tasks>
-
 </benchmark>
