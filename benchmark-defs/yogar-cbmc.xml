@@ -4,7 +4,7 @@
 
 <require cpuModel="Intel Xeon E3-1230 v5 @ 3.40 GHz" cpuCores="2"/>
     
-  <resultfiles>counterexample.witness</resultfiles>
+  <resultfiles>**.graphml</resultfiles>
    
   <rundefinition name="sv-comp17">
   </rundefinition>
