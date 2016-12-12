@@ -12,106 +12,141 @@
 
   <option name="--validate">../../results-verified/LOGDIR/sv-comp17.${inputfile_name}.files/witness.graphml</option>
 
-  <tasks name="ArraysReach">
+  <tasks name="ReachSafety-Arrays">
     <exclude>../sv-benchmarks/c/*/*_true-unreach-call*</exclude>
-    <includesfile>../sv-benchmarks/c/ArraysReach.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/ArraysReach.prp</propertyfile>
+    <includesfile>../sv-benchmarks/c/ReachSafety-Arrays.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/ReachSafety.prp</propertyfile>
     <option name="32bit"/>
   </tasks>
-  <tasks name="ArraysMemSafety">
+  <tasks name="ReachSafety-BitVectors">
+    <exclude>../sv-benchmarks/c/*/*_true-unreach-call*</exclude>
+    <includesfile>../sv-benchmarks/c/ReachSafety-BitVectors.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/ReachSafety.prp</propertyfile>
+    <option name="32bit"/>
+  </tasks>
+  <tasks name="ReachSafety-ControlFlow">
+    <exclude>../sv-benchmarks/c/*/*_true-unreach-call*</exclude>
+    <includesfile>../sv-benchmarks/c/ReachSafety-ControlFlow.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/ReachSafety.prp</propertyfile>
+    <option name="32bit"/>
+  </tasks>
+  <tasks name="ReachSafety-ECA">
+    <exclude>../sv-benchmarks/c/*/*_true-unreach-call*</exclude>
+    <includesfile>../sv-benchmarks/c/ReachSafety-ECA.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/ReachSafety.prp</propertyfile>
+    <option name="32bit"/>
+  </tasks>
+  <tasks name="ReachSafety-Floats">
+    <exclude>../sv-benchmarks/c/*/*_true-unreach-call*</exclude>
+    <includesfile>../sv-benchmarks/c/ReachSafety-Floats.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/ReachSafety.prp</propertyfile>
+    <option name="32bit"/>
+  </tasks>
+  <tasks name="ReachSafety-Heap">
+    <exclude>../sv-benchmarks/c/*/*_true-unreach-call*</exclude>
+    <includesfile>../sv-benchmarks/c/ReachSafety-Heap.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/ReachSafety.prp</propertyfile>
+    <option name="32bit"/>
+  </tasks>
+  <tasks name="ReachSafety-Loops">
+    <exclude>../sv-benchmarks/c/*/*_true-unreach-call*</exclude>
+    <includesfile>../sv-benchmarks/c/ReachSafety-Loops.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/ReachSafety.prp</propertyfile>
+    <option name="32bit"/>
+  </tasks>
+  <tasks name="ReachSafety-ProductLines">
+    <exclude>../sv-benchmarks/c/*/*_true-unreach-call*</exclude>
+    <includesfile>../sv-benchmarks/c/ReachSafety-ProductLines.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/ReachSafety.prp</propertyfile>
+    <option name="32bit"/>
+  </tasks>
+  <tasks name="ReachSafety-Recursive">
+    <exclude>../sv-benchmarks/c/*/*_true-unreach-call*</exclude>
+    <includesfile>../sv-benchmarks/c/ReachSafety-Recursive.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/ReachSafety.prp</propertyfile>
+    <option name="32bit"/>
+  </tasks>
+  <tasks name="ReachSafety-Sequentialized">
+    <exclude>../sv-benchmarks/c/*/*_true-unreach-call*</exclude>
+    <includesfile>../sv-benchmarks/c/ReachSafety-Sequentialized.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/ReachSafety.prp</propertyfile>
+    <option name="32bit"/>
+  </tasks>
+
+  <tasks name="MemSafety-Arrays">
     <exclude>../sv-benchmarks/c/*/*_true-valid-memsafety*</exclude>
-    <includesfile>../sv-benchmarks/c/ArraysMemSafety.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/ArraysMemSafety.prp</propertyfile>
+    <includesfile>../sv-benchmarks/c/MemSafety-Arrays.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/MemSafety.prp</propertyfile>
     <option name="32bit"/>
   </tasks>
-  <tasks name="BitVectorsReach">
+  <tasks name="MemSafety-Heap">
+    <exclude>../sv-benchmarks/c/*/*_true-valid-memsafety*</exclude>
+    <includesfile>../sv-benchmarks/c/MemSafety-Heap.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/MemSafety.prp</propertyfile>
+    <option name="32bit"/>
+  </tasks>
+  <tasks name="MemSafety-Other">
+    <exclude>../sv-benchmarks/c/*/*_true-valid-memsafety*</exclude>
+    <includesfile>../sv-benchmarks/c/MemSafety-Other.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/MemSafety.prp</propertyfile>
+    <option name="32bit"/>
+  </tasks>
+
+  <tasks name="ConcurrencySafety-Main">
     <exclude>../sv-benchmarks/c/*/*_true-unreach-call*</exclude>
-    <includesfile>../sv-benchmarks/c/BitVectorsReach.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/BitVectorsReach.prp</propertyfile>
+    <includesfile>../sv-benchmarks/c/ConcurrencySafety-Main.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/ConcurrencySafety.prp</propertyfile>
     <option name="32bit"/>
   </tasks>
-  <tasks name="BitVectorsOverflows">
+
+  <tasks name="Overflows-BitVectors">
     <exclude>../sv-benchmarks/c/*/*_true-no-overflow*</exclude>
-    <includesfile>../sv-benchmarks/c/BitVectorsOverflows.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/BitVectorsOverflows.prp</propertyfile>
+    <includesfile>../sv-benchmarks/c/Overflows-BitVectors.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/Overflows.prp</propertyfile>
     <option name="64bit"/>
   </tasks>
-  <tasks name="HeapReach">
-    <exclude>../sv-benchmarks/c/*/*_true-unreach-call*</exclude>
-    <includesfile>../sv-benchmarks/c/HeapReach.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/HeapReach.prp</propertyfile>
+  <tasks name="Overflows-Other">
+    <exclude>../sv-benchmarks/c/*/*_true-no-overflow*</exclude>
+    <includesfile>../sv-benchmarks/c/Overflows-Other.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/Overflows.prp</propertyfile>
     <option name="32bit"/>
   </tasks>
-  <tasks name="HeapMemSafety">
-    <exclude>../sv-benchmarks/c/*/*_true-valid-memsafety*</exclude>
-    <includesfile>../sv-benchmarks/c/HeapMemSafety.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/HeapMemSafety.prp</propertyfile>
-    <option name="32bit"/>
-  </tasks>
-  <tasks name="Floats">
-    <exclude>../sv-benchmarks/c/*/*_true-unreach-call*</exclude>
-    <includesfile>../sv-benchmarks/c/Floats.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/Floats.prp</propertyfile>
-    <option name="32bit"/>
-  </tasks>
-  <tasks name="ControlFlow">
-    <exclude>../sv-benchmarks/c/*/*_true-unreach-call*</exclude>
-    <includesfile>../sv-benchmarks/c/ControlFlow.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/ControlFlow.prp</propertyfile>
-    <option name="32bit"/>
-  </tasks>
-  <tasks name="ECA">
-    <exclude>../sv-benchmarks/c/*/*_true-unreach-call*</exclude>
-    <includesfile>../sv-benchmarks/c/ECA.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/ECA.prp</propertyfile>
-    <option name="32bit"/>
-  </tasks>
-  <tasks name="Loops">
-    <exclude>../sv-benchmarks/c/*/*_true-unreach-call*</exclude>
-    <includesfile>../sv-benchmarks/c/Loops.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/Loops.prp</propertyfile>
-    <option name="32bit"/>
-  </tasks>
-  <tasks name="Recursive">
-    <exclude>../sv-benchmarks/c/*/*_true-unreach-call*</exclude>
-    <includesfile>../sv-benchmarks/c/Recursive.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/Recursive.prp</propertyfile>
-    <option name="32bit"/>
-  </tasks>
-  <tasks name="ProductLines">
-    <exclude>../sv-benchmarks/c/*/*_true-unreach-call*</exclude>
-    <includesfile>../sv-benchmarks/c/ProductLines.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/ProductLines.prp</propertyfile>
-    <option name="32bit"/>
-  </tasks>
-  <tasks name="Sequentialized">
-    <exclude>../sv-benchmarks/c/*/*_true-unreach-call*</exclude>
-    <includesfile>../sv-benchmarks/c/Sequentialized.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/Sequentialized.prp</propertyfile>
-    <option name="32bit"/>
-  </tasks>
-  <tasks name="Termination-Main">
+
+  <tasks name="Termination-MainControlFlow">
     <exclude>../sv-benchmarks/c/*/*_true-termination*</exclude>
-    <includesfile>../sv-benchmarks/c/Termination-Main.set</includesfile>
+    <includesfile>../sv-benchmarks/c/Termination-MainControlFlow.set</includesfile>
     <propertyfile>../sv-benchmarks/c/Termination.prp</propertyfile>
     <option name="64bit"/>
   </tasks>
-  <tasks name="Concurrency">
-    <exclude>../sv-benchmarks/c/*/*_true-unreach-call*</exclude>
-    <includesfile>../sv-benchmarks/c/Concurrency.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/Concurrency.prp</propertyfile>
-    <option name="32bit"/>
-  </tasks>
-  <tasks name="DeviceDriversLinux64">
-    <exclude>../sv-benchmarks/c/*/*_true-unreach-call*</exclude>
-    <includesfile>../sv-benchmarks/c/DeviceDriversLinux64.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/DeviceDriversLinux64.prp</propertyfile>
+  <tasks name="Termination-MainHeap">
+    <exclude>../sv-benchmarks/c/*/*_true-termination*</exclude>
+    <includesfile>../sv-benchmarks/c/Termination-MainHeap.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/Termination.prp</propertyfile>
     <option name="64bit"/>
   </tasks>
-  <tasks name="BusyBox">
+  <tasks name="Termination-Other">
+    <exclude>../sv-benchmarks/c/*/*_true-termination*</exclude>
+    <includesfile>../sv-benchmarks/c/Termination-Other.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/Termination.prp</propertyfile>
+    <option name="32bit"/>
+  </tasks>
+
+  <tasks name="Systems_BusyBox_MemSafety">
+    <exclude>../sv-benchmarks/c/*/*_true-valid-memsafety*</exclude>
+    <includesfile>../sv-benchmarks/c/Systems_BusyBox_MemSafety.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/Systems_BusyBox_MemSafety.prp</propertyfile>
+    <option name="64bit"/>
+  </tasks>
+  <tasks name="Systems_BusyBox_Overflows">
+    <exclude>../sv-benchmarks/c/*/*_true-no-overflow*</exclude>
+    <includesfile>../sv-benchmarks/c/Systems_BusyBox_Overflows.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/Systems_BusyBox_Overflows.prp</propertyfile>
+    <option name="64bit"/>
+  </tasks>
+  <tasks name="Systems_DeviceDriversLinux64_Safety">
     <exclude>../sv-benchmarks/c/*/*_true-unreach-call*</exclude>
-    <includesfile>../sv-benchmarks/c/BusyBox.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/BusyBox.prp</propertyfile>
+    <includesfile>../sv-benchmarks/c/Systems_DeviceDriversLinux64_Safety.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/Systems_DeviceDriversLinux64_Safety.prp</propertyfile>
     <option name="64bit"/>
   </tasks>
 

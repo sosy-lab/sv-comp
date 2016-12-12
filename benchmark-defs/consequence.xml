@@ -7,9 +7,9 @@
 
   <rundefinition name="sv-comp17"></rundefinition>
 
-  <tasks name="Concurrency">
-    <includesfile>../sv-benchmarks/c/Concurrency.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/Concurrency.prp</propertyfile>
+  <tasks name="ConcurrencySafety-Main">
+    <includesfile>../sv-benchmarks/c/ConcurrencySafety-Main.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/ConcurrencySafety.prp</propertyfile>
   </tasks>
 
 </benchmark>

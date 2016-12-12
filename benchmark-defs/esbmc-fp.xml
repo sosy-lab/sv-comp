@@ -10,9 +10,9 @@
 
   <option name="-s">fp</option>
 
-  <tasks name="Floats">
-    <includesfile>../sv-benchmarks/c/Floats.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/Floats.prp</propertyfile>
+  <tasks name="ReachSafety-Floats">
+    <includesfile>../sv-benchmarks/c/ReachSafety-Floats.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/ReachSafety.prp</propertyfile>
   </tasks>
 
 </benchmark>

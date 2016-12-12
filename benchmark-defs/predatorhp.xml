@@ -10,13 +10,17 @@
 
   <option name="--witness">error-witness.graphml</option> 
 
-  <tasks name="HeapReach">
-    <includesfile>../sv-benchmarks/c/HeapReach.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/HeapReach.prp</propertyfile>
+  <tasks name="MemSafety-Arrays">
+    <includesfile>../sv-benchmarks/c/MemSafety-Arrays.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/MemSafety.prp</propertyfile>
   </tasks>
-  <tasks name="HeapMemSafety">
-    <includesfile>../sv-benchmarks/c/HeapMemSafety.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/HeapMemSafety.prp</propertyfile>
+  <tasks name="MemSafety-Heap">
+    <includesfile>../sv-benchmarks/c/MemSafety-Heap.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/MemSafety.prp</propertyfile>
+  </tasks>
+  <tasks name="MemSafety-Other">
+    <includesfile>../sv-benchmarks/c/MemSafety-Other.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/MemSafety.prp</propertyfile>
   </tasks>
 
 </benchmark>

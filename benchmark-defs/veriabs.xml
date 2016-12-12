@@ -8,32 +8,45 @@
   
   <rundefinition name="sv-comp17"></rundefinition>
 
-  <tasks name="ArraysReach">
-    <includesfile>../sv-benchmarks/c/ArraysReach.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/ArraysReach.prp</propertyfile>
+  <tasks name="ReachSafety-Arrays">
+    <includesfile>../sv-benchmarks/c/ReachSafety-Arrays.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/ReachSafety.prp</propertyfile>
   </tasks>
-  <tasks name="ControlFlow">
-    <includesfile>../sv-benchmarks/c/ControlFlow.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/ControlFlow.prp</propertyfile>
+  <tasks name="ReachSafety-BitVectors">
+    <includesfile>../sv-benchmarks/c/ReachSafety-BitVectors.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/ReachSafety.prp</propertyfile>
   </tasks>
-  <tasks name="ECA">
-    <includesfile>../sv-benchmarks/c/ECA.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/ECA.prp</propertyfile>
+  <tasks name="ReachSafety-ControlFlow">
+    <includesfile>../sv-benchmarks/c/ReachSafety-ControlFlow.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/ReachSafety.prp</propertyfile>
   </tasks>
-  <tasks name="Loops">
-    <includesfile>../sv-benchmarks/c/Loops.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/Loops.prp</propertyfile>
+  <tasks name="ReachSafety-ECA">
+    <includesfile>../sv-benchmarks/c/ReachSafety-ECA.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/ReachSafety.prp</propertyfile>
   </tasks>
-  <tasks name="Recursive">
-    <includesfile>../sv-benchmarks/c/Recursive.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/Recursive.prp</propertyfile>
+  <tasks name="ReachSafety-Floats">
+    <includesfile>../sv-benchmarks/c/ReachSafety-Floats.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/ReachSafety.prp</propertyfile>
   </tasks>
-  <tasks name="ProductLines">
-    <includesfile>../sv-benchmarks/c/ProductLines.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/ProductLines.prp</propertyfile>
+  <tasks name="ReachSafety-Heap">
+    <includesfile>../sv-benchmarks/c/ReachSafety-Heap.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/ReachSafety.prp</propertyfile>
   </tasks>
-  <tasks name="Sequentialized">
-    <includesfile>../sv-benchmarks/c/Sequentialized.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/Sequentialized.prp</propertyfile>
+  <tasks name="ReachSafety-Loops">
+    <includesfile>../sv-benchmarks/c/ReachSafety-Loops.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/ReachSafety.prp</propertyfile>
   </tasks>
+  <tasks name="ReachSafety-ProductLines">
+    <includesfile>../sv-benchmarks/c/ReachSafety-ProductLines.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/ReachSafety.prp</propertyfile>
+  </tasks>
+  <tasks name="ReachSafety-Recursive">
+    <includesfile>../sv-benchmarks/c/ReachSafety-Recursive.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/ReachSafety.prp</propertyfile>
+  </tasks>
+  <tasks name="ReachSafety-Sequentialized">
+    <includesfile>../sv-benchmarks/c/ReachSafety-Sequentialized.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/ReachSafety.prp</propertyfile>
+  </tasks>
+
 </benchmark>

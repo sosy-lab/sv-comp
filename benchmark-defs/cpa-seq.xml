@@ -96,7 +96,6 @@
     <propertyfile>../sv-benchmarks/c/Termination.prp</propertyfile>
   </tasks>
 
-
   <tasks name="Systems_BusyBox_MemSafety">
     <includesfile>../sv-benchmarks/c/Systems_BusyBox_MemSafety.set</includesfile>
     <propertyfile>../sv-benchmarks/c/Systems_BusyBox_MemSafety.prp</propertyfile>

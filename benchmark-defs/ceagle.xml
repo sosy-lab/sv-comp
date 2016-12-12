@@ -10,91 +10,120 @@
     <option name="--compiler">clang-3.7</option>
   </rundefinition>
 
-  <tasks name="ArraysReach">
-    <includesfile>../sv-benchmarks/c/ArraysReach.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/ArraysReach.prp</propertyfile>
+  <tasks name="ReachSafety-Arrays">
+    <includesfile>../sv-benchmarks/c/ReachSafety-Arrays.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/ReachSafety.prp</propertyfile>
     <option name="--mem">32</option>
   </tasks>
-  <tasks name="ArraysMemSafety">
-    <includesfile>../sv-benchmarks/c/ArraysMemSafety.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/ArraysMemSafety.prp</propertyfile>
+  <tasks name="ReachSafety-BitVectors">
+    <includesfile>../sv-benchmarks/c/ReachSafety-BitVectors.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/ReachSafety.prp</propertyfile>
     <option name="--mem">32</option>
   </tasks>
-  <tasks name="BitVectorsReach">
-    <includesfile>../sv-benchmarks/c/BitVectorsReach.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/BitVectorsReach.prp</propertyfile>
+  <tasks name="ReachSafety-ControlFlow">
+    <includesfile>../sv-benchmarks/c/ReachSafety-ControlFlow.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/ReachSafety.prp</propertyfile>
     <option name="--mem">32</option>
   </tasks>
-  <tasks name="BitVectorsOverflows">
-    <includesfile>../sv-benchmarks/c/BitVectorsOverflows.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/BitVectorsOverflows.prp</propertyfile>
+  <tasks name="ReachSafety-ECA">
+    <includesfile>../sv-benchmarks/c/ReachSafety-ECA.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/ReachSafety.prp</propertyfile>
+    <option name="--mem">32</option>
+  </tasks>
+  <tasks name="ReachSafety-Floats">
+    <includesfile>../sv-benchmarks/c/ReachSafety-Floats.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/ReachSafety.prp</propertyfile>
+    <option name="--mem">32</option>
+  </tasks>
+  <tasks name="ReachSafety-Heap">
+    <includesfile>../sv-benchmarks/c/ReachSafety-Heap.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/ReachSafety.prp</propertyfile>
+    <option name="--mem">32</option>
+  </tasks>
+  <tasks name="ReachSafety-Loops">
+    <includesfile>../sv-benchmarks/c/ReachSafety-Loops.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/ReachSafety.prp</propertyfile>
+    <option name="--mem">32</option>
+  </tasks>
+  <tasks name="ReachSafety-ProductLines">
+    <includesfile>../sv-benchmarks/c/ReachSafety-ProductLines.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/ReachSafety.prp</propertyfile>
+    <option name="--mem">32</option>
+  </tasks>
+  <tasks name="ReachSafety-Recursive">
+    <includesfile>../sv-benchmarks/c/ReachSafety-Recursive.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/ReachSafety.prp</propertyfile>
+    <option name="--mem">32</option>
+  </tasks>
+  <tasks name="ReachSafety-Sequentialized">
+    <includesfile>../sv-benchmarks/c/ReachSafety-Sequentialized.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/ReachSafety.prp</propertyfile>
+    <option name="--mem">32</option>
+  </tasks>
+
+  <tasks name="MemSafety-Arrays">
+    <includesfile>../sv-benchmarks/c/MemSafety-Arrays.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/MemSafety.prp</propertyfile>
+    <option name="--mem">32</option>
+  </tasks>
+  <tasks name="MemSafety-Heap">
+    <includesfile>../sv-benchmarks/c/MemSafety-Heap.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/MemSafety.prp</propertyfile>
+    <option name="--mem">32</option>
+  </tasks>
+  <tasks name="MemSafety-Other">
+    <includesfile>../sv-benchmarks/c/MemSafety-Other.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/MemSafety.prp</propertyfile>
+    <option name="--mem">32</option>
+  </tasks>
+
+  <tasks name="ConcurrencySafety-Main">
+    <includesfile>../sv-benchmarks/c/ConcurrencySafety-Main.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/ConcurrencySafety.prp</propertyfile>
+    <option name="--mem">32</option>
+  </tasks>
+
+  <tasks name="Overflows-BitVectors">
+    <includesfile>../sv-benchmarks/c/Overflows-BitVectors.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/Overflows.prp</propertyfile>
     <option name="--mem">64</option>
   </tasks>
-  <tasks name="HeapReach">
-    <includesfile>../sv-benchmarks/c/HeapReach.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/HeapReach.prp</propertyfile>
+  <tasks name="Overflows-Other">
+    <includesfile>../sv-benchmarks/c/Overflows-Other.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/Overflows.prp</propertyfile>
     <option name="--mem">32</option>
   </tasks>
-  <tasks name="HeapMemSafety">
-    <includesfile>../sv-benchmarks/c/HeapMemSafety.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/HeapMemSafety.prp</propertyfile>
-    <option name="--mem">32</option>
-  </tasks>
-  <tasks name="Floats">
-    <includesfile>../sv-benchmarks/c/Floats.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/Floats.prp</propertyfile>
-    <option name="--mem">32</option>
-  </tasks>
-  <tasks name="ControlFlow">
-    <includesfile>../sv-benchmarks/c/ControlFlow.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/ControlFlow.prp</propertyfile>
-    <option name="--mem">32</option>
-  </tasks>
-  <tasks name="ECA">
-    <includesfile>../sv-benchmarks/c/ECA.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/ECA.prp</propertyfile>
-    <option name="--mem">32</option>
-  </tasks>
-  <tasks name="Loops">
-    <includesfile>../sv-benchmarks/c/Loops.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/Loops.prp</propertyfile>
-    <option name="--mem">32</option>
-  </tasks>
-  <tasks name="Recursive">
-    <includesfile>../sv-benchmarks/c/Recursive.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/Recursive.prp</propertyfile>
-    <option name="--mem">32</option>
-  </tasks>
-  <tasks name="ProductLines">
-    <includesfile>../sv-benchmarks/c/ProductLines.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/ProductLines.prp</propertyfile>
-    <option name="--mem">32</option>
-  </tasks>
-  <tasks name="Sequentialized">
-    <includesfile>../sv-benchmarks/c/Sequentialized.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/Sequentialized.prp</propertyfile>
-    <option name="--mem">32</option>
-  </tasks>
-  <tasks name="Termination-Main">
-    <includesfile>../sv-benchmarks/c/Termination-Main.set</includesfile>
+
+  <tasks name="Termination-MainControlFlow">
+    <includesfile>../sv-benchmarks/c/Termination-MainControlFlow.set</includesfile>
     <propertyfile>../sv-benchmarks/c/Termination.prp</propertyfile>
     <option name="--mem">64</option>
   </tasks>
-  <tasks name="Concurrency">
-    <includesfile>../sv-benchmarks/c/Concurrency.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/Concurrency.prp</propertyfile>
+  <tasks name="Termination-MainHeap">
+    <includesfile>../sv-benchmarks/c/Termination-MainHeap.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/Termination.prp</propertyfile>
+    <option name="--mem">64</option>
+  </tasks>
+  <tasks name="Termination-Other">
+    <includesfile>../sv-benchmarks/c/Termination-Other.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/Termination.prp</propertyfile>
     <option name="--mem">32</option>
   </tasks>
-  <tasks name="DeviceDriversLinux64">
-    <includesfile>../sv-benchmarks/c/DeviceDriversLinux64.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/DeviceDriversLinux64.prp</propertyfile>
-    <option name="--mem">64</option>
-  </tasks>
-  <tasks name="BusyBox">
-    <includesfile>../sv-benchmarks/c/BusyBox.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/BusyBox.prp</propertyfile>
-    <option name="--mem">64</option>
-  </tasks>
 
+  <tasks name="Systems_BusyBox_MemSafety">
+    <includesfile>../sv-benchmarks/c/Systems_BusyBox_MemSafety.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/Systems_BusyBox_MemSafety.prp</propertyfile>
+    <option name="--mem">64</option>
+  </tasks>
+  <tasks name="Systems_BusyBox_Overflows">
+    <includesfile>../sv-benchmarks/c/Systems_BusyBox_Overflows.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/Systems_BusyBox_Overflows.prp</propertyfile>
+    <option name="--mem">64</option>
+  </tasks>
+  <tasks name="Systems_DeviceDriversLinux64_Safety">
+    <includesfile>../sv-benchmarks/c/Systems_DeviceDriversLinux64_Safety.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/Systems_DeviceDriversLinux64_Safety.prp</propertyfile>
+    <option name="--mem">64</option>
+  </tasks>
 
 </benchmark>
