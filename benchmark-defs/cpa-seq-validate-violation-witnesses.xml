@@ -106,10 +106,10 @@
     <propertyfile>../sv-benchmarks/c/Systems_BusyBox_Overflows.prp</propertyfile>
     <option name="-64"/>
   </tasks>
-  <tasks name="Systems_DeviceDriversLinux64_Safety">
+  <tasks name="Systems_DeviceDriversLinux64_ReachSafety">
     <exclude>../sv-benchmarks/c/*/*_true-unreach-call*</exclude>
-    <includesfile>../sv-benchmarks/c/Systems_DeviceDriversLinux64_Safety.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/Systems_DeviceDriversLinux64_Safety.prp</propertyfile>
+    <includesfile>../sv-benchmarks/c/Systems_DeviceDriversLinux64_ReachSafety.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/Systems_DeviceDriversLinux64_ReachSafety.prp</propertyfile>
     <option name="-64"/>
   </tasks>
 

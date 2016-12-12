@@ -97,9 +97,9 @@
     <includesfile>../sv-benchmarks/c/Systems_BusyBox_Overflows.set</includesfile>
     <propertyfile>../sv-benchmarks/c/Systems_BusyBox_Overflows.prp</propertyfile>
   </tasks>
-  <tasks name="Systems_DeviceDriversLinux64_Safety">
-    <includesfile>../sv-benchmarks/c/Systems_DeviceDriversLinux64_Safety.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/Systems_DeviceDriversLinux64_Safety.prp</propertyfile>
+  <tasks name="Systems_DeviceDriversLinux64_ReachSafety">
+    <includesfile>../sv-benchmarks/c/Systems_DeviceDriversLinux64_ReachSafety.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/Systems_DeviceDriversLinux64_ReachSafety.prp</propertyfile>
   </tasks>
 
 </benchmark>
