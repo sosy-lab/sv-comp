@@ -85,6 +85,12 @@
     <propertyfile>../sv-benchmarks/c/MemSafety.prp</propertyfile>
     <option name="32bit"/>
   </tasks>
+  <tasks name="MemSafety-LinkedLists">
+    <exclude>../sv-benchmarks/c/*/*_true-valid-memsafety*</exclude>
+    <includesfile>../sv-benchmarks/c/MemSafety-LinkedLists.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/MemSafety.prp</propertyfile>
+    <option name="32bit"/>
+  </tasks>
   <tasks name="MemSafety-Other">
     <exclude>../sv-benchmarks/c/*/*_true-valid-memsafety*</exclude>
     <includesfile>../sv-benchmarks/c/MemSafety-Other.set</includesfile>

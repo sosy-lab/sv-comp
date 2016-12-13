@@ -80,6 +80,13 @@
     <includesfile>../sv-benchmarks/c/MemSafety-Heap.set</includesfile>
     <propertyfile>../sv-benchmarks/c/MemSafety.prp</propertyfile>
   </tasks>
+  <tasks name="MemSafety-LinkedLists">
+    <exclude>../sv-benchmarks/c/*/*_false-valid-deref*</exclude>
+    <exclude>../sv-benchmarks/c/*/*_false-valid-free*</exclude>
+    <exclude>../sv-benchmarks/c/*/*_false-valid-memtrack*</exclude>
+    <includesfile>../sv-benchmarks/c/MemSafety-LinkedLists.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/MemSafety.prp</propertyfile>
+  </tasks>
   <tasks name="MemSafety-Other">
     <exclude>../sv-benchmarks/c/*/*_false-valid-deref*</exclude>
     <exclude>../sv-benchmarks/c/*/*_false-valid-free*</exclude>
