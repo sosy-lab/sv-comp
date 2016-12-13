@@ -5,23 +5,18 @@
 <require cpuModel="Intel Xeon E3-1230 v5 @ 3.40 GHz" cpuCores="2"/>
 
   <resultfiles>**.graphml</resultfiles>
-  
+
   <rundefinition name="sv-comp17"></rundefinition>
 
   <option name="--trace">error-witness.graphml</option>
-  <option name="--debug"/>
 
-  <tasks name="MemSafety-Arrays">
-    <includesfile>../sv-benchmarks/c/MemSafety-Arrays.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/MemSafety.prp</propertyfile>
-  </tasks>
   <tasks name="MemSafety-Heap">
     <includesfile>../sv-benchmarks/c/MemSafety-Heap.set</includesfile>
     <propertyfile>../sv-benchmarks/c/MemSafety.prp</propertyfile>
   </tasks>
-  <tasks name="MemSafety-Other">
-    <includesfile>../sv-benchmarks/c/MemSafety-Other.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/MemSafety.prp</propertyfile>
+  <tasks name="ReachSafety-Heap">
+    <includesfile>../sv-benchmarks/c/ReachSafety-Heap.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/ReachSafety.prp</propertyfile>
   </tasks>
 
 </benchmark>
