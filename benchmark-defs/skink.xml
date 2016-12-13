@@ -8,46 +8,20 @@
   
   <rundefinition name="sv-comp17"></rundefinition>
 
-  <tasks name="ReachSafety-Arrays">
-    <includesfile>../sv-benchmarks/c/ReachSafety-Arrays.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/ReachSafety.prp</propertyfile>
-  </tasks>
   <tasks name="ReachSafety-BitVectors">
     <includesfile>../sv-benchmarks/c/ReachSafety-BitVectors.set</includesfile>
     <propertyfile>../sv-benchmarks/c/ReachSafety.prp</propertyfile>
+    <option name="cmp"></option>
     <option name="-i">bit</option>
-  </tasks>
-  <tasks name="ReachSafety-ControlFlow">
-    <includesfile>../sv-benchmarks/c/ReachSafety-ControlFlow.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/ReachSafety.prp</propertyfile>
-  </tasks>
-  <tasks name="ReachSafety-ECA">
-    <includesfile>../sv-benchmarks/c/ReachSafety-ECA.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/ReachSafety.prp</propertyfile>
-  </tasks>
-  <tasks name="ReachSafety-Floats">
-    <includesfile>../sv-benchmarks/c/ReachSafety-Floats.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/ReachSafety.prp</propertyfile>
-  </tasks>
-  <tasks name="ReachSafety-Heap">
-    <includesfile>../sv-benchmarks/c/ReachSafety-Heap.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/ReachSafety.prp</propertyfile>
   </tasks>
   <tasks name="ReachSafety-Loops">
     <includesfile>../sv-benchmarks/c/ReachSafety-Loops.set</includesfile>
     <propertyfile>../sv-benchmarks/c/ReachSafety.prp</propertyfile>
+    <option name="cmp"></option>
   </tasks>
-  <tasks name="ReachSafety-ProductLines">
-    <includesfile>../sv-benchmarks/c/ReachSafety-ProductLines.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/ReachSafety.prp</propertyfile>
+  <tasks name="ConcurrencySafety-Main">
+    <includesfile>../sv-benchmarks/c/ConcurrencySafety-Main.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/ConcurrencySafety.prp</propertyfile>
+    <option name="exp"></option>
   </tasks>
-  <tasks name="ReachSafety-Recursive">
-    <includesfile>../sv-benchmarks/c/ReachSafety-Recursive.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/ReachSafety.prp</propertyfile>
-  </tasks>
-  <tasks name="ReachSafety-Sequentialized">
-    <includesfile>../sv-benchmarks/c/ReachSafety-Sequentialized.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/ReachSafety.prp</propertyfile>
-  </tasks>
-
 </benchmark>
