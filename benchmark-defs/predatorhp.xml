@@ -10,6 +10,10 @@
 
   <option name="--witness">error-witness.graphml</option> 
 
+  <tasks name="ReachSafety-Heap">
+    <includesfile>../sv-benchmarks/c/ReachSafety-Heap.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/ReachSafety.prp</propertyfile>
+  </tasks>
   <tasks name="MemSafety-Arrays">
     <includesfile>../sv-benchmarks/c/MemSafety-Arrays.set</includesfile>
     <propertyfile>../sv-benchmarks/c/MemSafety.prp</propertyfile>
