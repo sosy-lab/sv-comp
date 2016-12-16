@@ -9,7 +9,7 @@
   <rundefinition name="sv-comp17"></rundefinition>
 
   <option name="verify"/>
-  <option name="-svcomp16"/>
+  <option name="-svcomp17"/>
 
   <tasks name="ConcurrencySafety-Main">
     <includesfile>../sv-benchmarks/c/ConcurrencySafety-Main.set</includesfile>
