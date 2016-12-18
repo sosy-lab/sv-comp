@@ -11,7 +11,7 @@
   </rundefinition>
 
   <option name="-witnessValidation"/>
-  <option name="-setprop witness.checkProgramHash=false"/>
+  <option name="-setprop">witness.checkProgramHash=false</option>
   <option name="-disable-java-assertions"/>
   <option name="-heap">10000m</option>
   <option name="-witness">../../results-verified/LOGDIR/sv-comp17.${inputfile_name}.files/witness.graphml</option>
