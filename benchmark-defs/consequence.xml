@@ -1,7 +1,7 @@
 <!DOCTYPE benchmark PUBLIC "+//IDN sosy-lab.org//DTD BenchExec benchmark 1.4//EN" "http://www.sosy-lab.org/benchexec/benchmark-1.4.dtd">
-<benchmark tool="consequence" timelimit="900 s" hardtimelimit="960 s" memlimit="15 GB" cpuCores="2">
+<benchmark tool="consequence" timelimit="900 s" hardtimelimit="960 s" memlimit="15 GB" cpuCores="4">
 
-<require cpuModel="Intel Xeon E3-1230 v5 @ 3.40 GHz" cpuCores="2"/>
+<require cpuModel="Intel Xeon E3-1230 v5 @ 3.40 GHz" cpuCores="4"/>
 
   <resultfiles>**.graphml</resultfiles>
 
