@@ -6,11 +6,11 @@
 
   <resultfiles>**.graphml</resultfiles>
 
-  <rundefinition name="sv-comp17"></rundefinition>
+  <rundefinition name="sv-comp18"></rundefinition>
 
-  <option name="-sv-comp17"/>
+  <option name="-svcomp18"/>
   <option name="-heap">10000M</option>
-  <option name="-disable-java-assertions"/>
+  <option name="-benchmark"/>
 
   <tasks name="ReachSafety-Arrays">
     <includesfile>../sv-benchmarks/c/ReachSafety-Arrays.set</includesfile>
