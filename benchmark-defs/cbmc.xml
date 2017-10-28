@@ -89,13 +89,13 @@
   </tasks>
 
   <tasks name="Overflows-BitVectors">
-    <includesfile>../sv-benchmarks/c/Overflows-BitVectors.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/Overflows.prp</propertyfile>
+    <includesfile>../sv-benchmarks/c/NoOverflows-BitVectors.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/NoOverflows.prp</propertyfile>
     <option name="--64"/>
   </tasks>
   <tasks name="Overflows-Other">
-    <includesfile>../sv-benchmarks/c/Overflows-Other.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/Overflows.prp</propertyfile>
+    <includesfile>../sv-benchmarks/c/NoOverflows-Other.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/NoOverflows.prp</propertyfile>
     <option name="--32"/>
   </tasks>
 
@@ -121,8 +121,8 @@
     <option name="--64"/>
   </tasks>
   <tasks name="Systems_BusyBox_Overflows">
-    <includesfile>../sv-benchmarks/c/Systems_BusyBox_Overflows.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/Systems_BusyBox_Overflows.prp</propertyfile>
+    <includesfile>../sv-benchmarks/c/Systems_BusyBox_NoOverflows.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/Systems_BusyBox_NoOverflows.prp</propertyfile>
     <option name="--64"/>
   </tasks>
   <tasks name="Systems_DeviceDriversLinux64_ReachSafety">
@@ -132,3 +132,4 @@
   </tasks>
 
 </benchmark>
+
