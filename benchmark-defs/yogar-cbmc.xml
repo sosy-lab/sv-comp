@@ -6,7 +6,7 @@
     
   <resultfiles>**.graphml</resultfiles>
    
-  <rundefinition name="sv-comp17">
+  <rundefinition name="sv-comp18">
   </rundefinition>
 
   <tasks name="ConcurrencySafety-Main">
