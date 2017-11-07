@@ -11,6 +11,7 @@
   <option name="-svcomp18"/>
   <option name="-heap">10000M</option>
   <option name="-benchmark"/>
+  <option name="-timelimit">900s</option>
 
   <tasks name="ReachSafety-Arrays">
     <includesfile>../sv-benchmarks/c/ReachSafety-Arrays.set</includesfile>
