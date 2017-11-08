@@ -19,7 +19,6 @@
   <option name="-setprop">analysis.summaryEdges=true</option>
   <option name="-setprop">cpa.callstack.skipVoidRecursion=true</option>
   <option name="-setprop">cpa.callstack.skipFunctionPointerRecursion=true</option>
-  <option name="-setprop">cpa.predicate.memoryAllocationsAlwaysSucceed=true</option>
 
   <tasks name="ReachSafety-Arrays">
     <exclude>../sv-benchmarks/c/*/*_true-unreach-call*</exclude>
