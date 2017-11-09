@@ -48,14 +48,14 @@
   </tasks>
   
 
-  <tasks name="Overflows-BitVectors">
-    <includesfile>../sv-benchmarks/c/Overflows-BitVectors.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/Overflows.prp</propertyfile>
+  <tasks name="NoOverflow-BitVectors">
+    <includesfile>../sv-benchmarks/c/NoOverflows-BitVectors.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/PropertyNoOverflow.prp</propertyfile>
     <option name="--arch">64</option>
   </tasks>
-  <tasks name="Overflows-Other">
-    <includesfile>../sv-benchmarks/c/Overflows-Other.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/Overflows.prp</propertyfile>
+  <tasks name="NoOverflow-Other">
+    <includesfile>../sv-benchmarks/c/NoOverflows-Other.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/PropertyNoOverflow.prp</propertyfile>
   </tasks>  
 
 </benchmark>
