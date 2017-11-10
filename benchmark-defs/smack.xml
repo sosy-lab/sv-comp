@@ -6,7 +6,7 @@
 
   <resultfiles>**.graphml</resultfiles>
   
-  <rundefinition name="sv-comp17"></rundefinition>
+  <rundefinition name="sv-comp18"></rundefinition>
 
   <option name="-w">error-witness.graphml</option>
 
