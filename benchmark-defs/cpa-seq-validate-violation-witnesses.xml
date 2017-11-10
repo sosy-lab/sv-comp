@@ -118,5 +118,24 @@
     <propertyfile>../sv-benchmarks/c/Systems_DeviceDriversLinux64_ReachSafety.prp</propertyfile>
     <option name="-64"/>
   </tasks>
+  
+  <tasks name="Termination-MainControlFlow">
+    <exclude>../sv-benchmarks/c/*/*_true-termination*</exclude>
+    <includesfile>../sv-benchmarks/c/Termination-MainControlFlow.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/Termination.prp</propertyfile>
+    <option name="-64"/>
+  </tasks>
+  <tasks name="Termination-MainHeap">
+    <exclude>../sv-benchmarks/c/*/*_true-termination*</exclude>
+    <includesfile>../sv-benchmarks/c/Termination-MainHeap.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/Termination.prp</propertyfile>
+    <option name="-64"/>
+  </tasks>
+  <tasks name="Termination-Other">
+    <exclude>../sv-benchmarks/c/*/*_true-termination*</exclude>
+    <includesfile>../sv-benchmarks/c/Termination-Other.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/Termination.prp</propertyfile>
+    <option name="-32"/>
+  </tasks>
 
 </benchmark>
