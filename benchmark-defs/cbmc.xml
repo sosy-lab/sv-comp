@@ -88,12 +88,12 @@
     <option name="--32"/>
   </tasks>
 
-  <tasks name="Overflows-BitVectors">
+  <tasks name="NoOverflows-BitVectors">
     <includesfile>../sv-benchmarks/c/NoOverflows-BitVectors.set</includesfile>
     <propertyfile>../sv-benchmarks/c/NoOverflows.prp</propertyfile>
     <option name="--64"/>
   </tasks>
-  <tasks name="Overflows-Other">
+  <tasks name="NoOverflows-Other">
     <includesfile>../sv-benchmarks/c/NoOverflows-Other.set</includesfile>
     <propertyfile>../sv-benchmarks/c/NoOverflows.prp</propertyfile>
     <option name="--32"/>
@@ -120,7 +120,7 @@
     <propertyfile>../sv-benchmarks/c/Systems_BusyBox_MemSafety.prp</propertyfile>
     <option name="--64"/>
   </tasks>
-  <tasks name="Systems_BusyBox_Overflows">
+  <tasks name="Systems_BusyBox_NoOverflows">
     <includesfile>../sv-benchmarks/c/Systems_BusyBox_NoOverflows.set</includesfile>
     <propertyfile>../sv-benchmarks/c/Systems_BusyBox_NoOverflows.prp</propertyfile>
     <option name="--64"/>

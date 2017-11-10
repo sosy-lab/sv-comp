@@ -75,14 +75,14 @@
     <propertyfile>../sv-benchmarks/c/ConcurrencySafety.prp</propertyfile>
   </tasks>
 
-  <tasks name="Overflows-BitVectors">
-    <includesfile>../sv-benchmarks/c/Overflows-BitVectors.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/Overflows.prp</propertyfile>
+  <tasks name="NoOverflows-BitVectors">
+    <includesfile>../sv-benchmarks/c/NoOverflows-BitVectors.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/NoOverflows.prp</propertyfile>
     <option name="-64"/>
   </tasks>
-  <tasks name="Overflows-Other">
-    <includesfile>../sv-benchmarks/c/Overflows-Other.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/Overflows.prp</propertyfile>
+  <tasks name="NoOverflows-Other">
+    <includesfile>../sv-benchmarks/c/NoOverflows-Other.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/NoOverflows.prp</propertyfile>
   </tasks>
 
   <tasks name="Termination-MainControlFlow">
@@ -106,9 +106,9 @@
     <propertyfile>../sv-benchmarks/c/Systems_BusyBox_MemSafety.prp</propertyfile>
     <option name="-64"/>
   </tasks>
-  <tasks name="Systems_BusyBox_Overflows">
-    <includesfile>../sv-benchmarks/c/Systems_BusyBox_Overflows.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/Systems_BusyBox_Overflows.prp</propertyfile>
+  <tasks name="Systems_BusyBox_NoOverflows">
+    <includesfile>../sv-benchmarks/c/Systems_BusyBox_NoOverflows.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/Systems_BusyBox_NoOverflows.prp</propertyfile>
     <option name="-64"/>
   </tasks>
   <tasks name="Systems_DeviceDriversLinux64_ReachSafety">
