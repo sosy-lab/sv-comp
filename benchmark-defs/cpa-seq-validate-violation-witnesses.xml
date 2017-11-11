@@ -7,7 +7,7 @@
   <resultfiles>**.graphml</resultfiles>
 
   <rundefinition name="sv-comp18-violation-witness">
-    <requiredfiles>../results-verified/LOGDIR/sv-comp18${inputfile_name}.files/witness.graphml</requiredfiles>
+    <requiredfiles>../results-verified/LOGDIR/sv-comp18.${inputfile_name}.files/witness.graphml</requiredfiles>
   </rundefinition>
 
   <option name="-witnessValidation"/>
