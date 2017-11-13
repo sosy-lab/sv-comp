@@ -15,6 +15,7 @@
   <option name="-disable-java-assertions"/>
   <option name="-heap">5000m</option>
   <option name="-witness">../../results-verified/LOGDIR/sv-comp18.${inputfile_name}.files/witness.graphml</option>
+  <option name="-setprop">cpa.predicate.memoryAllocationsAlwaysSucceed=true</option>
 
   <tasks name="ReachSafety-Arrays">
     <exclude>../sv-benchmarks/c/*/*_false-unreach-call*</exclude>
