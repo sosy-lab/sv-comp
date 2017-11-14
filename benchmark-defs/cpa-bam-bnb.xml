@@ -8,7 +8,7 @@
   
   <rundefinition name="sv-comp18"></rundefinition>
 
-  <option name="-sv-comp17-bam-bnb"/>
+  <option name="-svcomp18-bam-bnb"/>
   <option name="-disable-java-assertions"/>
   <option name="-heap">10000m</option>
 
