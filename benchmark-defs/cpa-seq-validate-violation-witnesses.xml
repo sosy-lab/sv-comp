@@ -89,6 +89,12 @@
     <propertyfile>../sv-benchmarks/c/MemSafety.prp</propertyfile>
   </tasks>
 
+  <tasks name="ConcurrencySafety-Main">
+    <exclude>../sv-benchmarks/c/*/*_true-unreach-call*</exclude>
+    <includesfile>../sv-benchmarks/c/ConcurrencySafety-Main.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/ConcurrencySafety.prp</propertyfile>
+  </tasks>
+
   <tasks name="NoOverflows-BitVectors">
     <exclude>../sv-benchmarks/c/*/*_true-no-overflow*</exclude>
     <includesfile>../sv-benchmarks/c/NoOverflows-BitVectors.set</includesfile>
