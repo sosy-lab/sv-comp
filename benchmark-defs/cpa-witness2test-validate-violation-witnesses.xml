@@ -12,8 +12,8 @@
 
   <option name="-witness2test"/>
   <option name="-setprop">witness.checkProgramHash=false</option>
-  <option name="-disable-java-assertions"/>
   <option name="-heap">5000m</option>
+  <option name="-benchmark"/>
   <option name="-witness">../../results-verified/LOGDIR/sv-comp18.${inputfile_name}.files/witness.graphml</option>
 
   <option name="-setprop">analysis.summaryEdges=true</option>
