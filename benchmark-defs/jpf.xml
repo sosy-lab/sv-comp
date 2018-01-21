@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE benchmark PUBLIC "+//IDN sosy-lab.org//DTD BenchExec benchmark 1.4//EN" "http://www.sosy-lab.org/benchexec/benchmark-1.4.dtd">
+<benchmark tool="jpf" timelimit="900 s" memlimit="15 GB" cpuCores="8">
+
+<require cpuModel="Intel Xeon E3-1230 v5 @ 3.40 GHz" cpuCores="8"/>
+
+  <resultfiles>**.graphml</resultfiles>
+
+  <rundefinition name="sv-comp19"></rundefinition>
+
+  <tasks name="ReachSafety">
+    <includesfile>../sv-benchmarks/java/ReachSafety.set</includesfile>
+    <propertyfile>../sv-benchmarks/java/ReachSafety.prp</propertyfile>
+  </tasks>
+
+</benchmark>
