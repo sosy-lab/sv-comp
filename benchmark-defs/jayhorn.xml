@@ -8,8 +8,6 @@
 
   <rundefinition name="sv-comp19"></rundefinition>
 
-  <option name="-solver">spacer</option>
-
   <tasks name="ReachSafety">
     <includesfile>../sv-benchmarks/java/ReachSafety.set</includesfile>
     <propertyfile>../sv-benchmarks/java/ReachSafety.prp</propertyfile>
