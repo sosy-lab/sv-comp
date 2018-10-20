@@ -6,9 +6,9 @@
 
   <resultfiles>**.graphml</resultfiles>
 
-  <rundefinition name="sv-comp18"></rundefinition>
+  <rundefinition name="sv-comp19"></rundefinition>
 
-  <option name="-sv-comp18-interpcpachecker"/>
+  <option name="-sv-comp19-interpcpachecker"/>
   <option name="-heap">10000M</option>
   <option name="-disable-java-assertions"/>
 

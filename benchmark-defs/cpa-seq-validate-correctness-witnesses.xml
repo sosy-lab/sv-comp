@@ -6,15 +6,15 @@
 
   <resultfiles>**.graphml</resultfiles>
 
-  <rundefinition name="sv-comp18-correctness-witness">
-    <requiredfiles>../results-verified/LOGDIR/sv-comp18.${inputfile_name}.files/witness.graphml</requiredfiles>
+  <rundefinition name="sv-comp19-correctness-witness">
+    <requiredfiles>../results-verified/LOGDIR/sv-comp19.${inputfile_name}.files/witness.graphml</requiredfiles>
   </rundefinition>
 
   <option name="-witnessValidation"/>
   <option name="-setprop">witness.checkProgramHash=false</option>
   <option name="-heap">5000m</option>
   <option name="-benchmark"/>
-  <option name="-witness">../../results-verified/LOGDIR/sv-comp18.${inputfile_name}.files/witness.graphml</option>
+  <option name="-witness">../../results-verified/LOGDIR/sv-comp19.${inputfile_name}.files/witness.graphml</option>
   <option name="-setprop">cpa.predicate.memoryAllocationsAlwaysSucceed=true</option>
 
   <tasks name="ReachSafety-Arrays">

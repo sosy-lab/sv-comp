@@ -6,12 +6,12 @@
 
   <resultfiles>**.graphml</resultfiles>
 
-  <rundefinition name="sv-comp18-correctness-witness">
-    <requiredfiles>../results-verified/LOGDIR/sv-comp18.${inputfile_name}.files/witness.graphml</requiredfiles>
+  <rundefinition name="sv-comp19-correctness-witness">
+    <requiredfiles>../results-verified/LOGDIR/sv-comp19.${inputfile_name}.files/witness.graphml</requiredfiles>
   </rundefinition>
 
   <option name="--full-output"/>
-  <option name="--validate">../../results-verified/LOGDIR/sv-comp18.${inputfile_name}.files/witness.graphml</option>
+  <option name="--validate">../../results-verified/LOGDIR/sv-comp19.${inputfile_name}.files/witness.graphml</option>
 
   <tasks name="ReachSafety-Arrays">
     <exclude>../sv-benchmarks/c/*/*_false-unreach-call*</exclude>
