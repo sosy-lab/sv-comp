@@ -81,6 +81,11 @@
     <propertyfile>../sv-benchmarks/c/MemSafety.prp</propertyfile>
     <option name="--32"/>
   </tasks>
+  <tasks name="MemSafety-MemCleanup">
+    <includesfile>../sv-benchmarks/c/MemSafety-MemCleanup.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/MemSafety-MemCleanup.prp</propertyfile>
+    <option name="--32"/>
+  </tasks>
 
   <tasks name="ConcurrencySafety-Main">
     <includesfile>../sv-benchmarks/c/ConcurrencySafety-Main.set</includesfile>
