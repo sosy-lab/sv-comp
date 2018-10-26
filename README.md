@@ -15,6 +15,17 @@ in order to make results from SV-COMP more replicability.
 --set-cgroup-value pids.max=5000
 --filesSizeLimit 15GB
 --filesCountLimit 10000
+--output-directory <work-dir>
+--overlay-dir <run-dir>
+--debug
+--maxOutputSize 2MB
+--dir <work-dir>
+--output <logfile>
+--timelimit <depends on benchmark XML>
+--softtimelimit 900s # only if specified in benchmark XML
+--memlimit 15GB
+--memoryNodes 0 # hardware-specific
+--cores 0-7 # hardware-specific
 ```
 
 ## Ubuntu Packages on Apollon Machines for SV-COMP
