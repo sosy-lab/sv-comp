@@ -10,7 +10,7 @@ in order to make results from SV-COMP more replicability.
 --hidden-dir /home
 --overlay-dir /etc
 --hidden-dir /sys/kernel/debug
---hidden-dir /var/lib/cloudy
+--hidden-dir /var/lib/cloudy # environment-specific
 --read-only-dir /run/systemd/resolve
 --set-cgroup-value pids.max=5000
 --filesSizeLimit 15GB
