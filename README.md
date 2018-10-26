@@ -17,7 +17,7 @@ in order to make results from SV-COMP more replicability.
 --filesCountLimit 10000
 ```
 
-## Ubuntu Package on Apollon Machines for SV-COMP
+## Ubuntu Packages on Apollon Machines for SV-COMP
 
 ### Added Packages
 - linux-image-generic
