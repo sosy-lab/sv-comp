@@ -23,18 +23,18 @@ in order to make results from SV-COMP more replicability.
 - linux-image-generic
 - ubuntu-minimal
 - openjdk-8-jre-headless
-- gcc-multilib # cpp, development headers
-- libgomp1 # for Z3
-- make # for fshellw2t
-- clang # SV-COMP'19 AProVE
-- mono-apache-server # to avoid the mono-xsp dependency of mono-xsp
-- mono-complete # SV-COMP'19 AProVE, SMACK
-- gcc-5-multilib # SV-COMP'19 PredatorHP
-- python # SV-COMP'19 PredatorHP, Symbiotic
-- python-lxml # SV-COMP'19 Symbiotic
-- linux-libc-dev:i386 # SV-COMP'19 CBMC
-- python-sklearn # SV-COMP'19 VeriFuzz
-- python-pandas # SV-COMP'19 VeriFuzz
-- python-pycparser # SV-COMP'19 CSeq
-- unzip # SV-COMP'19 JBMC
+- gcc-multilib *// cpp, development headers*
+- libgomp1 *// for Z3*
+- make *// for fshellw2t*
+- clang *// SV-COMP'19 AProVE*
+- mono-apache-server *// to avoid the mono-xsp dependency of mono-xsp*
+- mono-complete *// SV-COMP'19 AProVE, SMACK*
+- gcc-5-multilib *// SV-COMP'19 PredatorHP*
+- python *// SV-COMP'19 PredatorHP, Symbiotic*
+- python-lxml *// SV-COMP'19 Symbiotic*
+- linux-libc-dev:i386 *// SV-COMP'19 CBMC*
+- python-sklearn *// SV-COMP'19 VeriFuzz*
+- python-pandas *// SV-COMP'19 VeriFuzz*
+- python-pycparser *// SV-COMP'19 CSeq*
+- unzip *// SV-COMP'19 JBMC*
 
