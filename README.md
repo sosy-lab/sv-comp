@@ -38,8 +38,7 @@ in order to make results from SV-COMP more replicability.
 - libgomp1 *// for Z3*
 - make *// for fshellw2t*
 - clang *// SV-COMP'19 AProVE*
-- mono-apache-server *// to avoid the mono-xsp dependency of mono-xsp*
-- mono-complete *// SV-COMP'19 AProVE, SMACK*
+- mono-devel *// SV-COMP'19 AProVE, SMACK*
 - gcc-5-multilib *// SV-COMP'19 PredatorHP*
 - python *// SV-COMP'19 PredatorHP, Symbiotic*
 - python-lxml *// SV-COMP'19 Symbiotic*
