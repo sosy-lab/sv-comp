@@ -6,22 +6,20 @@
 
   <resultfiles>**.graphml</resultfiles>
 
-  <rundefinition name="sv-comp19">
-    <requiredfiles>../results-verified/LOGDIR/sv-comp19.${inputfile_name}.files/witness.graphml</requiredfiles>
-  </rundefinition>
-
   <option name="-witnessValidation"/>
   <option name="-setprop">witness.checkProgramHash=false</option>
   <option name="-heap">5000m</option>
   <option name="-benchmark"/>
-  <option name="-witness">../../results-verified/LOGDIR/sv-comp19.${inputfile_name}.files/witness.graphml</option>
-
   <option name="-setprop">cpa.predicate.memoryAllocationsAlwaysSucceed=true</option>
 
   <option name="-setprop">cpa.smg.memoryAllocationFunctions=malloc,__kmalloc,kmalloc,kzalloc,kzalloc_node,ldv_zalloc,ldv_malloc</option>
   <option name="-setprop">cpa.smg.arrayAllocationFunctions=calloc,kmalloc_array,kcalloc</option>
   <option name="-setprop">cpa.smg.zeroingMemoryAllocation=calloc,kzalloc,kcalloc,kzalloc_node,ldv_zalloc</option>
   <option name="-setprop">cpa.smg.deallocationFunctions=free,kfree,kfree_const</option>
+
+<rundefinition name="sv-comp19_prop-reachsafety">
+  <requiredfiles>../results-verified/LOGDIR/sv-comp19_prop-reachsafety.${inputfile_name}.files/witness.graphml</requiredfiles>
+  <option name="-witness">../../results-verified/LOGDIR/sv-comp19_prop-reachsafety.${inputfile_name}.files/witness.graphml</option>
 
   <tasks name="ReachSafety-Arrays">
     <exclude>../sv-benchmarks/c/*/*_true-unreach-call*</exclude>
@@ -74,6 +72,24 @@
     <propertyfile>../sv-benchmarks/c/ReachSafety.prp</propertyfile>
   </tasks>
 
+  <tasks name="ConcurrencySafety-Main">
+    <exclude>../sv-benchmarks/c/*/*_true-unreach-call*</exclude>
+    <includesfile>../sv-benchmarks/c/ConcurrencySafety-Main.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/ConcurrencySafety.prp</propertyfile>
+  </tasks>
+
+  <tasks name="Systems_DeviceDriversLinux64_ReachSafety">
+    <exclude>../sv-benchmarks/c/*/*_true-unreach-call*</exclude>
+    <includesfile>../sv-benchmarks/c/Systems_DeviceDriversLinux64_ReachSafety.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/Systems_DeviceDriversLinux64_ReachSafety.prp</propertyfile>
+    <option name="-64"/>
+  </tasks>
+</rundefinition>
+
+<rundefinition name="sv-comp19_prop-memsafety">
+  <requiredfiles>../results-verified/LOGDIR/sv-comp19_prop-memsafety.${inputfile_name}.files/witness.graphml</requiredfiles>
+  <option name="-witness">../../results-verified/LOGDIR/sv-comp19_prop-memsafety.${inputfile_name}.files/witness.graphml</option>
+
   <tasks name="MemSafety-Arrays">
     <exclude>../sv-benchmarks/c/*/*_true-valid-memsafety*</exclude>
     <includesfile>../sv-benchmarks/c/MemSafety-Arrays.set</includesfile>
@@ -100,11 +116,17 @@
     <propertyfile>../sv-benchmarks/c/MemSafety-MemCleanup.prp</propertyfile>
   </tasks>
 
-  <tasks name="ConcurrencySafety-Main">
-    <exclude>../sv-benchmarks/c/*/*_true-unreach-call*</exclude>
-    <includesfile>../sv-benchmarks/c/ConcurrencySafety-Main.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/ConcurrencySafety.prp</propertyfile>
+  <tasks name="Systems_BusyBox_MemSafety">
+    <exclude>../sv-benchmarks/c/*/*_true-valid-memsafety*</exclude>
+    <includesfile>../sv-benchmarks/c/Systems_BusyBox_MemSafety.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/Systems_BusyBox_MemSafety.prp</propertyfile>
+    <option name="-64"/>
   </tasks>
+</rundefinition>
+
+<rundefinition name="sv-comp19_prop-overflow">
+  <requiredfiles>../results-verified/LOGDIR/sv-comp19_prop-overflow.${inputfile_name}.files/witness.graphml</requiredfiles>
+  <option name="-witness">../../results-verified/LOGDIR/sv-comp19_prop-overflow.${inputfile_name}.files/witness.graphml</option>
 
   <tasks name="NoOverflows-BitVectors">
     <exclude>../sv-benchmarks/c/*/*_true-no-overflow*</exclude>
@@ -118,25 +140,18 @@
     <propertyfile>../sv-benchmarks/c/NoOverflows.prp</propertyfile>
   </tasks>
 
-  <tasks name="Systems_BusyBox_MemSafety">
-    <exclude>../sv-benchmarks/c/*/*_true-valid-memsafety*</exclude>
-    <includesfile>../sv-benchmarks/c/Systems_BusyBox_MemSafety.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/Systems_BusyBox_MemSafety.prp</propertyfile>
-    <option name="-64"/>
-  </tasks>
   <tasks name="Systems_BusyBox_NoOverflows">
     <exclude>../sv-benchmarks/c/*/*_true-no-overflow*</exclude>
     <includesfile>../sv-benchmarks/c/Systems_BusyBox_NoOverflows.set</includesfile>
     <propertyfile>../sv-benchmarks/c/Systems_BusyBox_NoOverflows.prp</propertyfile>
     <option name="-64"/>
   </tasks>
-  <tasks name="Systems_DeviceDriversLinux64_ReachSafety">
-    <exclude>../sv-benchmarks/c/*/*_true-unreach-call*</exclude>
-    <includesfile>../sv-benchmarks/c/Systems_DeviceDriversLinux64_ReachSafety.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/Systems_DeviceDriversLinux64_ReachSafety.prp</propertyfile>
-    <option name="-64"/>
-  </tasks>
-  
+</rundefinition>
+
+<rundefinition name="sv-comp19_prop-termination">
+  <requiredfiles>../results-verified/LOGDIR/sv-comp19_prop-termination.${inputfile_name}.files/witness.graphml</requiredfiles>
+  <option name="-witness">../../results-verified/LOGDIR/sv-comp19_prop-termination.${inputfile_name}.files/witness.graphml</option>
+
   <tasks name="Termination-MainControlFlow">
     <exclude>../sv-benchmarks/c/*/*_true-termination*</exclude>
     <includesfile>../sv-benchmarks/c/Termination-MainControlFlow.set</includesfile>
@@ -153,7 +168,7 @@
     <exclude>../sv-benchmarks/c/*/*_true-termination*</exclude>
     <includesfile>../sv-benchmarks/c/Termination-Other.set</includesfile>
     <propertyfile>../sv-benchmarks/c/Termination.prp</propertyfile>
-    <option name="-32"/>
   </tasks>
+</rundefinition>
 
 </benchmark>

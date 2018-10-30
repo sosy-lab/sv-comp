@@ -6,12 +6,11 @@
 
   <resultfiles>**.graphml</resultfiles>
 
-  <rundefinition name="sv-comp19">
-    <requiredfiles>../results-verified/LOGDIR/sv-comp19.${inputfile_name}.files/witness.graphml</requiredfiles> 
-  </rundefinition>
-
   <option name="--full-output"/>
-  <option name="--validate">../../results-verified/LOGDIR/sv-comp19.${inputfile_name}.files/witness.graphml</option>
+
+<rundefinition name="sv-comp19_prop-reachsafety">
+  <requiredfiles>../results-verified/LOGDIR/sv-comp19_prop-reachsafety.${inputfile_name}.files/witness.graphml</requiredfiles>
+  <option name="--validate">../../results-verified/LOGDIR/sv-comp19_prop-reachsafety.${inputfile_name}.files/witness.graphml</option>
 
   <tasks name="ReachSafety-Arrays">
     <exclude>../sv-benchmarks/c/*/*_true-unreach-call*</exclude>
@@ -74,6 +73,18 @@
     <option name="--architecture">32bit</option>
   </tasks>
 
+  <tasks name="Systems_DeviceDriversLinux64_ReachSafety">
+    <exclude>../sv-benchmarks/c/*/*_true-unreach-call*</exclude>
+    <includesfile>../sv-benchmarks/c/Systems_DeviceDriversLinux64_ReachSafety.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/Systems_DeviceDriversLinux64_ReachSafety.prp</propertyfile>
+    <option name="--architecture">64bit</option>
+  </tasks>
+</rundefinition>
+
+<rundefinition name="sv-comp19_prop-memsafety">
+  <requiredfiles>../results-verified/LOGDIR/sv-comp19_prop-memsafety.${inputfile_name}.files/witness.graphml</requiredfiles>
+  <option name="--validate">../../results-verified/LOGDIR/sv-comp19_prop-reachsafety.${inputfile_name}.files/witness.graphml</option>
+
   <tasks name="MemSafety-Arrays">
     <exclude>../sv-benchmarks/c/*/*_true-valid-memsafety*</exclude>
     <includesfile>../sv-benchmarks/c/MemSafety-Arrays.set</includesfile>
@@ -105,6 +116,18 @@
     <option name="--architecture">32bit</option>
   </tasks>
 
+  <tasks name="Systems_BusyBox_MemSafety">
+    <exclude>../sv-benchmarks/c/*/*_true-valid-memsafety*</exclude>
+    <includesfile>../sv-benchmarks/c/Systems_BusyBox_MemSafety.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/Systems_BusyBox_MemSafety.prp</propertyfile>
+    <option name="--architecture">64bit</option>
+  </tasks>
+</rundefinition>
+
+<rundefinition name="sv-comp19_prop-overflow">
+  <requiredfiles>../results-verified/LOGDIR/sv-comp19_prop-overflow.${inputfile_name}.files/witness.graphml</requiredfiles>
+  <option name="--validate">../../results-verified/LOGDIR/sv-comp19_prop-reachsafety.${inputfile_name}.files/witness.graphml</option>
+
   <tasks name="NoOverflows-BitVectors">
     <exclude>../sv-benchmarks/c/*/*_true-no-overflow*</exclude>
     <includesfile>../sv-benchmarks/c/NoOverflows-BitVectors.set</includesfile>
@@ -118,24 +141,17 @@
     <option name="--architecture">32bit</option>
   </tasks>
 
-  <tasks name="Systems_BusyBox_MemSafety">
-    <exclude>../sv-benchmarks/c/*/*_true-valid-memsafety*</exclude>
-    <includesfile>../sv-benchmarks/c/Systems_BusyBox_MemSafety.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/Systems_BusyBox_MemSafety.prp</propertyfile>
-    <option name="--architecture">64bit</option>
-  </tasks>
   <tasks name="Systems_BusyBox_NoOverflows">
     <exclude>../sv-benchmarks/c/*/*_true-no-overflow*</exclude>
     <includesfile>../sv-benchmarks/c/Systems_BusyBox_NoOverflows.set</includesfile>
     <propertyfile>../sv-benchmarks/c/Systems_BusyBox_NoOverflows.prp</propertyfile>
     <option name="--architecture">64bit</option>
   </tasks>
-  <tasks name="Systems_DeviceDriversLinux64_ReachSafety">
-    <exclude>../sv-benchmarks/c/*/*_true-unreach-call*</exclude>
-    <includesfile>../sv-benchmarks/c/Systems_DeviceDriversLinux64_ReachSafety.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/Systems_DeviceDriversLinux64_ReachSafety.prp</propertyfile>
-    <option name="--architecture">64bit</option>
-  </tasks>
+</rundefinition>
+
+<rundefinition name="sv-comp19_prop-termination">
+  <requiredfiles>../results-verified/LOGDIR/sv-comp19_prop-termination.${inputfile_name}.files/witness.graphml</requiredfiles>
+  <option name="--validate">../../results-verified/LOGDIR/sv-comp19_prop-reachsafety.${inputfile_name}.files/witness.graphml</option>
 
   <tasks name="Termination-MainControlFlow">
     <exclude>../sv-benchmarks/c/*/*_true-termination*</exclude>
@@ -155,4 +171,6 @@
     <propertyfile>../sv-benchmarks/c/Termination.prp</propertyfile>
     <option name="--architecture">32bit</option>
   </tasks>
+</rundefinition>
+
 </benchmark>
