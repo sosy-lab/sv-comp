@@ -6,11 +6,11 @@
 
   <resultfiles>**.graphml</resultfiles>
 
-  <rundefinition name="sv-comp19"></rundefinition>
-
+<rundefinition name="sv-comp19_prop-reachsafety">
   <tasks name="ReachSafety">
     <includesfile>../sv-benchmarks/java/ReachSafety.set</includesfile>
     <propertyfile>../sv-benchmarks/java/ReachSafety.prp</propertyfile>
   </tasks>
+</rundefinition>
 
 </benchmark>
