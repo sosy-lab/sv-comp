@@ -6,15 +6,15 @@
 
   <resultfiles>**.graphml</resultfiles>
 
-  <rundefinition name="sv-comp19"></rundefinition>
-
   <option name="-svcomp19-lockator"/>
   <option name="-disable-java-assertions"/>
   <option name="-heap">12000m</option>
 
+<rundefinition name="sv-comp19_prop-reachsafety">
   <tasks name="ConcurrencySafety-Main">
     <includesfile>../sv-benchmarks/c/ConcurrencySafety-Main.set</includesfile>
     <propertyfile>../sv-benchmarks/c/ConcurrencySafety.prp</propertyfile>
   </tasks>
+</rundefinition>
 
 </benchmark>

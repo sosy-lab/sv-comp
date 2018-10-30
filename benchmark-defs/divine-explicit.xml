@@ -6,10 +6,9 @@
 
   <resultfiles>**.graphml</resultfiles>
 
-  <rundefinition name="sv-comp19"></rundefinition>
-
   <option name="--no-symbolic"></option>
 
+<rundefinition name="sv-comp19_prop-reachsafety">
   <tasks name="ReachSafety-Arrays">
     <includesfile>../sv-benchmarks/c/ReachSafety-Arrays.set</includesfile>
     <propertyfile>../sv-benchmarks/c/ReachSafety.prp</propertyfile>
@@ -64,6 +63,20 @@
     <option name="--32"/>
   </tasks>
 
+  <tasks name="ConcurrencySafety-Main">
+    <includesfile>../sv-benchmarks/c/ConcurrencySafety-Main.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/ConcurrencySafety.prp</propertyfile>
+    <option name="--32"/>
+    <option name="--no-correctness-witness"></option>
+  </tasks>
+
+  <tasks name="Systems_DeviceDriversLinux64_ReachSafety">
+    <includesfile>../sv-benchmarks/c/Systems_DeviceDriversLinux64_ReachSafety.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/Systems_DeviceDriversLinux64_ReachSafety.prp</propertyfile>
+  </tasks>
+</rundefinition>
+
+<rundefinition name="sv-comp19_prop-memsafety">
   <tasks name="MemSafety-Arrays">
     <includesfile>../sv-benchmarks/c/MemSafety-Arrays.set</includesfile>
     <propertyfile>../sv-benchmarks/c/MemSafety.prp</propertyfile>
@@ -95,13 +108,14 @@
     <option name="--no-correctness-witness"></option>
   </tasks>
 
-  <tasks name="ConcurrencySafety-Main">
-    <includesfile>../sv-benchmarks/c/ConcurrencySafety-Main.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/ConcurrencySafety.prp</propertyfile>
-    <option name="--32"/>
+  <tasks name="Systems_BusyBox_MemSafety">
+    <includesfile>../sv-benchmarks/c/Systems_BusyBox_MemSafety.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/Systems_BusyBox_MemSafety.prp</propertyfile>
     <option name="--no-correctness-witness"></option>
   </tasks>
+</rundefinition>
 
+<rundefinition name="sv-comp19_prop-overflow">
   <tasks name="NoOverflows-BitVectors">
     <includesfile>../sv-benchmarks/c/NoOverflows-BitVectors.set</includesfile>
     <propertyfile>../sv-benchmarks/c/NoOverflows.prp</propertyfile>
@@ -112,6 +126,13 @@
     <option name="--32"/>
   </tasks>
 
+  <tasks name="Systems_BusyBox_NoOverflows">
+    <includesfile>../sv-benchmarks/c/Systems_BusyBox_NoOverflows.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/Systems_BusyBox_NoOverflows.prp</propertyfile>
+  </tasks>
+</rundefinition>
+
+<rundefinition name="sv-comp19_prop-termination">
   <tasks name="Termination-MainControlFlow">
     <includesfile>../sv-benchmarks/c/Termination-MainControlFlow.set</includesfile>
     <propertyfile>../sv-benchmarks/c/Termination.prp</propertyfile>
@@ -128,19 +149,6 @@
     <option name="--32"/>
     <option name="--no-correctness-witness"></option>
   </tasks>
-
-  <tasks name="Systems_BusyBox_MemSafety">
-    <includesfile>../sv-benchmarks/c/Systems_BusyBox_MemSafety.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/Systems_BusyBox_MemSafety.prp</propertyfile>
-    <option name="--no-correctness-witness"></option>
-  </tasks>
-  <tasks name="Systems_BusyBox_NoOverflows">
-    <includesfile>../sv-benchmarks/c/Systems_BusyBox_NoOverflows.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/Systems_BusyBox_NoOverflows.prp</propertyfile>
-  </tasks>
-  <tasks name="Systems_DeviceDriversLinux64_ReachSafety">
-    <includesfile>../sv-benchmarks/c/Systems_DeviceDriversLinux64_ReachSafety.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/Systems_DeviceDriversLinux64_ReachSafety.prp</propertyfile>
-  </tasks>
+</rundefinition>
 
 </benchmark>

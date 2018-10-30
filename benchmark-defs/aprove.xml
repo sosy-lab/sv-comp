@@ -6,8 +6,7 @@
 
   <resultfiles>**.graphml</resultfiles>
   
-  <rundefinition name="sv-comp19"></rundefinition>
-
+<rundefinition name="sv-comp19_prop-termination">
   <tasks name="Termination-MainControlFlow">
     <includesfile>../sv-benchmarks/c/Termination-MainControlFlow.set</includesfile>
     <propertyfile>../sv-benchmarks/c/Termination.prp</propertyfile>
@@ -20,5 +19,6 @@
     <includesfile>../sv-benchmarks/c/Termination-Other.set</includesfile>
     <propertyfile>../sv-benchmarks/c/Termination.prp</propertyfile>
   </tasks>
+</rundefinition>
 
 </benchmark>
