@@ -6,12 +6,12 @@
 
   <resultfiles>**.graphml</resultfiles>
 
+  <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}.${inputfile_name}.files/witness.graphml</requiredfiles>
+
   <option name="--full-output"/>
+  <option name="--validate">../../results-verified/LOGDIR/${rundefinition_name}.${inputfile_name}.files/witness.graphml</option>
 
 <rundefinition name="sv-comp19_prop-reachsafety">
-  <requiredfiles>../results-verified/LOGDIR/sv-comp19_prop-reachsafety.${inputfile_name}.files/witness.graphml</requiredfiles>
-  <option name="--validate">../../results-verified/LOGDIR/sv-comp19_prop-reachsafety.${inputfile_name}.files/witness.graphml</option>
-
   <tasks name="ReachSafety-Arrays">
     <exclude>../sv-benchmarks/c/*/*_true-unreach-call*</exclude>
     <includesfile>../sv-benchmarks/c/ReachSafety-Arrays.set</includesfile>
@@ -82,9 +82,6 @@
 </rundefinition>
 
 <rundefinition name="sv-comp19_prop-memsafety">
-  <requiredfiles>../results-verified/LOGDIR/sv-comp19_prop-memsafety.${inputfile_name}.files/witness.graphml</requiredfiles>
-  <option name="--validate">../../results-verified/LOGDIR/sv-comp19_prop-reachsafety.${inputfile_name}.files/witness.graphml</option>
-
   <tasks name="MemSafety-Arrays">
     <exclude>../sv-benchmarks/c/*/*_true-valid-memsafety*</exclude>
     <includesfile>../sv-benchmarks/c/MemSafety-Arrays.set</includesfile>
@@ -125,9 +122,6 @@
 </rundefinition>
 
 <rundefinition name="sv-comp19_prop-overflow">
-  <requiredfiles>../results-verified/LOGDIR/sv-comp19_prop-overflow.${inputfile_name}.files/witness.graphml</requiredfiles>
-  <option name="--validate">../../results-verified/LOGDIR/sv-comp19_prop-reachsafety.${inputfile_name}.files/witness.graphml</option>
-
   <tasks name="NoOverflows-BitVectors">
     <exclude>../sv-benchmarks/c/*/*_true-no-overflow*</exclude>
     <includesfile>../sv-benchmarks/c/NoOverflows-BitVectors.set</includesfile>
@@ -150,9 +144,6 @@
 </rundefinition>
 
 <rundefinition name="sv-comp19_prop-termination">
-  <requiredfiles>../results-verified/LOGDIR/sv-comp19_prop-termination.${inputfile_name}.files/witness.graphml</requiredfiles>
-  <option name="--validate">../../results-verified/LOGDIR/sv-comp19_prop-reachsafety.${inputfile_name}.files/witness.graphml</option>
-
   <tasks name="Termination-MainControlFlow">
     <exclude>../sv-benchmarks/c/*/*_true-termination*</exclude>
     <includesfile>../sv-benchmarks/c/Termination-MainControlFlow.set</includesfile>
