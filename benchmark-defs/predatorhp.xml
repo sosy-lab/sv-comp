@@ -6,14 +6,16 @@
 
   <resultfiles>**.graphml</resultfiles>
   
-  <rundefinition name="sv-comp19"></rundefinition>
-
   <option name="--witness">error-witness.graphml</option> 
 
+<rundefinition name="sv-comp19_prop-reachsafety">
   <tasks name="ReachSafety-Heap">
     <includesfile>../sv-benchmarks/c/ReachSafety-Heap.set</includesfile>
     <propertyfile>../sv-benchmarks/c/ReachSafety.prp</propertyfile>
   </tasks>
+</rundefinition>
+
+<rundefinition name="sv-comp19_prop-memsafety">
   <tasks name="MemSafety-Arrays">
     <includesfile>../sv-benchmarks/c/MemSafety-Arrays.set</includesfile>
     <propertyfile>../sv-benchmarks/c/MemSafety.prp</propertyfile>
@@ -30,5 +32,6 @@
     <includesfile>../sv-benchmarks/c/MemSafety-MemCleanup.set</includesfile>
     <propertyfile>../sv-benchmarks/c/MemSafety-MemCleanup.prp</propertyfile>
   </tasks>
+</rundefinition>
 
 </benchmark>

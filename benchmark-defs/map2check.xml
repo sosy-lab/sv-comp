@@ -6,8 +6,7 @@
 
   <resultfiles>**.graphml</resultfiles>
   
-  <rundefinition name="sv-comp19"></rundefinition>
-
+<rundefinition name="sv-comp19_prop-reachsafety">
   <tasks name="ReachSafety-Arrays">
     <includesfile>../sv-benchmarks/c/ReachSafety-Arrays.set</includesfile>
     <propertyfile>../sv-benchmarks/c/ReachSafety.prp</propertyfile>
@@ -32,8 +31,9 @@
     <includesfile>../sv-benchmarks/c/ReachSafety-Recursive.set</includesfile>
     <propertyfile>../sv-benchmarks/c/ReachSafety.prp</propertyfile>
   </tasks>
-    
+</rundefinition>
 
+<rundefinition name="sv-comp19_prop-memsafety">
   <tasks name="MemSafety-Arrays">
     <includesfile>../sv-benchmarks/c/MemSafety-Arrays.set</includesfile>
     <propertyfile>../sv-benchmarks/c/MemSafety.prp</propertyfile>
@@ -54,8 +54,9 @@
     <includesfile>../sv-benchmarks/c/MemSafety-MemCleanup.set</includesfile>
     <propertyfile>../sv-benchmarks/c/MemSafety-MemCleanup.prp</propertyfile>
   </tasks>
-  
+</rundefinition>
 
+<rundefinition name="sv-comp19_prop-overflow">
   <tasks name="NoOverflows-BitVectors">
     <includesfile>../sv-benchmarks/c/NoOverflows-BitVectors.set</includesfile>
     <propertyfile>../sv-benchmarks/c/NoOverflows.prp</propertyfile>
@@ -64,5 +65,6 @@
     <includesfile>../sv-benchmarks/c/NoOverflows-Other.set</includesfile>
     <propertyfile>../sv-benchmarks/c/NoOverflows.prp</propertyfile>
   </tasks>
+</rundefinition>
 
 </benchmark>
