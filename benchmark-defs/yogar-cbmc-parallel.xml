@@ -6,12 +6,11 @@
     
   <resultfiles>**.graphml</resultfiles>
    
-  <rundefinition name="sv-comp19">
-  </rundefinition>
-
+<rundefinition name="sv-comp19_prop-reachsafety">
   <tasks name="ConcurrencySafety-Main">
     <includesfile>../sv-benchmarks/c/ConcurrencySafety-Main.set</includesfile>
     <propertyfile>../sv-benchmarks/c/ConcurrencySafety.prp</propertyfile>
   </tasks>
+</rundefinition>
 
 </benchmark>

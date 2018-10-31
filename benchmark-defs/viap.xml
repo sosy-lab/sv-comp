@@ -6,8 +6,7 @@
 
   <resultfiles>**.graphml</resultfiles>
   
-  <rundefinition name="sv-comp19"></rundefinition>
-
+<rundefinition name="sv-comp19_prop-reachsafety">
   <tasks name="ReachSafety-Arrays">
     <includesfile>../sv-benchmarks/c/ReachSafety-Arrays.set</includesfile>
     <propertyfile>../sv-benchmarks/c/ReachSafety.prp</propertyfile>
@@ -20,4 +19,6 @@
     <includesfile>../sv-benchmarks/c/ReachSafety-Recursive.set</includesfile>
     <propertyfile>../sv-benchmarks/c/ReachSafety.prp</propertyfile>
   </tasks>
+</rundefinition>
+
 </benchmark>

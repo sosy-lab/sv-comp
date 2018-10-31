@@ -6,8 +6,7 @@
 
   <resultfiles>**.graphml</resultfiles>
   
-  <rundefinition name="sv-comp19"></rundefinition>
-
+<rundefinition name="sv-comp19_prop-reachsafety">
   <tasks name="ReachSafety-Arrays">
     <includesfile>../sv-benchmarks/c/ReachSafety-Arrays.set</includesfile>
     <propertyfile>../sv-benchmarks/c/ReachSafety.prp</propertyfile>
@@ -48,19 +47,28 @@
     <includesfile>../sv-benchmarks/c/ReachSafety-Sequentialized.set</includesfile>
     <propertyfile>../sv-benchmarks/c/ReachSafety.prp</propertyfile>
   </tasks>
-  <tasks name="Systems_BusyBox_MemSafety">
-    <includesfile>../sv-benchmarks/c/Systems_BusyBox_MemSafety.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/Systems_BusyBox_MemSafety.prp</propertyfile>
-    <option name="-64"/>
-  </tasks>
-  <tasks name="Systems_BusyBox_NoOverflows">
-    <includesfile>../sv-benchmarks/c/Systems_BusyBox_NoOverflows.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/Systems_BusyBox_NoOverflows.prp</propertyfile>
-    <option name="-64"/>
-  </tasks>
+
   <tasks name="Systems_DeviceDriversLinux64_ReachSafety">
     <includesfile>../sv-benchmarks/c/Systems_DeviceDriversLinux64_ReachSafety.set</includesfile>
     <propertyfile>../sv-benchmarks/c/Systems_DeviceDriversLinux64_ReachSafety.prp</propertyfile>
     <option name="-64"/>
   </tasks>
+</rundefinition>
+
+<rundefinition name="sv-comp19_prop-memsafety">
+  <tasks name="Systems_BusyBox_MemSafety">
+    <includesfile>../sv-benchmarks/c/Systems_BusyBox_MemSafety.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/Systems_BusyBox_MemSafety.prp</propertyfile>
+    <option name="-64"/>
+  </tasks>
+</rundefinition>
+
+<rundefinition name="sv-comp19_prop-overflow">
+  <tasks name="Systems_BusyBox_NoOverflows">
+    <includesfile>../sv-benchmarks/c/Systems_BusyBox_NoOverflows.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/Systems_BusyBox_NoOverflows.prp</propertyfile>
+    <option name="-64"/>
+  </tasks>
+</rundefinition>
+
 </benchmark>
