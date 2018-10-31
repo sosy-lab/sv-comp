@@ -6,19 +6,19 @@
 
   <resultfiles>**.graphml</resultfiles>
 
-  <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}.${inputfile_name}.files/witness.graphml</requiredfiles>
-
   <option name="-witness2test"/>
   <option name="-setprop">witness.checkProgramHash=false</option>
   <option name="-heap">5000m</option>
   <option name="-benchmark"/>
-  <option name="-witness">../../results-verified/LOGDIR/${rundefinition_name}.${inputfile_name}.files/witness.graphml</option>
 
   <option name="-setprop">analysis.summaryEdges=true</option>
   <option name="-setprop">cpa.callstack.skipVoidRecursion=true</option>
   <option name="-setprop">cpa.callstack.skipFunctionPointerRecursion=true</option>
 
 <rundefinition name="sv-comp19_prop-reachsafety">
+  <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}.${inputfile_name}.files/witness.graphml</requiredfiles>
+  <option name="-witness">../../results-verified/LOGDIR/${rundefinition_name}.${inputfile_name}.files/witness.graphml</option>
+
   <tasks name="ReachSafety-Arrays">
     <exclude>../sv-benchmarks/c/*/*_true-unreach-call*</exclude>
     <includesfile>../sv-benchmarks/c/ReachSafety-Arrays.set</includesfile>

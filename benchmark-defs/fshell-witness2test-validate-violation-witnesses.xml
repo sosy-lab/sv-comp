@@ -6,11 +6,10 @@
 
   <resultfiles>**.graphml</resultfiles>
 
+<rundefinition name="sv-comp19_prop-reachsafety">
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}.${inputfile_name}.files/witness.graphml</requiredfiles>
-
   <option name="--graphml-witness">../../results-verified/LOGDIR/${rundefinition_name}.${inputfile_name}.files/witness.graphml</option>
 
-<rundefinition name="sv-comp19_prop-reachsafety">
   <tasks name="ReachSafety-Arrays">
     <exclude>../sv-benchmarks/c/*/*_true-unreach-call*</exclude>
     <includesfile>../sv-benchmarks/c/ReachSafety-Arrays.set</includesfile>

@@ -6,12 +6,12 @@
 
   <resultfiles>**.graphml</resultfiles>
 
-  <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}.${inputfile_name}.files/witness.graphml</requiredfiles>
-
   <option name="--full-output"/>
-  <option name="--validate">../../results-verified/LOGDIR/${rundefinition_name}.${inputfile_name}.files/witness.graphml</option>
 
 <rundefinition name="sv-comp19_prop-reachsafety">
+  <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}.${inputfile_name}.files/witness.graphml</requiredfiles>
+  <option name="--validate">../../results-verified/LOGDIR/${rundefinition_name}.${inputfile_name}.files/witness.graphml</option>
+
   <tasks name="ReachSafety-Arrays">
     <exclude>../sv-benchmarks/c/*/*_false-unreach-call*</exclude>
     <includesfile>../sv-benchmarks/c/ReachSafety-Arrays.set</includesfile>
@@ -82,6 +82,9 @@
 </rundefinition>
 
 <rundefinition name="sv-comp19_prop-memsafety">
+  <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}.${inputfile_name}.files/witness.graphml</requiredfiles>
+  <option name="--validate">../../results-verified/LOGDIR/${rundefinition_name}.${inputfile_name}.files/witness.graphml</option>
+
   <tasks name="MemSafety-Arrays">
     <exclude>../sv-benchmarks/c/*/*_false-valid-deref*</exclude>
     <exclude>../sv-benchmarks/c/*/*_false-valid-free*</exclude>
@@ -132,6 +135,9 @@
 </rundefinition>
 
 <rundefinition name="sv-comp19_prop-nooverflow">
+  <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}.${inputfile_name}.files/witness.graphml</requiredfiles>
+  <option name="--validate">../../results-verified/LOGDIR/${rundefinition_name}.${inputfile_name}.files/witness.graphml</option>
+
   <tasks name="NoOverflows-BitVectors">
     <exclude>../sv-benchmarks/c/*/*_false-no-overflow*</exclude>
     <includesfile>../sv-benchmarks/c/NoOverflows-BitVectors.set</includesfile>
