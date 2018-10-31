@@ -63,7 +63,7 @@
   </tasks>
 </rundefinition>
 
-<rundefinition name="sv-comp19_prop-overflow">
+<rundefinition name="sv-comp19_prop-nooverflow">
   <tasks name="Systems_BusyBox_NoOverflows">
     <includesfile>../sv-benchmarks/c/Systems_BusyBox_NoOverflows.set</includesfile>
     <propertyfile>../sv-benchmarks/c/Systems_BusyBox_NoOverflows.prp</propertyfile>

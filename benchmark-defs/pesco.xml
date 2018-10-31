@@ -94,7 +94,7 @@
   </tasks>
 </rundefinition>
 
-<rundefinition name="sv-comp19_prop-overflow">
+<rundefinition name="sv-comp19_prop-nooverflow">
   <tasks name="NoOverflows-BitVectors">
     <includesfile>../sv-benchmarks/c/NoOverflows-BitVectors.set</includesfile>
     <propertyfile>../sv-benchmarks/c/NoOverflows.prp</propertyfile>
