@@ -1,7 +1,7 @@
 # SV-COMP Replicability
 This repository describes the configuration of the competition machines (below)
 and the benchmark definition for each verifier (folder benchmark-defs),
-in order to make results from SV-COMP more replicability.
+in order to make results from SV-COMP more replicable.
 
 ## Parameters of RunExec for SV-COMP
 ```
