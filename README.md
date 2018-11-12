@@ -33,7 +33,7 @@ in order to make results from SV-COMP more replicability.
 ### Added Packages
 - linux-image-generic
 - ubuntu-minimal
-- openjdk-8-jre-headless
+- openjdk-8-jdk-headless
 - gcc-multilib *// cpp, development headers*
 - libgomp1 *// for Z3*
 - make *// for fshellw2t*
