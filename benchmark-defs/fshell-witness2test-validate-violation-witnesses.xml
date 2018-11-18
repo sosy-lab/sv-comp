@@ -86,25 +86,25 @@
   <tasks name="MemSafety-Arrays">
     <exclude>../sv-benchmarks/c/*/*_true-valid-memsafety*</exclude>
     <includesfile>../sv-benchmarks/c/MemSafety-Arrays.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/MemSafety.prp</propertyfile>
+    <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
     <option name="-m32"/>
   </tasks>
   <tasks name="MemSafety-Heap">
     <exclude>../sv-benchmarks/c/*/*_true-valid-memsafety*</exclude>
     <includesfile>../sv-benchmarks/c/MemSafety-Heap.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/MemSafety.prp</propertyfile>
+    <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
     <option name="-m32"/>
   </tasks>
   <tasks name="MemSafety-LinkedLists">
     <exclude>../sv-benchmarks/c/*/*_true-valid-memsafety*</exclude>
     <includesfile>../sv-benchmarks/c/MemSafety-LinkedLists.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/MemSafety.prp</propertyfile>
+    <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
     <option name="-m32"/>
   </tasks>
   <tasks name="MemSafety-Other">
     <exclude>../sv-benchmarks/c/*/*_true-valid-memsafety*</exclude>
     <includesfile>../sv-benchmarks/c/MemSafety-Other.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/MemSafety.prp</propertyfile>
+    <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
     <option name="-m32"/>
   </tasks>
   <tasks name="MemSafety-MemCleanup">

@@ -12,7 +12,7 @@
 
   <tasks name="MemSafety-Heap">
     <includesfile>../sv-benchmarks/c/MemSafety-Heap.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/MemSafety.prp</propertyfile>
+    <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
   </tasks>
   <tasks name="ReachSafety-Heap">
     <includesfile>../sv-benchmarks/c/ReachSafety-Heap.set</includesfile>
@@ -20,7 +20,7 @@
   </tasks>
   <tasks name="MemSafety-LinkedLists">
     <includesfile>../sv-benchmarks/c/MemSafety-LinkedLists.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/MemSafety.prp</propertyfile>
+    <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
   </tasks>
 
 </benchmark>

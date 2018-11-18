@@ -18,19 +18,19 @@
 <rundefinition name="sv-comp19_prop-memsafety">
   <tasks name="MemSafety-Arrays">
     <includesfile>../sv-benchmarks/c/MemSafety-Arrays.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/MemSafety.prp</propertyfile>
+    <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
   </tasks>
   <tasks name="MemSafety-Heap">
     <includesfile>../sv-benchmarks/c/MemSafety-Heap.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/MemSafety.prp</propertyfile>
+    <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
   </tasks>
   <tasks name="MemSafety-LinkedLists">
     <includesfile>../sv-benchmarks/c/MemSafety-LinkedLists.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/MemSafety.prp</propertyfile>
+    <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
   </tasks>
   <tasks name="MemSafety-Other">
     <includesfile>../sv-benchmarks/c/MemSafety-Other.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/MemSafety.prp</propertyfile>
+    <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
   </tasks>
   <tasks name="MemSafety-MemCleanup">
     <includesfile>../sv-benchmarks/c/MemSafety-MemCleanup.set</includesfile>

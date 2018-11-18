@@ -90,7 +90,7 @@
     <exclude>../sv-benchmarks/c/*/*_false-valid-free*</exclude>
     <exclude>../sv-benchmarks/c/*/*_false-valid-memtrack*</exclude>
     <includesfile>../sv-benchmarks/c/MemSafety-Arrays.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/MemSafety.prp</propertyfile>
+    <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
     <option name="--architecture">32bit</option>
   </tasks>
   <tasks name="MemSafety-Heap">
@@ -98,7 +98,7 @@
     <exclude>../sv-benchmarks/c/*/*_false-valid-free*</exclude>
     <exclude>../sv-benchmarks/c/*/*_false-valid-memtrack*</exclude>
     <includesfile>../sv-benchmarks/c/MemSafety-Heap.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/MemSafety.prp</propertyfile>
+    <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
     <option name="--architecture">32bit</option>
   </tasks>
   <tasks name="MemSafety-LinkedLists">
@@ -106,7 +106,7 @@
     <exclude>../sv-benchmarks/c/*/*_false-valid-free*</exclude>
     <exclude>../sv-benchmarks/c/*/*_false-valid-memtrack*</exclude>
     <includesfile>../sv-benchmarks/c/MemSafety-LinkedLists.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/MemSafety.prp</propertyfile>
+    <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
     <option name="--architecture">32bit</option>
   </tasks>
   <tasks name="MemSafety-Other">
@@ -114,7 +114,7 @@
     <exclude>../sv-benchmarks/c/*/*_false-valid-free*</exclude>
     <exclude>../sv-benchmarks/c/*/*_false-valid-memtrack*</exclude>
     <includesfile>../sv-benchmarks/c/MemSafety-Other.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/MemSafety.prp</propertyfile>
+    <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
     <option name="--architecture">32bit</option>
   </tasks>
   <tasks name="MemSafety-MemCleanup">
