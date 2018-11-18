@@ -113,7 +113,7 @@
   <tasks name="MemSafety-MemCleanup">
     <exclude>../sv-benchmarks/c/*/*_true-valid-memcleanup*</exclude>
     <includesfile>../sv-benchmarks/c/MemSafety-MemCleanup.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/MemSafety-MemCleanup.prp</propertyfile>
+    <propertyfile>../sv-benchmarks/c/properties/valid-memcleanup.prp</propertyfile>
   </tasks>
 
   <tasks name="Systems_BusyBox_MemSafety">
