@@ -9,7 +9,7 @@
 <rundefinition name="sv-comp19_prop-reachsafety">
   <tasks name="ConcurrencySafety-Main">
     <includesfile>../sv-benchmarks/c/ConcurrencySafety-Main.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/ConcurrencySafety.prp</propertyfile>
+    <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
     <option name="--32"/>
   </tasks>
 </rundefinition>

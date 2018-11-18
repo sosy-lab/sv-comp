@@ -62,7 +62,7 @@
 
   <tasks name="ConcurrencySafety-Main">
     <includesfile>../sv-benchmarks/c/ConcurrencySafety-Main.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/ConcurrencySafety.prp</propertyfile>
+    <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
     <option name="--architecture">32bit</option>
   </tasks>
 

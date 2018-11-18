@@ -52,7 +52,7 @@
 
   <tasks name="ConcurrencySafety-Main">
     <includesfile>../sv-benchmarks/c/ConcurrencySafety-Main.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/ConcurrencySafety.prp</propertyfile>
+    <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
   </tasks>
 
   <tasks name="Systems_DeviceDriversLinux64_ReachSafety">
