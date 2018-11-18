@@ -79,12 +79,12 @@
 
   <tasks name="NoOverflows-BitVectors">
     <includesfile>../sv-benchmarks/c/NoOverflows-BitVectors.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/NoOverflows.prp</propertyfile>
+    <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
     <option name="--64"/>
   </tasks>
   <tasks name="NoOverflows-Other">
     <includesfile>../sv-benchmarks/c/NoOverflows-Other.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/NoOverflows.prp</propertyfile>
+    <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
   </tasks>
 
   <tasks name="Termination-MainControlFlow">

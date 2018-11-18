@@ -141,13 +141,13 @@
   <tasks name="NoOverflows-BitVectors">
     <exclude>../sv-benchmarks/c/*/*_false-no-overflow*</exclude>
     <includesfile>../sv-benchmarks/c/NoOverflows-BitVectors.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/NoOverflows.prp</propertyfile>
+    <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
     <option name="--architecture">64bit</option>
   </tasks>
   <tasks name="NoOverflows-Other">
     <exclude>../sv-benchmarks/c/*/*_false-no-overflow*</exclude>
     <includesfile>../sv-benchmarks/c/NoOverflows-Other.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/NoOverflows.prp</propertyfile>
+    <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
     <option name="--architecture">32bit</option>
   </tasks>
 
