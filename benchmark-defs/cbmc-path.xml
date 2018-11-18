@@ -11,52 +11,52 @@
 <rundefinition name="sv-comp19_prop-reachsafety">
   <tasks name="ReachSafety-Arrays">
     <includesfile>../sv-benchmarks/c/ReachSafety-Arrays.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/ReachSafety.prp</propertyfile>
+    <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
     <option name="--32"/>
   </tasks>
   <tasks name="ReachSafety-BitVectors">
     <includesfile>../sv-benchmarks/c/ReachSafety-BitVectors.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/ReachSafety.prp</propertyfile>
+    <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
     <option name="--32"/>
   </tasks>
   <tasks name="ReachSafety-ControlFlow">
     <includesfile>../sv-benchmarks/c/ReachSafety-ControlFlow.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/ReachSafety.prp</propertyfile>
+    <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
     <option name="--32"/>
   </tasks>
   <tasks name="ReachSafety-ECA">
     <includesfile>../sv-benchmarks/c/ReachSafety-ECA.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/ReachSafety.prp</propertyfile>
+    <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
     <option name="--32"/>
   </tasks>
   <tasks name="ReachSafety-Floats">
     <includesfile>../sv-benchmarks/c/ReachSafety-Floats.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/ReachSafety.prp</propertyfile>
+    <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
     <option name="--32"/>
   </tasks>
   <tasks name="ReachSafety-Heap">
     <includesfile>../sv-benchmarks/c/ReachSafety-Heap.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/ReachSafety.prp</propertyfile>
+    <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
     <option name="--32"/>
   </tasks>
   <tasks name="ReachSafety-Loops">
     <includesfile>../sv-benchmarks/c/ReachSafety-Loops.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/ReachSafety.prp</propertyfile>
+    <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
     <option name="--32"/>
   </tasks>
   <tasks name="ReachSafety-ProductLines">
     <includesfile>../sv-benchmarks/c/ReachSafety-ProductLines.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/ReachSafety.prp</propertyfile>
+    <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
     <option name="--32"/>
   </tasks>
   <tasks name="ReachSafety-Recursive">
     <includesfile>../sv-benchmarks/c/ReachSafety-Recursive.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/ReachSafety.prp</propertyfile>
+    <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
     <option name="--32"/>
   </tasks>
   <tasks name="ReachSafety-Sequentialized">
     <includesfile>../sv-benchmarks/c/ReachSafety-Sequentialized.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/ReachSafety.prp</propertyfile>
+    <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
     <option name="--32"/>
   </tasks>
 

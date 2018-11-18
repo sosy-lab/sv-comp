@@ -11,7 +11,7 @@
 <rundefinition name="sv-comp19_prop-reachsafety">
   <tasks name="ReachSafety-Heap">
     <includesfile>../sv-benchmarks/c/ReachSafety-Heap.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/ReachSafety.prp</propertyfile>
+    <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
   </tasks>
 </rundefinition>
 
