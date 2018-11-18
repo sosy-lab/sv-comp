@@ -156,19 +156,19 @@
   <tasks name="Termination-MainControlFlow">
     <exclude>../sv-benchmarks/c/*/*_true-termination*</exclude>
     <includesfile>../sv-benchmarks/c/Termination-MainControlFlow.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/Termination.prp</propertyfile>
+    <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
     <option name="--architecture">64bit</option>
   </tasks>
   <tasks name="Termination-MainHeap">
     <exclude>../sv-benchmarks/c/*/*_true-termination*</exclude>
     <includesfile>../sv-benchmarks/c/Termination-MainHeap.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/Termination.prp</propertyfile>
+    <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
     <option name="--architecture">64bit</option>
   </tasks>
   <tasks name="Termination-Other">
     <exclude>../sv-benchmarks/c/*/*_true-termination*</exclude>
     <includesfile>../sv-benchmarks/c/Termination-Other.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/Termination.prp</propertyfile>
+    <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
     <option name="--architecture">32bit</option>
   </tasks>
 </rundefinition>
