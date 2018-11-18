@@ -154,7 +154,7 @@
   <tasks name="Systems_BusyBox_NoOverflows">
     <exclude>../sv-benchmarks/c/*/*_false-no-overflow*</exclude>
     <includesfile>../sv-benchmarks/c/Systems_BusyBox_NoOverflows.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/Systems_BusyBox_NoOverflows.prp</propertyfile>
+    <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
     <option name="--architecture">64bit</option>
   </tasks>
 </rundefinition>
