@@ -117,7 +117,7 @@
   <tasks name="Systems_BusyBox_MemSafety">
     <exclude>../sv-benchmarks/c/*/*_true-valid-memsafety*</exclude>
     <includesfile>../sv-benchmarks/c/Systems_BusyBox_MemSafety.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/Systems_BusyBox_MemSafety.prp</propertyfile>
+    <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
     <option name="-m64"/>
   </tasks>
 </rundefinition>

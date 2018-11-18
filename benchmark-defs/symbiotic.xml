@@ -101,7 +101,7 @@
 
   <tasks name="Systems_BusyBox_MemSafety">
     <includesfile>../sv-benchmarks/c/Systems_BusyBox_MemSafety.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/Systems_BusyBox_MemSafety.prp</propertyfile>
+    <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
   </tasks>
 </rundefinition>
 

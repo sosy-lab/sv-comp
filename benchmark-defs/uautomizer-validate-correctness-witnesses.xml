@@ -129,7 +129,7 @@
     <exclude>../sv-benchmarks/c/*/*_false-valid-free*</exclude>
     <exclude>../sv-benchmarks/c/*/*_false-valid-memtrack*</exclude>
     <includesfile>../sv-benchmarks/c/Systems_BusyBox_MemSafety.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/Systems_BusyBox_MemSafety.prp</propertyfile>
+    <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
     <option name="--architecture">64bit</option>
   </tasks>
 </rundefinition>
