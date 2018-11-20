@@ -80,5 +80,10 @@
     <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
     <option name="--64"/>
   </tasks>
+  <tasks name="Termination-Other">
+    <includesfile>../sv-benchmarks/c/Termination-Other.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
+    <option name="--32"/>
+  </tasks>
 </rundefinition>
 </benchmark>
