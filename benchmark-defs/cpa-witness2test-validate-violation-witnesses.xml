@@ -77,4 +77,28 @@
   </tasks>
 </rundefinition>
 
+<rundefinition name="sv-comp19_prop-nooverflow">
+  <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}.${inputfile_name}.files/witness.graphml</requiredfiles>
+  <option name="-witness">../../results-verified/LOGDIR/${rundefinition_name}.${inputfile_name}.files/witness.graphml</option>
+
+  <tasks name="NoOverflows-BitVectors">
+    <exclude>../sv-benchmarks/c/*/*_true-no-overflow*</exclude>
+    <includesfile>../sv-benchmarks/c/NoOverflows-BitVectors.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
+    <option name="-64"/>
+  </tasks>
+  <tasks name="NoOverflows-Other">
+    <exclude>../sv-benchmarks/c/*/*_true-no-overflow*</exclude>
+    <includesfile>../sv-benchmarks/c/NoOverflows-Other.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
+  </tasks>
+
+  <tasks name="Systems_BusyBox_NoOverflows">
+    <exclude>../sv-benchmarks/c/*/*_true-no-overflow*</exclude>
+    <includesfile>../sv-benchmarks/c/Systems_BusyBox_NoOverflows.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
+    <option name="-64"/>
+  </tasks>
+</rundefinition>
+
 </benchmark>
