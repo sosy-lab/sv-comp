@@ -6,7 +6,6 @@
 
   <resultfiles>**.graphml</resultfiles>
 
-  <option name="-witness2test"/>
   <option name="-setprop">witness.checkProgramHash=false</option>
   <option name="-heap">5000m</option>
   <option name="-benchmark"/>
