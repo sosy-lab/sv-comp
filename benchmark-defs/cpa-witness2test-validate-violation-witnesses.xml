@@ -6,7 +6,6 @@
 
   <resultfiles>**.graphml</resultfiles>
 
-  <option name="-witness2test"/>
   <option name="-setprop">witness.checkProgramHash=false</option>
   <option name="-heap">5000m</option>
   <option name="-benchmark"/>
@@ -74,6 +73,63 @@
     <exclude>../sv-benchmarks/c/*/*_true-unreach-call*</exclude>
     <includesfile>../sv-benchmarks/c/Systems_DeviceDriversLinux64_ReachSafety.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+    <option name="-64"/>
+  </tasks>
+</rundefinition>
+
+<rundefinition name="sv-comp19_prop-memsafety">
+  <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}.${inputfile_name}.files/witness.graphml</requiredfiles>
+  <option name="-witness">../../results-verified/LOGDIR/${rundefinition_name}.${inputfile_name}.files/witness.graphml</option>
+
+  <tasks name="MemSafety-Arrays">
+    <exclude>../sv-benchmarks/c/*/*_true-valid-memsafety*</exclude>
+    <includesfile>../sv-benchmarks/c/MemSafety-Arrays.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
+  </tasks>
+  <tasks name="MemSafety-Heap">
+    <exclude>../sv-benchmarks/c/*/*_true-valid-memsafety*</exclude>
+    <includesfile>../sv-benchmarks/c/MemSafety-Heap.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
+  </tasks>
+  <tasks name="MemSafety-LinkedLists">
+    <exclude>../sv-benchmarks/c/*/*_true-valid-memsafety*</exclude>
+    <includesfile>../sv-benchmarks/c/MemSafety-LinkedLists.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
+  </tasks>
+  <tasks name="MemSafety-Other">
+    <exclude>../sv-benchmarks/c/*/*_true-valid-memsafety*</exclude>
+    <includesfile>../sv-benchmarks/c/MemSafety-Other.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
+  </tasks>
+
+  <tasks name="Systems_BusyBox_MemSafety">
+    <exclude>../sv-benchmarks/c/*/*_true-valid-memsafety*</exclude>
+    <includesfile>../sv-benchmarks/c/Systems_BusyBox_MemSafety.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
+    <option name="-64"/>
+  </tasks>
+</rundefinition>
+
+<rundefinition name="sv-comp19_prop-nooverflow">
+  <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}.${inputfile_name}.files/witness.graphml</requiredfiles>
+  <option name="-witness">../../results-verified/LOGDIR/${rundefinition_name}.${inputfile_name}.files/witness.graphml</option>
+
+  <tasks name="NoOverflows-BitVectors">
+    <exclude>../sv-benchmarks/c/*/*_true-no-overflow*</exclude>
+    <includesfile>../sv-benchmarks/c/NoOverflows-BitVectors.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
+    <option name="-64"/>
+  </tasks>
+  <tasks name="NoOverflows-Other">
+    <exclude>../sv-benchmarks/c/*/*_true-no-overflow*</exclude>
+    <includesfile>../sv-benchmarks/c/NoOverflows-Other.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
+  </tasks>
+
+  <tasks name="Systems_BusyBox_NoOverflows">
+    <exclude>../sv-benchmarks/c/*/*_true-no-overflow*</exclude>
+    <includesfile>../sv-benchmarks/c/Systems_BusyBox_NoOverflows.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
     <option name="-64"/>
   </tasks>
 </rundefinition>
