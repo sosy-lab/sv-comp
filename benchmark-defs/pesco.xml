@@ -8,6 +8,7 @@
 
   <option name="-svcomp19-pesco"/>
   <option name="-heap">10000M</option>
+  <option name="-stack">2048k</option>
   <option name="-benchmark"/>
   <option name="-timelimit">900s</option>
 
