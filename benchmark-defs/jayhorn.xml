@@ -7,7 +7,7 @@
   <resultfiles>**.graphml</resultfiles>
 
 <rundefinition name="sv-comp19_prop-reachsafety_java">
-  <tasks name="ReachSafety">
+  <tasks name="ReachSafety-Java">
     <includesfile>../sv-benchmarks/java/ReachSafety.set</includesfile>
     <propertyfile>../sv-benchmarks/java/properties/assert.prp</propertyfile>
   </tasks>
