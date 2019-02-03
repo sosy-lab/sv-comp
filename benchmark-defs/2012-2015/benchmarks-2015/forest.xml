@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE benchmark SYSTEM "benchmark.dtd">
+<benchmark tool="forest" timelimit="900" hardtimelimit="930" memlimit="15000" cpuCores="8">
+
+  <require cpuCores="8"/>
+
+  <propertyfile>${sourcefile_path}/ALL.prp</propertyfile>
+
+  <resultfiles>**.*</resultfiles>
+  
+  <rundefinition name="sv-comp15"></rundefinition>
+
+  <option>-svcomp</option>
+
+  <sourcefiles name="ControlFlowInteger">
+    <includesfile>../../../sv-benchmarks/c/ControlFlowInteger.set</includesfile>
+  </sourcefiles>
+  <sourcefiles name="ECA">
+    <includesfile>../../../sv-benchmarks/c/ECA.set</includesfile>
+  </sourcefiles>
+  <sourcefiles name="Loops">
+    <includesfile>../../../sv-benchmarks/c/Loops.set</includesfile>
+  </sourcefiles>
+  <sourcefiles name="ProductLines">
+    <includesfile>../../../sv-benchmarks/c/ProductLines.set</includesfile>
+  </sourcefiles>
+
+</benchmark>

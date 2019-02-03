@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<!DOCTYPE benchmark SYSTEM "benchmark.dtd">
+<benchmark tool="cpacheckerwitness" timelimit="90" hardtimelimit="120" memlimit="15000" cpuCores="8">
+  
+  <require cpuCores="8"/>
+
+  <propertyfile>${sourcefile_path}/ALL.prp</propertyfile>
+
+  <resultfiles>**.*</resultfiles>
+  
+  <option>-witness-check</option>
+  <option>-noout</option>
+  <option name="-timelimit">90</option>
+
+  <rundefinition name="sv-comp15"></rundefinition>
+
+  <sourcefiles name="Arrays">
+    <Xincludesfile>../../../sv-benchmarks/c/Arrays.set</Xincludesfile>
+  </sourcefiles>
+  <sourcefiles name="BitVectors">
+    <Xincludesfile>../../../sv-benchmarks/c/BitVectors.set</Xincludesfile>
+  </sourcefiles>
+  <Xsourcefiles name="Concurrency">
+    <Xincludesfile>../../../sv-benchmarks/c/Concurrency.set</Xincludesfile>
+  </Xsourcefiles>
+  <sourcefiles name="ControlFlowInteger">
+    <Xincludesfile>../../../sv-benchmarks/c/ControlFlowInteger.set</Xincludesfile>
+  </sourcefiles>
+  <sourcefiles name="DeviceDrivers64">
+    <Xincludesfile>../../../sv-benchmarks/c/DeviceDrivers64.set</Xincludesfile>
+    <option>-64</option>
+  </sourcefiles>
+  <sourcefiles name="ECA">
+    <Xincludesfile>../../../sv-benchmarks/c/ECA.set</Xincludesfile>
+  </sourcefiles>
+  <sourcefiles name="Floats">
+    <Xincludesfile>../../../sv-benchmarks/c/Floats.set</Xincludesfile>
+  </sourcefiles>
+  <sourcefiles name="HeapManipulation">
+    <Xincludesfile>../../../sv-benchmarks/c/HeapManipulation.set</Xincludesfile>
+  </sourcefiles>
+  <sourcefiles name="Loops">
+    <Xincludesfile>../../../sv-benchmarks/c/Loops.set</Xincludesfile>
+  </sourcefiles>
+  <Xsourcefiles name="MemorySafety">
+    <Xincludesfile>../../../sv-benchmarks/c/MemorySafety.set</Xincludesfile>
+  </Xsourcefiles>
+  <sourcefiles name="ProductLines">
+    <Xincludesfile>../../../sv-benchmarks/c/ProductLines.set</Xincludesfile>
+  </sourcefiles>
+  <sourcefiles name="Recursive">
+    <Xincludesfile>../../../sv-benchmarks/c/Recursive.set</Xincludesfile>
+  </sourcefiles>
+  <sourcefiles name="Sequentialized">
+    <Xincludesfile>../../../sv-benchmarks/c/Sequentialized.set</Xincludesfile>
+  </sourcefiles>
+  <sourcefiles name="Simple">
+    <Xincludesfile>../../../sv-benchmarks/c/Simple.set</Xincludesfile>
+  </sourcefiles>
+  <Xsourcefiles name="Termination">
+    <Xincludesfile>../../../sv-benchmarks/c/Termination-crafted.set</Xincludesfile>
+  </Xsourcefiles>
+
+</benchmark>

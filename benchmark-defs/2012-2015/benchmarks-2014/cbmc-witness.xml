@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<!DOCTYPE benchmark SYSTEM "benchmark.dtd">
+<benchmark tool="cbmc-witness" timelimit="900" memlimit="15360" cpuCores="8">
+  <option name="--propertyfile">${sourcefile_path}/ALL.prp</option>
+
+  <requiredfiles>../../../sv-benchmarks/c/*/ALL.prp</requiredfiles>
+  <resultfiles>**</resultfiles>
+  <require memory="20000"/>
+
+
+  <rundefinition name="sv-comp14-demo-witness-write">
+      <option name="--graphml-cex">${sourcefile_name}.witness.graphml</option>
+  </rundefinition>
+
+  <rundefinition name="sv-comp14-demo-witness-read">
+      <option name="--verify-cex">./GRAPHML/${sourcefile_name}.witness.graphml</option>
+  </rundefinition>
+
+
+  <sourcefiles name="Simple">
+    <includesfile>../../../sv-benchmarks/c/Simple.false-unreach-label.set</includesfile>
+    <option name="--32"/>
+  </sourcefiles>
+  <sourcefiles name="BitVectors">
+    <includesfile>../../../sv-benchmarks/c/BitVectors.false-unreach-label.set</includesfile>
+    <option name="--32"/>
+  </sourcefiles>
+  <!--
+  <sourcefiles name="Concurrency">
+    <includesfile>../../../sv-benchmarks/c/Concurrency.false-unreach-label.set</includesfile>
+  </sourcefiles>
+  -->
+  <sourcefiles name="ControlFlowInteger">
+    <includesfile>../../../sv-benchmarks/c/ControlFlowInteger.false-unreach-label.set</includesfile>
+    <option name="--32"/>
+  </sourcefiles>
+  <sourcefiles name="DeviceDrivers64">
+    <includesfile>../../../sv-benchmarks/c/DeviceDrivers64.false-unreach-label.set</includesfile>
+    <option name="--64"/>
+  </sourcefiles>
+  <sourcefiles name="HeapManipulation">
+    <includesfile>../../../sv-benchmarks/c/HeapManipulation.false-unreach-label.set</includesfile>
+    <option name="--32"/>
+  </sourcefiles>
+  <sourcefiles name="Loops">
+    <includesfile>../../../sv-benchmarks/c/Loops.false-unreach-label.set</includesfile>
+    <option name="--32"/>
+  </sourcefiles>
+  <!--
+  <sourcefiles name="MemorySafety">
+    <includesfile>../../../sv-benchmarks/c/MemorySafety.false-unreach-label.set</includesfile>
+  </sourcefiles>
+  -->
+  <sourcefiles name="ProductLines">
+    <includesfile>../../../sv-benchmarks/c/ProductLines.false-unreach-label.set</includesfile>
+    <option name="--32"/>
+  </sourcefiles>
+  <!--
+  <sourcefiles name="Recursive">
+    <includesfile>../../../sv-benchmarks/c/Recursive.false-unreach-label.set</includesfile>
+    </sourcefiles>
+  -->
+  <sourcefiles name="Sequentialized">
+    <includesfile>../../../sv-benchmarks/c/Sequentialized.false-unreach-label.set</includesfile>
+    <option name="--32"/>
+  </sourcefiles>
+
+
+</benchmark>
+

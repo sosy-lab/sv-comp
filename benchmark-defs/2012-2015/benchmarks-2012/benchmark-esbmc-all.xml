@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<!DOCTYPE benchmark SYSTEM "benchmark.dtd">
+
+<benchmark tool="esbmc" timelimit="900" memlimit="15000">
+
+  <!-- GLOBAL OPTIONS -->
+  <option name="--64"/>
+  <option name="--error-label">ERROR</option>
+  <option name="--no-bounds-check"/>
+  <option name="--no-div-by-zero-check"/>
+  <option name="--no-assertions"/>
+  <option name="--no-pointer-check"/>
+  <option name="--no-unwinding-assertions"/>
+  <option name="--partial-loops"/>
+
+  <test name="concurrency">
+      <sourcefiles>
+          <includesfile>./../sv-benchmarks/Concurrency.set</includesfile>
+      </sourcefiles>
+      <option name="--unwind">7</option>
+  </test>
+  
+  <test name="control">
+      <sourcefiles>
+          <includesfile>./../sv-benchmarks/ControlFlowInteger.set</includesfile>
+      </sourcefiles>
+      <option name="--unwind">8</option>
+  </test>
+  
+  <test name="drivers">
+      <sourcefiles>
+          <includesfile>./../sv-benchmarks/DeviceDrivers.set</includesfile>
+      </sourcefiles>
+      <option name="--unwind">8</option>
+  </test>
+  
+  <test name="drivers64">
+      <sourcefiles>
+          <includesfile>./../sv-benchmarks/DeviceDrivers64.set</includesfile>
+      </sourcefiles>
+      <option name="--unwind">2</option>
+  </test>
+  
+  <test name="heap">
+      <sourcefiles>
+          <includesfile>./../sv-benchmarks/HeapManipulation.set</includesfile>
+      </sourcefiles>
+      <option name="--unwind">8</option>
+  </test>
+
+  <test name="systemc">
+      <sourcefiles>
+          <includesfile>./../sv-benchmarks/SystemC.set</includesfile>
+      </sourcefiles>
+      <option name="--unwind">2</option>
+  </test>
+
+</benchmark>

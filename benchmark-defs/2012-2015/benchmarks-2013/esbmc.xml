@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<!DOCTYPE benchmark SYSTEM "benchmark.dtd">
+
+<benchmark tool="esbmc" timelimit="900" memlimit="15360">
+
+  <!-- GLOBAL OPTIONS -->
+  <!-- not needed for esbmc-->
+  
+  <test name="bitvectors"><sourcefiles>
+      <includesfile>./../../sv-benchmarks-trunk/BitVectors.set</includesfile>
+     <option name="placeholder"/>
+  </sourcefiles></test>
+  
+  <test name="concurrency"><sourcefiles>
+      <includesfile>./../../sv-benchmarks-trunk/Concurrency.set</includesfile>
+     <option name="placeholder"/>
+  </sourcefiles></test>
+  
+  <test name="controlflowinteger-memprecise"><sourcefiles>
+      <includesfile>./../../sv-benchmarks-trunk/ControlFlowInteger-MemPrecise.set</includesfile>
+     <option name="placeholder"/>
+  </sourcefiles></test>
+  
+  <test name="controlflowinteger-memsimple"><sourcefiles>
+      <includesfile>./../../sv-benchmarks-trunk/ControlFlowInteger-MemSimple.set</includesfile>
+     <option name="placeholder"/>
+  </sourcefiles></test>
+
+  <test name="devicedrivers64"><sourcefiles>
+      <includesfile>./../../sv-benchmarks-trunk/DeviceDrivers64.set</includesfile>
+     <option name="placeholder"/>
+  </sourcefiles></test>
+  
+  <test name="featurechecks"><sourcefiles>
+      <includesfile>./../../sv-benchmarks-trunk/FeatureChecks.set</includesfile>
+     <option name="placeholder"/>
+  </sourcefiles></test>
+  
+  <test name="heapmanipulation"><sourcefiles>
+      <includesfile>./../../sv-benchmarks-trunk/HeapManipulation.set</includesfile>
+     <option name="placeholder"/>
+  </sourcefiles></test>
+  
+  <test name="loops"><sourcefiles>
+      <includesfile>./../../sv-benchmarks-trunk/Loops.set</includesfile>
+     <option name="placeholder"/>
+  </sourcefiles></test>
+
+  <test name="memorysafety"><sourcefiles>
+      <includesfile>./../../sv-benchmarks-trunk/MemorySafety.set</includesfile></sourcefiles>
+      <option name="memsafety"/> <!-- this option is really needed, all other options are only placeholders -->
+  </test>
+  
+  <test name="productlines"><sourcefiles>
+      <includesfile>./../../sv-benchmarks-trunk/ProductLines.set</includesfile>
+     <option name="placeholder"/>
+  </sourcefiles></test>
+
+  <test name="systemc"><sourcefiles>
+      <includesfile>./../../sv-benchmarks-trunk/SystemC.set</includesfile>
+     <option name="placeholder"/>
+  </sourcefiles></test>
+  
+</benchmark>

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE benchmark SYSTEM "benchmark.dtd">
+<benchmark tool="esbmcChallenge" timelimit="7200" memlimit="15360" cpuCores="8">
+  
+  <option name="-c">${sourcefile_path}/ALL.prp</option>
+
+  <requiredfiles>../../../sv-benchmarks/c/*/ALL.prp</requiredfiles>
+
+  <rundefinition name="sv-comp14-demo">
+
+  <sourcefiles name="DriverChallenges">
+    <includesfile>../../../sv-benchmarks/c/DriverChallenges.set</includesfile>
+  </sourcefiles>
+  
+  </rundefinition>
+  
+</benchmark>
