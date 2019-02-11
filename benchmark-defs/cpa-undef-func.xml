@@ -9,7 +9,7 @@
   <option name="-collect-undefined-functions"/>
   <option name="-heap">2000M</option>
   <option name="-benchmark"/>
-  <option name="-timelimit">900s</option>
+  <option name="-timelimit">900 s</option>
 
 <rundefinition name="sv-comp19_prop-reachsafety_undef-func">
   <tasks name="ReachSafety-Arrays">
