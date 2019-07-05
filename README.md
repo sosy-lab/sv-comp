@@ -9,12 +9,8 @@ in order to make results from SV-COMP more replicable.
 --read-only-dir /
 --hidden-dir /home
 --overlay-dir /etc
---hidden-dir /sys/kernel/debug
 --hidden-dir /var/lib/cloudy # environment-specific
---read-only-dir /run/systemd/resolve
 --set-cgroup-value pids.max=5000
---filesSizeLimit 15GB
---filesCountLimit 10000
 --output-directory <work-dir>
 --overlay-dir <run-dir>
 --debug
@@ -33,7 +29,7 @@ in order to make results from SV-COMP more replicable.
 ### Added Packages
 - linux-image-generic
 - ubuntu-minimal
-- openjdk-8-jdk-headless
+- openjdk-11-jdk-headless
 - gcc-multilib *// cpp, development headers*
 - libgomp1 *// for Z3*
 - make *// for fshellw2t*
