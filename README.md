@@ -9,8 +9,12 @@ in order to make results from SV-COMP more replicable.
 ### Docker Image
 SV-COMP provides a Docker image that tries to provide an environment
 that has mostly the same packages installed as the competition machines:
-- Docker image: registry.gitlab.com/sosy-lab/sv-comp/archives-2020/user:latest
 - Docker definition: https://gitlab.com/sosy-lab/sv-comp/archives-2020/blob/master/Dockerfile.user
+- Docker image: registry.gitlab.com/sosy-lab/sv-comp/archives-2020/user:latest
+- Test if the tool works with the installation:
+  - Unzip tool archive to temporary directory <TOOL> (<TOOL> must be an absolute path)
+  - docker run --rm -i -t --volume=<TOOL>:/tool --workdir=/tool registry.gitlab.com/sosy-lab/sv-comp/archives-2020/user:latest bash
+  - Start tool
 
 ### Additional Packages on Apollon Machines
 The following packages are not installed in the Docker image, but on the competition machines:
