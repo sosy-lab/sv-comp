@@ -17,7 +17,7 @@
   <option name="-setprop">cpa.smg.zeroingMemoryAllocation=calloc,kzalloc,kcalloc,kzalloc_node,ldv_zalloc</option>
   <option name="-setprop">cpa.smg.deallocationFunctions=free,kfree,kfree_const</option>
 
-<rundefinition name="sv-comp19_prop-reachsafety">
+<rundefinition name="sv-comp20_prop-reachsafety">
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}.${inputfile_name}.files/witness.graphml</requiredfiles>
   <option name="-witness">../../results-verified/LOGDIR/${rundefinition_name}.${inputfile_name}.files/witness.graphml</option>
 
@@ -86,7 +86,7 @@
   </tasks>
 </rundefinition>
 
-<rundefinition name="sv-comp19_prop-memsafety">
+<rundefinition name="sv-comp20_prop-memsafety">
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}.${inputfile_name}.files/witness.graphml</requiredfiles>
   <option name="-witness">../../results-verified/LOGDIR/${rundefinition_name}.${inputfile_name}.files/witness.graphml</option>
 
@@ -124,7 +124,7 @@
   </tasks>
 </rundefinition>
 
-<rundefinition name="sv-comp19_prop-nooverflow">
+<rundefinition name="sv-comp20_prop-nooverflow">
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}.${inputfile_name}.files/witness.graphml</requiredfiles>
   <option name="-witness">../../results-verified/LOGDIR/${rundefinition_name}.${inputfile_name}.files/witness.graphml</option>
 
@@ -148,7 +148,7 @@
   </tasks>
 </rundefinition>
 
-<rundefinition name="sv-comp19_prop-termination">
+<rundefinition name="sv-comp20_prop-termination">
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}.${inputfile_name}.files/witness.graphml</requiredfiles>
   <option name="-witness">../../results-verified/LOGDIR/${rundefinition_name}.${inputfile_name}.files/witness.graphml</option>
 
