@@ -7,7 +7,7 @@
 
     <resultfiles>**.graphml</resultfiles>
 
-    <rundefinition name="sv-comp19_prop-reachsafety">
+    <rundefinition name="sv-comp20_prop-reachsafety">
         <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}.${inputfile_name}.files/witness.graphml</requiredfiles>
         <option name="">../../results-verified/LOGDIR/${rundefinition_name}.${inputfile_name}.files/witness.graphml</option>
 

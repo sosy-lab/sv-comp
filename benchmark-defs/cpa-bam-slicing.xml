@@ -6,7 +6,7 @@
 
   <resultfiles>**.graphml</resultfiles>
 
-  <rundefinition name="sv-comp19"></rundefinition>
+  <rundefinition name="sv-comp20"></rundefinition>
 
   <option name="-ldv-bam-svcomp"/>
   <option name="-disable-java-assertions"/>

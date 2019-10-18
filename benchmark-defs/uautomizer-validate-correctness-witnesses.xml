@@ -8,7 +8,7 @@
 
   <option name="--full-output"/>
 
-<rundefinition name="sv-comp19_prop-reachsafety">
+<rundefinition name="sv-comp20_prop-reachsafety">
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}.${inputfile_name}.files/witness.graphml</requiredfiles>
   <option name="--validate">../../results-verified/LOGDIR/${rundefinition_name}.${inputfile_name}.files/witness.graphml</option>
 
@@ -81,7 +81,7 @@
   </tasks>
 </rundefinition>
 
-<rundefinition name="sv-comp19_prop-memsafety">
+<rundefinition name="sv-comp20_prop-memsafety">
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}.${inputfile_name}.files/witness.graphml</requiredfiles>
   <option name="--validate">../../results-verified/LOGDIR/${rundefinition_name}.${inputfile_name}.files/witness.graphml</option>
 
@@ -134,7 +134,7 @@
   </tasks>
 </rundefinition>
 
-<rundefinition name="sv-comp19_prop-nooverflow">
+<rundefinition name="sv-comp20_prop-nooverflow">
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}.${inputfile_name}.files/witness.graphml</requiredfiles>
   <option name="--validate">../../results-verified/LOGDIR/${rundefinition_name}.${inputfile_name}.files/witness.graphml</option>
 

@@ -6,7 +6,7 @@
 
   <resultfiles>**.graphml</resultfiles>
   
-  <rundefinition name="sv-comp19">
+  <rundefinition name="sv-comp20">
     <option name="--compiler">clang-3.7</option>
   </rundefinition>
 
