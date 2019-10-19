@@ -13,8 +13,8 @@
   <option name="-setprop">cpa.predicate.memoryAllocationsAlwaysSucceed=true</option>
 
 <rundefinition name="sv-comp20_prop-reachsafety">
-  <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}.files/witness.graphml</requiredfiles>
-  <option name="-witness">../../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}.files/witness.graphml</option>
+  <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</requiredfiles>
+  <option name="-witness">../../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</option>
 
   <tasks name="ReachSafety-Arrays">
     <exclude>../sv-benchmarks/c/*/*_false-unreach-call*</exclude>

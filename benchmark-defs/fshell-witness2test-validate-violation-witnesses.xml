@@ -7,8 +7,8 @@
   <resultfiles>**.graphml</resultfiles>
 
 <rundefinition name="sv-comp20_prop-reachsafety">
-  <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}.files/witness.graphml</requiredfiles>
-  <option name="--graphml-witness">../../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}.files/witness.graphml</option>
+  <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</requiredfiles>
+  <option name="--graphml-witness">../../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</option>
 
   <tasks name="ReachSafety-Arrays">
     <exclude>../sv-benchmarks/c/*/*_true-unreach-call*</exclude>
@@ -80,8 +80,8 @@
 </rundefinition>
 
 <rundefinition name="sv-comp20_prop-memsafety">
-  <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}.files/witness.graphml</requiredfiles>
-  <option name="--graphml-witness">../../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}.files/witness.graphml</option>
+  <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</requiredfiles>
+  <option name="--graphml-witness">../../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</option>
 
   <tasks name="MemSafety-Arrays">
     <exclude>../sv-benchmarks/c/*/*_true-valid-memsafety*</exclude>
@@ -123,8 +123,8 @@
 </rundefinition>
 
 <rundefinition name="sv-comp20_prop-nooverflow">
-  <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}.files/witness.graphml</requiredfiles>
-  <option name="--graphml-witness">../../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}.files/witness.graphml</option>
+  <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</requiredfiles>
+  <option name="--graphml-witness">../../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</option>
 
   <tasks name="NoOverflows-BitVectors">
     <exclude>../sv-benchmarks/c/*/*_true-no-overflow*</exclude>
