@@ -8,8 +8,8 @@
     <resultfiles>**.graphml</resultfiles>
 
     <rundefinition name="sv-comp20_prop-reachsafety">
-        <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}.${inputfile_name}.files/witness.graphml</requiredfiles>
-        <option name="">../../results-verified/LOGDIR/${rundefinition_name}.${inputfile_name}.files/witness.graphml</option>
+        <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}.files/witness.graphml</requiredfiles>
+        <option name="">../../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}.files/witness.graphml</option>
 
         <tasks name="ReachSafety-Arrays">
             <exclude>../sv-benchmarks/c/*/*_true-unreach-call*</exclude>
