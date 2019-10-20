@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE benchmark SYSTEM "benchmark.dtd">
+<benchmark tool="ulcseq" timelimit="900" hardtimelimit="930" memlimit="15000" cpuCores="8">
+
+  <require cpuCores="8"/>
+
+  <propertyfile>${sourcefile_path}/ALL.prp</propertyfile>
+
+  <resultfiles>**.*</resultfiles>
+  
+  <rundefinition name="sv-comp15"></rundefinition>
+
+  <option name="--witness">witness.txt</option>
+
+  <sourcefiles name="Concurrency">
+    <includesfile>../../../sv-benchmarks/c/Concurrency.set</includesfile>
+  </sourcefiles>
+
+</benchmark>

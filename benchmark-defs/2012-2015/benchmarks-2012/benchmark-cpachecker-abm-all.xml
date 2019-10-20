@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!DOCTYPE benchmark SYSTEM "benchmark.dtd">
+
+<benchmark tool="cpachecker_abm" timelimit="900" memlimit="15000">
+
+  <!-- GLOBAL OPTIONS -->
+  <option name="-heap">12500m</option>
+
+  <test name="concurrency">
+      <sourcefiles>
+          <includesfile>./../sv-benchmarks/Concurrency.set</includesfile>
+      </sourcefiles>
+      <option name="-sv-comp12-abm"/>
+  </test>
+  
+  <test name="control">
+      <sourcefiles>
+          <includesfile>./../sv-benchmarks/ControlFlowInteger.set</includesfile>
+      </sourcefiles>
+      <option name="-sv-comp12-abm"/>
+  </test>
+  
+  <test name="drivers">
+      <sourcefiles>
+          <includesfile>./../sv-benchmarks/DeviceDrivers.set</includesfile>
+      </sourcefiles>
+      <option name="-setprop">cpa.predicate.handlePointerAliasing=true</option>
+      <option name="-setprop">cpa.abm.blockHeuristic=LoopPartitioning</option>
+      <option name="-sv-comp12-abm-funpoint"/>
+  </test>
+  
+  <test name="drivers64">
+      <sourcefiles>
+          <includesfile>./../sv-benchmarks/DeviceDrivers64.set</includesfile>
+      </sourcefiles>
+      <option name="-setprop">cpa.predicate.machineModel=64-Linux</option>
+      <option name="-sv-comp12-abm"/>
+  </test>
+  
+  <test name="heap">
+      <sourcefiles>
+          <includesfile>./../sv-benchmarks/HeapManipulation.set</includesfile>
+      </sourcefiles>
+      <option name="-sv-comp12-abm"/>
+  </test>
+
+  <test name="systemc">
+      <sourcefiles>
+          <includesfile>./../sv-benchmarks/SystemC.set</includesfile>
+      </sourcefiles>
+      <option name="-sv-comp12-abm"/>
+  </test>
+
+</benchmark>

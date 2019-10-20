@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE benchmark SYSTEM "benchmark.dtd">
+
+<benchmark tool="tan" timelimit="900" memlimit="15360" cpuCores="8">
+  <requiredfiles>../../../sv-benchmarks/c/*/ALL.prp</requiredfiles>
+
+  <option name="-x">${logfile_path}/${rundefinition_name}.${sourcefile_name}.cex</option>
+  <!--option name="-p">${sourcefile_path}/ALL.prp</option-->
+  <option name="../../../../sv-benchmarks/c/PropertyTermination.prp"/>
+
+  <rundefinition name="sv-comp14-termination">
+      
+  <sourcefiles name="Termination-crafted">
+    <includesfile>../../../sv-benchmarks/c/Termination-crafted.set</includesfile>
+  </sourcefiles>
+  <sourcefiles name="Termination-ext">
+    <includesfile>../../../sv-benchmarks/c/Termination-ext.set</includesfile>
+  </sourcefiles>
+
+  </rundefinition>
+</benchmark>
+

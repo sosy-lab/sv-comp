@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE benchmark SYSTEM "benchmark.dtd">
+<benchmark tool="sym" timelimit="60" hardtimelimit="90" memlimit="1000">
+
+  <propertyfile>${sourcefile_path}/ALL.prp</propertyfile>
+
+  <resultfiles>**.*</resultfiles>
+  
+  <rundefinition name="test"></rundefinition>
+
+  <sourcefiles name="Loops">
+    <includesfile>../../../sv-benchmarks/c/Loops.set</includesfile>
+  </sourcefiles>
+
+</benchmark>

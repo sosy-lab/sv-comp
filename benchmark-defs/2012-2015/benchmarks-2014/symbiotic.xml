@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!DOCTYPE benchmark SYSTEM "benchmark.dtd">
+
+<benchmark tool="symbiotic" timelimit="900" memlimit="15360" cpuCores="8">
+  <requiredfiles>../../../sv-benchmarks/c/*/ALL.prp</requiredfiles>
+
+  <sourcefiles name="Simple">
+    <includesfile>../../../sv-benchmarks/c/Simple.set</includesfile>
+  </sourcefiles>
+  <sourcefiles name="BitVectors">
+    <includesfile>../../../sv-benchmarks/c/BitVectors.set</includesfile>
+  </sourcefiles>
+  <sourcefiles name="Concurrency">
+    <includesfile>../../../sv-benchmarks/c/Concurrency.set</includesfile>
+  </sourcefiles>
+  <sourcefiles name="ControlFlowInteger">
+    <includesfile>../../../sv-benchmarks/c/ControlFlowInteger.set</includesfile>
+  </sourcefiles>
+  <sourcefiles name="DeviceDrivers64">
+    <includesfile>../../../sv-benchmarks/c/DeviceDrivers64.set</includesfile>
+    <option name="-m64"/>
+  </sourcefiles>
+  <sourcefiles name="HeapManipulation">
+    <includesfile>../../../sv-benchmarks/c/HeapManipulation.set</includesfile>
+  </sourcefiles>
+  <sourcefiles name="Loops">
+    <includesfile>../../../sv-benchmarks/c/Loops.set</includesfile>
+  </sourcefiles>
+  <sourcefiles name="MemorySafety">
+    <includesfile>../../../sv-benchmarks/c/MemorySafety.set</includesfile>
+    <!--option name="-simple-mem"/>-->
+  </sourcefiles>
+  <sourcefiles name="ProductLines">
+    <includesfile>../../../sv-benchmarks/c/ProductLines.set</includesfile>
+  </sourcefiles>
+  <sourcefiles name="Recursive">
+    <includesfile>../../../sv-benchmarks/c/Recursive.set</includesfile>
+  </sourcefiles>
+  <sourcefiles name="Sequentialized">
+    <includesfile>../../../sv-benchmarks/c/Sequentialized.set</includesfile>
+  </sourcefiles>
+
+  <rundefinition name="sv-comp14">
+  </rundefinition>
+</benchmark>
+

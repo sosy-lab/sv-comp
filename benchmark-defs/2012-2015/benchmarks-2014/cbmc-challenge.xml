@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE benchmark SYSTEM "benchmark.dtd">
+<benchmark tool="cbmcChallenge" timelimit="7200" memlimit="15360" cpuCores="8">
+
+  <option name="--propertyfile">${sourcefile_path}/ALL.prp</option>
+  <option name="--64"/>
+
+  <requiredfiles>../../../sv-benchmarks/c/*/ALL.prp</requiredfiles>
+  <resultfiles>**</resultfiles>
+  <require memory="20000"/>
+
+  <rundefinition name="sv-comp14-demo">
+
+  <sourcefiles name="DriverChallenges">
+    <includesfile>../../../sv-benchmarks/c/DriverChallenges.set</includesfile>
+  </sourcefiles>
+  
+  </rundefinition>
+  
+</benchmark>

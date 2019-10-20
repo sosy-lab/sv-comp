@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!DOCTYPE benchmark SYSTEM "benchmark.dtd">
+
+<benchmark tool="llbmc2" timelimit="900" memlimit="15000">
+
+<!--
+  <test name="concurrency"><sourcefiles>
+      <includesfile>./../sv-benchmarks/Concurrency.set</includesfile>
+  </sourcefiles></test>
+-->
+
+  <test name="control"><sourcefiles>
+      <includesfile>./../sv-benchmarks/ControlFlowInteger.set</includesfile>
+  </sourcefiles></test>
+
+  <test name="drivers"><sourcefiles>
+      <includesfile>./../sv-benchmarks/DeviceDrivers.set</includesfile>
+  </sourcefiles></test>
+  
+  <test name="drivers64"><sourcefiles>
+      <includesfile>./../sv-benchmarks/DeviceDrivers64.set</includesfile>
+  </sourcefiles></test>
+  
+  <test name="heap"><sourcefiles>
+      <includesfile>./../sv-benchmarks/HeapManipulation.set</includesfile>
+  </sourcefiles></test>
+
+<!--
+  <test name="systemc"><sourcefiles>
+      <includesfile>./../sv-benchmarks/SystemC.set</includesfile>
+  </sourcefiles></test>
+-->
+  
+</benchmark>

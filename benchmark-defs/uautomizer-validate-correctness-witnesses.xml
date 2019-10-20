@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<!DOCTYPE benchmark PUBLIC "+//IDN sosy-lab.org//DTD BenchExec benchmark 1.4//EN" "http://www.sosy-lab.org/benchexec/benchmark-1.4.dtd">
-<benchmark tool="ultimateautomizer" timelimit="900 s" hardtimelimit="960 s" memlimit="7 GB" cpuCores="2">
+<!DOCTYPE benchmark PUBLIC "+//IDN sosy-lab.org//DTD BenchExec benchmark 1.9//EN" "http://www.sosy-lab.org/benchexec/benchmark-1.9.dtd">
+<benchmark tool="ultimateautomizer" timelimit="15 min" hardtimelimit="16 min" memlimit="7 GB" cpuCores="2">
 
 <require cpuModel="Intel Xeon E3-1230 v5 @ 3.40 GHz" cpuCores="2"/>
 
@@ -8,9 +8,9 @@
 
   <option name="--full-output"/>
 
-<rundefinition name="sv-comp19_prop-reachsafety">
-  <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}.${inputfile_name}.files/witness.graphml</requiredfiles>
-  <option name="--validate">../../results-verified/LOGDIR/${rundefinition_name}.${inputfile_name}.files/witness.graphml</option>
+<rundefinition name="sv-comp20_prop-reachsafety">
+  <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</requiredfiles>
+  <option name="--validate">../../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</option>
 
   <tasks name="ReachSafety-Arrays">
     <exclude>../sv-benchmarks/c/*/*_false-unreach-call*</exclude>
@@ -81,9 +81,9 @@
   </tasks>
 </rundefinition>
 
-<rundefinition name="sv-comp19_prop-memsafety">
-  <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}.${inputfile_name}.files/witness.graphml</requiredfiles>
-  <option name="--validate">../../results-verified/LOGDIR/${rundefinition_name}.${inputfile_name}.files/witness.graphml</option>
+<rundefinition name="sv-comp20_prop-memsafety">
+  <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</requiredfiles>
+  <option name="--validate">../../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</option>
 
   <tasks name="MemSafety-Arrays">
     <exclude>../sv-benchmarks/c/*/*_false-valid-deref*</exclude>
@@ -134,9 +134,9 @@
   </tasks>
 </rundefinition>
 
-<rundefinition name="sv-comp19_prop-nooverflow">
-  <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}.${inputfile_name}.files/witness.graphml</requiredfiles>
-  <option name="--validate">../../results-verified/LOGDIR/${rundefinition_name}.${inputfile_name}.files/witness.graphml</option>
+<rundefinition name="sv-comp20_prop-nooverflow">
+  <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</requiredfiles>
+  <option name="--validate">../../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</option>
 
   <tasks name="NoOverflows-BitVectors">
     <exclude>../sv-benchmarks/c/*/*_false-no-overflow*</exclude>

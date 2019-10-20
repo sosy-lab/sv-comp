@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE benchmark SYSTEM "benchmark.dtd">
+<benchmark tool="cpacheckerChallenge" timelimit="7200" memlimit="15360" cpuCores="8">
+  <option name="-sv-comp14-challenge"/>
+  <option name="-disable-java-assertions"/>
+  <option name="-heap">10000m</option>
+  <option name="-spec">${sourcefile_path}/ALL.prp</option>
+  
+  <option name="-setprop">limits.time.cpu=2h</option>
+
+  <requiredfiles>../../../sv-benchmarks/c/*/ALL.prp</requiredfiles>
+  <resultfiles>**</resultfiles>
+  <require memory="20000"/>
+
+  <rundefinition name="sv-comp14-demo">
+
+  <sourcefiles name="DriverChallenges">
+    <includesfile>../../../sv-benchmarks/c/DriverChallenges.set</includesfile>
+    <option name="-64"/>
+  </sourcefiles>
+  
+  </rundefinition>
+  
+</benchmark>

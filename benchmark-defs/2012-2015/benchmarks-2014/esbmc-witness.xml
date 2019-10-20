@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<!DOCTYPE benchmark SYSTEM "benchmark.dtd">
+<benchmark tool="esbmcWitness" timelimit="900" memlimit="15360" cpuCores="8">
+
+  <!--requiredfiles>../../../sv-benchmarks/c/*/ALL.prp</requiredfiles-->
+  <resultfiles>**</resultfiles>
+  <require memory="15500"/>
+
+
+  <rundefinition name="sv-comp14-demo-witness-write">
+      <option name="-write">./output/${sourcefile_name}.witness</option>
+  </rundefinition>
+
+  <rundefinition name="sv-comp14-demo-witness-read">
+      <option name="-verify">./CEX/${sourcefile_name}.witness</option>
+  </rundefinition>
+
+
+  <sourcefiles name="Simple">
+    <includesfile>../../../sv-benchmarks/c/Simple.false-unreach-label.set</includesfile>
+  </sourcefiles>
+  <sourcefiles name="BitVectors">
+    <includesfile>../../../sv-benchmarks/c/BitVectors.false-unreach-label.set</includesfile>
+  </sourcefiles>
+  <!--
+  <sourcefiles name="Concurrency">
+    <includesfile>../../../sv-benchmarks/c/Concurrency.false-unreach-label.set</includesfile>
+  </sourcefiles>
+  -->
+  <sourcefiles name="ControlFlowInteger">
+    <includesfile>../../../sv-benchmarks/c/ControlFlowInteger.false-unreach-label.set</includesfile>
+  </sourcefiles>
+  <sourcefiles name="DeviceDrivers64">
+    <includesfile>../../../sv-benchmarks/c/DeviceDrivers64.false-unreach-label.set</includesfile>
+  </sourcefiles>
+  <sourcefiles name="HeapManipulation">
+    <includesfile>../../../sv-benchmarks/c/HeapManipulation.false-unreach-label.set</includesfile>
+  </sourcefiles>
+  <sourcefiles name="Loops">
+    <includesfile>../../../sv-benchmarks/c/Loops.false-unreach-label.set</includesfile>
+  </sourcefiles>
+  <!--
+  <sourcefiles name="MemorySafety">
+    <includesfile>../../../sv-benchmarks/c/MemorySafety.false-unreach-label.set</includesfile>
+  </sourcefiles>
+  -->
+  <sourcefiles name="ProductLines">
+    <includesfile>../../../sv-benchmarks/c/ProductLines.false-unreach-label.set</includesfile>
+  </sourcefiles>
+  <!--
+  <sourcefiles name="Recursive">
+    <includesfile>../../../sv-benchmarks/c/Recursive.false-unreach-label.set</includesfile>
+    </sourcefiles>
+  -->
+  <sourcefiles name="Sequentialized">
+    <includesfile>../../../sv-benchmarks/c/Sequentialized.false-unreach-label.set</includesfile>
+  </sourcefiles>
+
+
+</benchmark>

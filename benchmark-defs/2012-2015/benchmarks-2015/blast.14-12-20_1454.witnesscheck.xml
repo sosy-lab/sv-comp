@@ -1,0 +1,243 @@
+<?xml version="1.0" ?>
+<benchmark cpuCores="8" hardtimelimit="120" memlimit="15000" timelimit="90" tool="cpacheckerwitness">
+  
+  
+  
+  <require cpuCores="8"/>
+  
+
+  
+  <propertyfile>${sourcefile_path}/ALL.prp</propertyfile>
+  
+
+  
+  <resultfiles>**.*</resultfiles>
+  
+  
+  
+  <option>-witness-check</option>
+  
+  
+  <option>-noout</option>
+  
+  
+  <option name="-timelimit">90</option>
+  
+
+  
+  <rundefinition name="sv-comp15"/>
+  
+
+  
+  <sourcefiles name="Arrays">
+    
+    
+    <Xincludesfile>../../../sv-benchmarks/c/Arrays.set</Xincludesfile>
+    
+  
+  </sourcefiles>
+  
+  
+  <sourcefiles name="BitVectors">
+    
+    
+    <Xincludesfile>../../../sv-benchmarks/c/BitVectors.set</Xincludesfile>
+    
+  
+  </sourcefiles>
+  
+  
+  <Xsourcefiles name="Concurrency">
+    
+    
+    <Xincludesfile>../../../sv-benchmarks/c/Concurrency.set</Xincludesfile>
+    
+  
+  </Xsourcefiles>
+  
+  
+  <sourcefiles name="ControlFlowInteger">
+    
+    
+    <Xincludesfile>../../../sv-benchmarks/c/ControlFlowInteger.set</Xincludesfile>
+    
+  
+  </sourcefiles>
+  
+  
+  <sourcefiles name="DeviceDrivers64">
+    
+    
+    <Xincludesfile>../../../sv-benchmarks/c/DeviceDrivers64.set</Xincludesfile>
+    
+    
+    <option>-64</option>
+    
+  
+  </sourcefiles>
+  
+  
+  <sourcefiles name="ECA">
+    
+    
+    <Xincludesfile>../../../sv-benchmarks/c/ECA.set</Xincludesfile>
+    
+  
+  </sourcefiles>
+  
+  
+  <sourcefiles name="Floats">
+    
+    
+    <Xincludesfile>../../../sv-benchmarks/c/Floats.set</Xincludesfile>
+    
+  
+  </sourcefiles>
+  
+  
+  <sourcefiles name="HeapManipulation">
+    
+    
+    <Xincludesfile>../../../sv-benchmarks/c/HeapManipulation.set</Xincludesfile>
+    
+  
+  </sourcefiles>
+  
+  
+  <sourcefiles name="Loops">
+    
+    
+    <Xincludesfile>../../../sv-benchmarks/c/Loops.set</Xincludesfile>
+    
+  
+    <include>../../../sv-benchmarks/c/loop-acceleration/diamond_false-unreach-call1.i</include>
+    <include>../../../sv-benchmarks/c/loop-acceleration/multivar_false-unreach-call1.i</include>
+    <include>../../../sv-benchmarks/c/loop-acceleration/phases_false-unreach-call2.i</include>
+    <include>../../../sv-benchmarks/c/loop-acceleration/simple_false-unreach-call2.i</include>
+    <include>../../../sv-benchmarks/c/loop-acceleration/simple_false-unreach-call3.i</include>
+    <include>../../../sv-benchmarks/c/loop-acceleration/underapprox_false-unreach-call1.i</include>
+    <include>../../../sv-benchmarks/c/loop-acceleration/underapprox_false-unreach-call2.i</include>
+    <include>../../../sv-benchmarks/c/loops/array_false-unreach-call.i</include>
+    <include>../../../sv-benchmarks/c/loops/count_up_down_false-unreach-call_true-termination.i</include>
+    <include>../../../sv-benchmarks/c/loops/eureka_01_false-unreach-call.i</include>
+    <include>../../../sv-benchmarks/c/loops/for_bounded_loop1_false-unreach-call_true-termination.i</include>
+    <include>../../../sv-benchmarks/c/loops/insertion_sort_false-unreach-call.i</include>
+    <include>../../../sv-benchmarks/c/loops/invert_string_false-unreach-call.i</include>
+    <include>../../../sv-benchmarks/c/loops/linear_search_false-unreach-call.i</include>
+    <include>../../../sv-benchmarks/c/loops/ludcmp_false-unreach-call.i</include>
+    <include>../../../sv-benchmarks/c/loops/nec11_false-unreach-call.i</include>
+    <include>../../../sv-benchmarks/c/loops/nec20_false-unreach-call.i</include>
+    <include>../../../sv-benchmarks/c/loops/s3_false-unreach-call.i</include>
+    <include>../../../sv-benchmarks/c/loops/string_false-unreach-call.i</include>
+    <include>../../../sv-benchmarks/c/loops/sum01_bug02_false-unreach-call_true-termination.i</include>
+    <include>../../../sv-benchmarks/c/loops/sum01_bug02_sum01_bug02_base.case_false-unreach-call_true-termination.i</include>
+    <include>../../../sv-benchmarks/c/loops/sum01_false-unreach-call_true-termination.i</include>
+    <include>../../../sv-benchmarks/c/loops/sum03_false-unreach-call_true-termination.i</include>
+    <include>../../../sv-benchmarks/c/loops/sum04_false-unreach-call_true-termination.i</include>
+    <include>../../../sv-benchmarks/c/loops/sum_array_false-unreach-call.i</include>
+    <include>../../../sv-benchmarks/c/loops/terminator_01_false-unreach-call_false-termination.i</include>
+    <include>../../../sv-benchmarks/c/loops/terminator_02_false-unreach-call_true-termination.i</include>
+    <include>../../../sv-benchmarks/c/loops/terminator_03_false-unreach-call_true-termination.i</include>
+    <include>../../../sv-benchmarks/c/loops/trex01_false-unreach-call_true-termination.i</include>
+    <include>../../../sv-benchmarks/c/loops/trex02_false-unreach-call_true-termination.i</include>
+    <include>../../../sv-benchmarks/c/loops/trex03_false-unreach-call_true-termination.i</include>
+    <include>../../../sv-benchmarks/c/loops/verisec_NetBSD-libc__loop_false-unreach-call.i</include>
+    <include>../../../sv-benchmarks/c/loops/verisec_OpenSER__cases1_stripFullBoth_arr_false-unreach-call.i</include>
+    <include>../../../sv-benchmarks/c/loops/while_infinite_loop_4_false-unreach-call_true-termination.i</include>
+  </sourcefiles>
+  
+  
+  <Xsourcefiles name="MemorySafety">
+    
+    
+    <Xincludesfile>../../../sv-benchmarks/c/MemorySafety.set</Xincludesfile>
+    
+  
+  </Xsourcefiles>
+  
+  
+  <sourcefiles name="ProductLines">
+    
+    
+    <Xincludesfile>../../../sv-benchmarks/c/ProductLines.set</Xincludesfile>
+    
+  
+  </sourcefiles>
+  
+  
+  <sourcefiles name="Recursive">
+    
+    
+    <Xincludesfile>../../../sv-benchmarks/c/Recursive.set</Xincludesfile>
+    
+  
+  </sourcefiles>
+  
+  
+  <sourcefiles name="Sequentialized">
+    
+    
+    <Xincludesfile>../../../sv-benchmarks/c/Sequentialized.set</Xincludesfile>
+    
+  
+  </sourcefiles>
+  
+  
+  <sourcefiles name="Simple">
+    
+    
+    <Xincludesfile>../../../sv-benchmarks/c/Simple.set</Xincludesfile>
+    
+  
+  </sourcefiles>
+  
+  
+  <Xsourcefiles name="Termination">
+    
+    
+    <Xincludesfile>../../../sv-benchmarks/c/Termination-crafted.set</Xincludesfile>
+    
+  
+  </Xsourcefiles>
+  
+
+
+  <requiredfiles>../results-2015/blast.14-12-20_1454.logfiles/sv-comp15.diamond_false-unreach-call1.i.files/SV-Competition/comp/bin-2015/blast-2.7.3/bin/witness.graphml</requiredfiles>
+  <requiredfiles>../results-2015/blast.14-12-20_1454.logfiles/sv-comp15.multivar_false-unreach-call1.i.files/SV-Competition/comp/bin-2015/blast-2.7.3/bin/witness.graphml</requiredfiles>
+  <requiredfiles>../results-2015/blast.14-12-20_1454.logfiles/sv-comp15.phases_false-unreach-call2.i.files/SV-Competition/comp/bin-2015/blast-2.7.3/bin/witness.graphml</requiredfiles>
+  <requiredfiles>../results-2015/blast.14-12-20_1454.logfiles/sv-comp15.simple_false-unreach-call2.i.files/SV-Competition/comp/bin-2015/blast-2.7.3/bin/witness.graphml</requiredfiles>
+  <requiredfiles>../results-2015/blast.14-12-20_1454.logfiles/sv-comp15.simple_false-unreach-call3.i.files/SV-Competition/comp/bin-2015/blast-2.7.3/bin/witness.graphml</requiredfiles>
+  <requiredfiles>../results-2015/blast.14-12-20_1454.logfiles/sv-comp15.underapprox_false-unreach-call1.i.files/SV-Competition/comp/bin-2015/blast-2.7.3/bin/witness.graphml</requiredfiles>
+  <requiredfiles>../results-2015/blast.14-12-20_1454.logfiles/sv-comp15.underapprox_false-unreach-call2.i.files/SV-Competition/comp/bin-2015/blast-2.7.3/bin/witness.graphml</requiredfiles>
+  <requiredfiles>../results-2015/blast.14-12-20_1454.logfiles/sv-comp15.array_false-unreach-call.i.files/SV-Competition/comp/bin-2015/blast-2.7.3/bin/witness.graphml</requiredfiles>
+  <requiredfiles>../results-2015/blast.14-12-20_1454.logfiles/sv-comp15.count_up_down_false-unreach-call_true-termination.i.files/SV-Competition/comp/bin-2015/blast-2.7.3/bin/witness.graphml</requiredfiles>
+  <requiredfiles>../results-2015/blast.14-12-20_1454.logfiles/sv-comp15.eureka_01_false-unreach-call.i.files/SV-Competition/comp/bin-2015/blast-2.7.3/bin/witness.graphml</requiredfiles>
+  <requiredfiles>../results-2015/blast.14-12-20_1454.logfiles/sv-comp15.for_bounded_loop1_false-unreach-call_true-termination.i.files/SV-Competition/comp/bin-2015/blast-2.7.3/bin/witness.graphml</requiredfiles>
+  <requiredfiles>../results-2015/blast.14-12-20_1454.logfiles/sv-comp15.insertion_sort_false-unreach-call.i.files/SV-Competition/comp/bin-2015/blast-2.7.3/bin/witness.graphml</requiredfiles>
+  <requiredfiles>../results-2015/blast.14-12-20_1454.logfiles/sv-comp15.invert_string_false-unreach-call.i.files/SV-Competition/comp/bin-2015/blast-2.7.3/bin/witness.graphml</requiredfiles>
+  <requiredfiles>../results-2015/blast.14-12-20_1454.logfiles/sv-comp15.linear_search_false-unreach-call.i.files/SV-Competition/comp/bin-2015/blast-2.7.3/bin/witness.graphml</requiredfiles>
+  <requiredfiles>../results-2015/blast.14-12-20_1454.logfiles/sv-comp15.ludcmp_false-unreach-call.i.files/SV-Competition/comp/bin-2015/blast-2.7.3/bin/witness.graphml</requiredfiles>
+  <requiredfiles>../results-2015/blast.14-12-20_1454.logfiles/sv-comp15.nec11_false-unreach-call.i.files/SV-Competition/comp/bin-2015/blast-2.7.3/bin/witness.graphml</requiredfiles>
+  <requiredfiles>../results-2015/blast.14-12-20_1454.logfiles/sv-comp15.nec20_false-unreach-call.i.files/SV-Competition/comp/bin-2015/blast-2.7.3/bin/witness.graphml</requiredfiles>
+  <requiredfiles>../results-2015/blast.14-12-20_1454.logfiles/sv-comp15.s3_false-unreach-call.i.files/SV-Competition/comp/bin-2015/blast-2.7.3/bin/witness.graphml</requiredfiles>
+  <requiredfiles>../results-2015/blast.14-12-20_1454.logfiles/sv-comp15.string_false-unreach-call.i.files/SV-Competition/comp/bin-2015/blast-2.7.3/bin/witness.graphml</requiredfiles>
+  <requiredfiles>../results-2015/blast.14-12-20_1454.logfiles/sv-comp15.sum01_bug02_false-unreach-call_true-termination.i.files/SV-Competition/comp/bin-2015/blast-2.7.3/bin/witness.graphml</requiredfiles>
+  <requiredfiles>../results-2015/blast.14-12-20_1454.logfiles/sv-comp15.sum01_bug02_sum01_bug02_base.case_false-unreach-call_true-termination.i.files/SV-Competition/comp/bin-2015/blast-2.7.3/bin/witness.graphml</requiredfiles>
+  <requiredfiles>../results-2015/blast.14-12-20_1454.logfiles/sv-comp15.sum01_false-unreach-call_true-termination.i.files/SV-Competition/comp/bin-2015/blast-2.7.3/bin/witness.graphml</requiredfiles>
+  <requiredfiles>../results-2015/blast.14-12-20_1454.logfiles/sv-comp15.sum03_false-unreach-call_true-termination.i.files/SV-Competition/comp/bin-2015/blast-2.7.3/bin/witness.graphml</requiredfiles>
+  <requiredfiles>../results-2015/blast.14-12-20_1454.logfiles/sv-comp15.sum04_false-unreach-call_true-termination.i.files/SV-Competition/comp/bin-2015/blast-2.7.3/bin/witness.graphml</requiredfiles>
+  <requiredfiles>../results-2015/blast.14-12-20_1454.logfiles/sv-comp15.sum_array_false-unreach-call.i.files/SV-Competition/comp/bin-2015/blast-2.7.3/bin/witness.graphml</requiredfiles>
+  <requiredfiles>../results-2015/blast.14-12-20_1454.logfiles/sv-comp15.terminator_01_false-unreach-call_false-termination.i.files/SV-Competition/comp/bin-2015/blast-2.7.3/bin/witness.graphml</requiredfiles>
+  <requiredfiles>../results-2015/blast.14-12-20_1454.logfiles/sv-comp15.terminator_02_false-unreach-call_true-termination.i.files/SV-Competition/comp/bin-2015/blast-2.7.3/bin/witness.graphml</requiredfiles>
+  <requiredfiles>../results-2015/blast.14-12-20_1454.logfiles/sv-comp15.terminator_03_false-unreach-call_true-termination.i.files/SV-Competition/comp/bin-2015/blast-2.7.3/bin/witness.graphml</requiredfiles>
+  <requiredfiles>../results-2015/blast.14-12-20_1454.logfiles/sv-comp15.trex01_false-unreach-call_true-termination.i.files/SV-Competition/comp/bin-2015/blast-2.7.3/bin/witness.graphml</requiredfiles>
+  <requiredfiles>../results-2015/blast.14-12-20_1454.logfiles/sv-comp15.trex02_false-unreach-call_true-termination.i.files/SV-Competition/comp/bin-2015/blast-2.7.3/bin/witness.graphml</requiredfiles>
+  <requiredfiles>../results-2015/blast.14-12-20_1454.logfiles/sv-comp15.trex03_false-unreach-call_true-termination.i.files/SV-Competition/comp/bin-2015/blast-2.7.3/bin/witness.graphml</requiredfiles>
+  <requiredfiles>../results-2015/blast.14-12-20_1454.logfiles/sv-comp15.verisec_NetBSD-libc__loop_false-unreach-call.i.files/SV-Competition/comp/bin-2015/blast-2.7.3/bin/witness.graphml</requiredfiles>
+  <requiredfiles>../results-2015/blast.14-12-20_1454.logfiles/sv-comp15.verisec_OpenSER__cases1_stripFullBoth_arr_false-unreach-call.i.files/SV-Competition/comp/bin-2015/blast-2.7.3/bin/witness.graphml</requiredfiles>
+  <requiredfiles>../results-2015/blast.14-12-20_1454.logfiles/sv-comp15.while_infinite_loop_4_false-unreach-call_true-termination.i.files/SV-Competition/comp/bin-2015/blast-2.7.3/bin/witness.graphml</requiredfiles>
+  <option name="-spec">../../results-2015/blast.14-12-20_1454.logfiles/sv-comp15.${sourcefile_name}.files/SV-Competition/comp/bin-2015/blast-2.7.3/bin/witness.graphml</option>
+  <option name="-setprop">spec.singlePathMatching=true</option>
+  <option name="-setprop">parser.transformTokensToLines=false</option>
+  <option name="-tokenize">-useTokenizer</option>
+</benchmark>

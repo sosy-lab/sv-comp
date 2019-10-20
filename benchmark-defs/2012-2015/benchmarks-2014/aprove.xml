@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE benchmark SYSTEM "benchmark.dtd">
+
+<benchmark tool="aprove" timelimit="900" memlimit="15360" cpuCores="8">
+  <requiredfiles>../../../sv-benchmarks/c/*/ALL.prp</requiredfiles>
+
+  <option name="${logfile_path}/${rundefinition_name}.${sourcefile_name}.proof"/>
+
+  <rundefinition name="sv-comp14-termination">
+      
+  <sourcefiles name="Termination-crafted">
+    <includesfile>../../../sv-benchmarks/c/Termination-crafted.set</includesfile>
+  </sourcefiles>
+  <sourcefiles name="Termination-ext">
+    <includesfile>../../../sv-benchmarks/c/Termination-ext.set</includesfile>
+  </sourcefiles>
+
+  </rundefinition>
+</benchmark>
+

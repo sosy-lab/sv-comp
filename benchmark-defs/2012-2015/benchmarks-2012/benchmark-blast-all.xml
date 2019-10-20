@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE benchmark SYSTEM "benchmark.dtd">
+
+<benchmark tool="blast" timelimit="900" memlimit="15000">
+
+  <!-- GLOBAL OPTIONS -->
+  <option name="-alias">bdd</option>
+  <option name="-enable-recursion"/>
+  <option name="-noprofile"/>
+  <option name="-cref"/>
+  <option name="-sv-comp"/>
+  <option name="-lattice"/>
+  <option name="-include-lattice">symb</option>
+
+  <test name="concurrency"><sourcefiles>
+      <includesfile>./../sv-benchmarks/Concurrency.set</includesfile>
+  </sourcefiles></test>
+  
+  <test name="control"><sourcefiles>
+      <includesfile>./../sv-benchmarks/ControlFlowInteger.set</includesfile>
+  </sourcefiles></test>
+  
+  <test name="drivers"><sourcefiles>
+      <includesfile>./../sv-benchmarks/DeviceDrivers.set</includesfile>
+  </sourcefiles></test>
+  
+  <test name="drivers64"><sourcefiles>
+      <includesfile>./../sv-benchmarks/DeviceDrivers64.set</includesfile>
+  </sourcefiles></test>
+  
+  <test name="heap"><sourcefiles>
+      <includesfile>./../sv-benchmarks/HeapManipulation.set</includesfile>
+  </sourcefiles></test>
+
+  <test name="systemc"><sourcefiles>
+      <includesfile>./../sv-benchmarks/SystemC.set</includesfile>
+  </sourcefiles></test>
+  
+</benchmark>

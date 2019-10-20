@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<!DOCTYPE benchmark PUBLIC "+//IDN sosy-lab.org//DTD BenchExec benchmark 1.4//EN" "http://www.sosy-lab.org/benchexec/benchmark-1.4.dtd">
-<benchmark tool="pesco" timelimit="900 s" hardtimelimit="960 s" memlimit="15 GB" cpuCores="8">
+<!DOCTYPE benchmark PUBLIC "+//IDN sosy-lab.org//DTD BenchExec benchmark 1.9//EN" "http://www.sosy-lab.org/benchexec/benchmark-1.9.dtd">
+<benchmark tool="pesco" timelimit="15 min" hardtimelimit="16 min" memlimit="15 GB" cpuCores="8">
 
 <require cpuModel="Intel Xeon E3-1230 v5 @ 3.40 GHz" cpuCores="8"/>
 
@@ -10,9 +10,9 @@
   <option name="-heap">10000M</option>
   <option name="-stack">2048k</option>
   <option name="-benchmark"/>
-  <option name="-timelimit">900s</option>
+  <option name="-timelimit">900 s</option>
 
-<rundefinition name="sv-comp19_prop-reachsafety">
+<rundefinition name="sv-comp20_prop-reachsafety">
   <tasks name="ReachSafety-Arrays">
     <includesfile>../sv-benchmarks/c/ReachSafety-Arrays.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
@@ -66,7 +66,7 @@
   </tasks>
 </rundefinition>
 
-<rundefinition name="sv-comp19_prop-memsafety">
+<rundefinition name="sv-comp20_prop-memsafety">
   <tasks name="MemSafety-Arrays">
     <includesfile>../sv-benchmarks/c/MemSafety-Arrays.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
@@ -95,7 +95,7 @@
   </tasks>
 </rundefinition>
 
-<rundefinition name="sv-comp19_prop-nooverflow">
+<rundefinition name="sv-comp20_prop-nooverflow">
   <tasks name="NoOverflows-BitVectors">
     <includesfile>../sv-benchmarks/c/NoOverflows-BitVectors.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
@@ -113,7 +113,7 @@
   </tasks>
 </rundefinition>
 
-<rundefinition name="sv-comp19_prop-termination">
+<rundefinition name="sv-comp20_prop-termination">
   <tasks name="Termination-MainControlFlow">
     <includesfile>../sv-benchmarks/c/Termination-MainControlFlow.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>

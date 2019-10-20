@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!DOCTYPE benchmark SYSTEM "benchmark.dtd">
+
+<benchmark tool="wolverine" timelimit="900" memlimit="15000">
+
+  <!-- GLOBAL OPTIONS -->
+  <option name="--error-label">ERROR</option>
+
+  <test name="concurrency">
+      <sourcefiles>
+          <includesfile>./../sv-benchmarks/Concurrency.set</includesfile>
+      </sourcefiles>
+      <option name="--32"/>
+  </test>
+  
+  <test name="control">
+      <sourcefiles>
+          <includesfile>./../sv-benchmarks/ControlFlowInteger.set</includesfile>
+      </sourcefiles>
+      <option name="--32"/>
+  </test>
+  
+  <test name="drivers">
+      <sourcefiles>
+          <includesfile>./../sv-benchmarks/DeviceDrivers.set</includesfile>
+      </sourcefiles>
+      <option name="--32"/>
+  </test>
+  
+  <test name="drivers64">
+      <sourcefiles>
+          <includesfile>./../sv-benchmarks/DeviceDrivers64.set</includesfile>
+      </sourcefiles>
+      <option name="--64"/>
+  </test>
+  
+  <test name="heap">
+      <sourcefiles>
+          <includesfile>./../sv-benchmarks/HeapManipulation.set</includesfile>
+      </sourcefiles>
+      <option name="--32"/>
+  </test>
+
+  <test name="systemc">
+      <sourcefiles>
+          <includesfile>./../sv-benchmarks/SystemC.set</includesfile>
+      </sourcefiles>
+      <option name="--32"/>
+  </test>
+  
+</benchmark>

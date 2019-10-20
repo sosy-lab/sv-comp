@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<!DOCTYPE benchmark SYSTEM "benchmark.dtd">
+
+<benchmark tool="symbiotic" timelimit="900" memlimit="15360">
+
+  <!-- GLOBAL OPTIONS not needed -->
+  
+  <test name="bitvectors"><sourcefiles>
+      <includesfile>./../../sv-benchmarks-trunk/BitVectors.set</includesfile>
+  </sourcefiles></test>
+  
+  <test name="concurrency"><sourcefiles>
+      <includesfile>./../../sv-benchmarks-trunk/Concurrency.set</includesfile>
+  </sourcefiles></test>
+  
+  <test name="controlflowinteger-memprecise"><sourcefiles>
+      <includesfile>./../../sv-benchmarks-trunk/ControlFlowInteger-MemPrecise.set</includesfile>
+  </sourcefiles></test>
+  
+  <test name="controlflowinteger-memsimple"><sourcefiles>
+      <includesfile>./../../sv-benchmarks-trunk/ControlFlowInteger-MemSimple.set</includesfile>
+  </sourcefiles></test>
+
+  <test name="devicedrivers64"><sourcefiles>
+      <includesfile>./../../sv-benchmarks-trunk/DeviceDrivers64.set</includesfile>
+  </sourcefiles></test>
+  
+  <test name="featurechecks"><sourcefiles>
+      <includesfile>./../../sv-benchmarks-trunk/FeatureChecks.set</includesfile>
+  </sourcefiles></test>
+  
+  <test name="heapmanipulation"><sourcefiles>
+      <includesfile>./../../sv-benchmarks-trunk/HeapManipulation.set</includesfile>
+  </sourcefiles></test>
+  
+  <test name="loops"><sourcefiles>
+      <includesfile>./../../sv-benchmarks-trunk/Loops.set</includesfile>
+  </sourcefiles></test>
+  
+  <test name="memorysafety"><sourcefiles>
+      <includesfile>./../../sv-benchmarks-trunk/MemorySafety.set</includesfile>
+  </sourcefiles></test>
+  
+  <test name="productlines"><sourcefiles>
+      <includesfile>./../../sv-benchmarks-trunk/ProductLines.set</includesfile>
+  </sourcefiles></test>
+
+  <test name="systemc"><sourcefiles>
+      <includesfile>./../../sv-benchmarks-trunk/SystemC.set</includesfile>
+  </sourcefiles></test>
+  
+</benchmark>

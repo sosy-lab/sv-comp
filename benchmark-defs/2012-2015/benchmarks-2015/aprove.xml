@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE benchmark SYSTEM "benchmark.dtd">
+<benchmark tool="aprove" timelimit="900" hardtimelimit="930" memlimit="15000" cpuCores="8">
+  
+  <require cpuCores="8"/>
+
+  <propertyfile>${sourcefile_path}/ALL.prp</propertyfile>
+
+  <resultfiles>**.*</resultfiles>
+  
+  <rundefinition name="sv-comp15"></rundefinition>
+
+  <option>witness.txt</option>
+
+  <sourcefiles name="Termination">
+    <includesfile>../../../sv-benchmarks/c/Termination-crafted.set</includesfile>
+  </sourcefiles>
+
+</benchmark>
