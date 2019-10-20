@@ -6,7 +6,7 @@
 
   <resultfiles>**.graphml</resultfiles>
 
-  <option name="-svcomp19-pesco"/>
+  <option name="-svcomp20-pesco"/>
   <option name="-heap">10000M</option>
   <option name="-stack">2048k</option>
   <option name="-benchmark"/>
