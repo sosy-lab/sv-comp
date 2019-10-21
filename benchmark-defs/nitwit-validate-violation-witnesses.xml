@@ -9,7 +9,7 @@
 
     <rundefinition name="sv-comp20_prop-reachsafety">
         <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</requiredfiles>
-        <option>../../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</option>
+        <option name="-w">../../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</option>
 
         <tasks name="ReachSafety-Arrays">
             <exclude>../sv-benchmarks/c/*/*_true-unreach-call*</exclude>
