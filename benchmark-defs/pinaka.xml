@@ -54,6 +54,11 @@
     <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
     <option name="--32"/>
   </tasks>
+  <tasks name="ReachSafety-Sequentialized">
+    <includesfile>../sv-benchmarks/c/ReachSafety-Sequentialized.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+    <option name="--32"/>
+  </tasks>
 </rundefinition>
 
 <rundefinition name="sv-comp20_prop-nooverflow">
