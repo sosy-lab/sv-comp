@@ -9,7 +9,7 @@
   <rundefinition name="sv-comp_prop-reachsafety">
     <tasks name="ReachSafety-Loops">
       <includesfile>../sv-benchmarks/c/ReachSafety-Loops.set</includesfile>
-      <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</includesfile>
+      <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
     </tasks>
   </rundefinition>
 
