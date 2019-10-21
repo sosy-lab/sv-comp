@@ -6,13 +6,12 @@
 
   <resultfiles>**.graphml</resultfiles>
 
-  <rundefinition name="sv-comp20"></rundefinition>
-
   <option name="--fix_volatile"/>
   <option name="--fix_inline"/>
   <option name="--silent"/>
   <option name="-Os"/>
 
+<rundefinition name="sv-comp20_prop-reachsafety">
   <tasks name="ReachSafety-ControlFlow">
     <includesfile>../sv-benchmarks/c/ReachSafety-ControlFlow.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
@@ -48,5 +47,6 @@
     <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
     <option name="--64"/>
   </tasks>
+</rundefinition>
 
 </benchmark>
