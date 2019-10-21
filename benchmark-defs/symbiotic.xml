@@ -7,6 +7,7 @@
   <resultfiles>**.graphml</resultfiles>
   
   <option name="--witness">witness.graphml</option>
+  <option name="--sv-comp"/>
 
 <rundefinition name="sv-comp20_prop-reachsafety">
   <tasks name="ReachSafety-Arrays">
