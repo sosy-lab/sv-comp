@@ -6,10 +6,9 @@
 
   <resultfiles>**.graphml</resultfiles>
   
-  <rundefinition name="sv-comp20">
     <option name="--compiler">clang-3.7</option>
-  </rundefinition>
 
+<rundefinition name="sv-comp20">
   <tasks name="ReachSafety-Arrays">
     <includesfile>../sv-benchmarks/c/ReachSafety-Arrays.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
@@ -135,5 +134,6 @@
     <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
     <option name="--mem">64</option>
   </tasks>
+</rundefinition>
 
 </benchmark>

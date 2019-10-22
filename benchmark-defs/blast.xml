@@ -6,8 +6,6 @@
 
   <resultfiles>**.graphml</resultfiles>
   
-  <rundefinition name="sv-comp20"></rundefinition>
-
   <option name="-alias">empty</option>
   <option name="-enable-recursion"/>
   <option name="-noprofile"/>
@@ -18,6 +16,7 @@
   <option name="-nosserr"/>
   <option name="-svcomp-witness">error-witness.graphml</option>
   
+<rundefinition name="sv-comp20">
   <tasks name="ReachSafety-Arrays">
     <includesfile>../sv-benchmarks/c/ReachSafety-Arrays.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
@@ -71,5 +70,6 @@
     <includesfile>../sv-benchmarks/c/Systems_DeviceDriversLinux64_ReachSafety.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
   </tasks>
+</rundefinition>
 
 </benchmark>

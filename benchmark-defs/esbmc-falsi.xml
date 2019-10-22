@@ -5,11 +5,10 @@
 <require cpuModel="Intel Xeon E3-1230 v5 @ 3.40 GHz" cpuCores="8"/>
 
   <resultfiles>**.graphml</resultfiles>
-  
-  <rundefinition name="sv-comp20"></rundefinition>
 
   <option name="-s">falsi</option>
 
+<rundefinition name="sv-comp20">
   <tasks name="ReachSafety-Arrays">
     <includesfile>../sv-benchmarks/c/ReachSafety-Arrays.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
@@ -117,5 +116,6 @@
     <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
     <option name="--arch">64</option>
   </tasks>
+</rundefinition>
 
 </benchmark>
