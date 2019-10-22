@@ -35,6 +35,7 @@
   <tasks name="MemSafety-TerminCrafted">
     <includesfile>../sv-benchmarks/c/MemSafety-TerminCrafted.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
+    <option name="--compiler-options=-m64"/>
   </tasks>
   <tasks name="MemSafety-MemCleanup">
     <includesfile>../sv-benchmarks/c/MemSafety-MemCleanup.set</includesfile>
