@@ -66,6 +66,9 @@
   <tasks name="MemSafety-Other">
     <includesfile>../sv-benchmarks/c/MemSafety-Other.set</includesfile>
   </tasks>
+  <tasks name="MemSafety-TerminCrafted">
+    <includesfile>../sv-benchmarks/c/MemSafety-TerminCrafted.set</includesfile>
+  </tasks>
   <tasks name="MemSafety-MemCleanup">
     <includesfile>../sv-benchmarks/c/MemSafety-MemCleanup.set</includesfile>
   </tasks>

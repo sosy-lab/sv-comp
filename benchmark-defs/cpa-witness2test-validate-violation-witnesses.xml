@@ -101,6 +101,12 @@
     <includesfile>../sv-benchmarks/c/MemSafety-Other.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
   </tasks>
+  <tasks name="MemSafety-TerminCrafted">
+    <exclude>../sv-benchmarks/c/*/*_true-valid-memsafety*</exclude>
+    <includesfile>../sv-benchmarks/c/MemSafety-TerminCrafted.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
+    <option name="-64"/>
+  </tasks>
 
   <tasks name="Systems_BusyBox_MemSafety">
     <exclude>../sv-benchmarks/c/*/*_true-valid-memsafety*</exclude>

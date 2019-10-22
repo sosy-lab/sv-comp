@@ -94,6 +94,11 @@
     <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
     <option name="--32"/>
   </tasks>
+  <tasks name="MemSafety-TerminCrafted">
+    <includesfile>../sv-benchmarks/c/MemSafety-TerminCrafted.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
+    <option name="--64"/>
+  </tasks>
   <tasks name="MemSafety-MemCleanup">
     <includesfile>../sv-benchmarks/c/MemSafety-MemCleanup.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/valid-memcleanup.prp</propertyfile>

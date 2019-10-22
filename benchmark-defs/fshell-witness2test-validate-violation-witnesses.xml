@@ -107,6 +107,12 @@
     <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
     <option name="-m32"/>
   </tasks>
+  <tasks name="MemSafety-TerminCrafted">
+    <exclude>../sv-benchmarks/c/*/*_true-valid-memsafety*</exclude>
+    <includesfile>../sv-benchmarks/c/MemSafety-TerminCrafted.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
+    <option name="-m64"/>
+  </tasks>
   <tasks name="MemSafety-MemCleanup">
     <exclude>../sv-benchmarks/c/*/*_true-valid-memcleanup*</exclude>
     <includesfile>../sv-benchmarks/c/MemSafety-MemCleanup.set</includesfile>

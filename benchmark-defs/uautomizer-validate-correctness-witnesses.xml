@@ -117,6 +117,14 @@
     <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
     <option name="--architecture">32bit</option>
   </tasks>
+  <tasks name="MemSafety-TerminCrafted">
+    <exclude>../sv-benchmarks/c/*/*_false-valid-deref*</exclude>
+    <exclude>../sv-benchmarks/c/*/*_false-valid-free*</exclude>
+    <exclude>../sv-benchmarks/c/*/*_false-valid-memtrack*</exclude>
+    <includesfile>../sv-benchmarks/c/MemSafety-TerminCrafted.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
+    <option name="--architecture">64bit</option>
+  </tasks>
   <tasks name="MemSafety-MemCleanup">
     <exclude>../sv-benchmarks/c/*/*_false-valid-memcleanup*</exclude>
     <includesfile>../sv-benchmarks/c/MemSafety-MemCleanup.set</includesfile>
