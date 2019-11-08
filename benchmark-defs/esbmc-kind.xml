@@ -55,8 +55,8 @@
     <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
   </tasks>
 
-  <tasks name="Systems_DeviceDriversLinux64_ReachSafety">
-    <includesfile>../sv-benchmarks/c/Systems_DeviceDriversLinux64_ReachSafety.set</includesfile>
+  <tasks name="SoftwareSystems-DeviceDriversLinux64-ReachSafety">
+    <includesfile>../sv-benchmarks/c/SoftwareSystems-DeviceDriversLinux64-ReachSafety.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
     <option name="--arch">64</option>
   </tasks>
@@ -89,8 +89,8 @@
     <propertyfile>../sv-benchmarks/c/properties/valid-memcleanup.prp</propertyfile>
   </tasks>
 
-  <tasks name="Systems_BusyBox_MemSafety">
-    <includesfile>../sv-benchmarks/c/Systems_BusyBox_MemSafety.set</includesfile>
+  <tasks name="SoftwareSystems-BusyBox-MemSafety">
+    <includesfile>../sv-benchmarks/c/SoftwareSystems-BusyBox-MemSafety.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
     <option name="--arch">64</option>
   </tasks>
@@ -107,8 +107,8 @@
     <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
   </tasks>
 
-  <tasks name="Systems_BusyBox_NoOverflows">
-    <includesfile>../sv-benchmarks/c/Systems_BusyBox_NoOverflows.set</includesfile>
+  <tasks name="SoftwareSystems-BusyBox-NoOverflows">
+    <includesfile>../sv-benchmarks/c/SoftwareSystems-BusyBox-NoOverflows.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
     <option name="--arch">64</option>
   </tasks>

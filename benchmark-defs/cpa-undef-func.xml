@@ -47,8 +47,8 @@
     <includesfile>../sv-benchmarks/c/ConcurrencySafety-Main.set</includesfile>
   </tasks>
 
-  <tasks name="Systems_DeviceDriversLinux64_ReachSafety">
-    <includesfile>../sv-benchmarks/c/Systems_DeviceDriversLinux64_ReachSafety.set</includesfile>
+  <tasks name="SoftwareSystems-DeviceDriversLinux64-ReachSafety">
+    <includesfile>../sv-benchmarks/c/SoftwareSystems-DeviceDriversLinux64-ReachSafety.set</includesfile>
     <option name="-64"/>
   </tasks>
 </rundefinition>
@@ -73,8 +73,8 @@
     <includesfile>../sv-benchmarks/c/MemSafety-MemCleanup.set</includesfile>
   </tasks>
 
-  <tasks name="Systems_BusyBox_MemSafety">
-    <includesfile>../sv-benchmarks/c/Systems_BusyBox_MemSafety.set</includesfile>
+  <tasks name="SoftwareSystems-BusyBox-MemSafety">
+    <includesfile>../sv-benchmarks/c/SoftwareSystems-BusyBox-MemSafety.set</includesfile>
     <option name="-64"/>
   </tasks>
 </rundefinition>
@@ -88,8 +88,8 @@
     <includesfile>../sv-benchmarks/c/NoOverflows-Other.set</includesfile>
   </tasks>
 
-  <tasks name="Systems_BusyBox_NoOverflows">
-    <includesfile>../sv-benchmarks/c/Systems_BusyBox_NoOverflows.set</includesfile>
+  <tasks name="SoftwareSystems-BusyBox-NoOverflows">
+    <includesfile>../sv-benchmarks/c/SoftwareSystems-BusyBox-NoOverflows.set</includesfile>
     <option name="-64"/>
   </tasks>
 </rundefinition>
