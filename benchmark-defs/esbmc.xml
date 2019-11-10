@@ -99,6 +99,16 @@
     <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
     <option name="--arch">64</option>
   </tasks>
+  <tasks name="SoftwareSystems-OpenBSD-MemSafety">
+    <includesfile>../sv-benchmarks/c/SoftwareSystems-OpenBSD-MemSafety.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
+    <option name="--arch">64</option>
+  </tasks>
+  <tasks name="SoftwareSystems-SQLite-MemSafety">
+    <includesfile>../sv-benchmarks/c/SoftwareSystems-SQLite-MemSafety.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
+    <option name="--arch">64</option>
+  </tasks>
 </rundefinition>
 
 <rundefinition name="sv-comp20_prop-nooverflow">
