@@ -66,6 +66,11 @@
     <option name="--clang-options=-m32"/>
   </tasks>
 
+  <tasks name="SoftwareSystems-AWS-C-Common-ReachSafety">
+    <includesfile>../sv-benchmarks/c/SoftwareSystems-AWS-C-Common-ReachSafety.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+    <option name="--clang-options=-m64"/>
+  </tasks>
   <tasks name="SoftwareSystems-DeviceDriversLinux64-ReachSafety">
     <includesfile>../sv-benchmarks/c/SoftwareSystems-DeviceDriversLinux64-ReachSafety.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
