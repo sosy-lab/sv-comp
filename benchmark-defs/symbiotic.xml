@@ -101,7 +101,6 @@
   <tasks name="MemSafety-TerminCrafted">
     <includesfile>../sv-benchmarks/c/MemSafety-TerminCrafted.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
-    <option name="--64"/>
   </tasks>
   <tasks name="MemSafety-MemCleanup">
     <includesfile>../sv-benchmarks/c/MemSafety-MemCleanup.set</includesfile>
@@ -116,12 +115,10 @@
   <tasks name="SoftwareSystems-OpenBSD-MemSafety">
     <includesfile>../sv-benchmarks/c/SoftwareSystems-OpenBSD-MemSafety.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
-    <option name="--64"/>
   </tasks>
   <tasks name="SoftwareSystems-SQLite-MemSafety">
     <includesfile>../sv-benchmarks/c/SoftwareSystems-SQLite-MemSafety.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
-    <option name="--64"/>
   </tasks>
 </rundefinition>
 
