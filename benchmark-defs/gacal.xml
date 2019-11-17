@@ -6,8 +6,6 @@
 
   <resultfiles>**.graphml</resultfiles>
   
-  <option name="--noprint"/>
-  <option name="--noinform"/>
   <option name="--witness">witness.graphml</option>
 
 <rundefinition name="sv-comp20_prop-reachsafety">
