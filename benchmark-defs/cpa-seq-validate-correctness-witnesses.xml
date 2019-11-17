@@ -8,6 +8,7 @@
 
   <option name="-witnessValidation"/>
   <option name="-setprop">witness.checkProgramHash=false</option>
+  <option name="-setprop">witness.noViolationValidation=true</option>
   <option name="-heap">5000m</option>
   <option name="-benchmark"/>
   <option name="-setprop">cpa.predicate.memoryAllocationsAlwaysSucceed=true</option>
