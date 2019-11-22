@@ -123,6 +123,7 @@
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</requiredfiles>
   <option name="-metavalWitness">../../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</option>
   <option name="-metaval">ultimateautomizer</option>
+  <option name="--metavalAdditionalPATH">/usr/lib/jvm/java-8-openjdk-amd64/bin</option>
 
   <tasks name="NoOverflows-BitVectors">
     <includesfile>../sv-benchmarks/c/NoOverflows-BitVectors.set</includesfile>
@@ -145,6 +146,7 @@
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</requiredfiles>
   <option name="-metavalWitness">../../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</option>
   <option name="-metaval">ultimateautomizer</option>
+  <option name="--metavalAdditionalPATH">/usr/lib/jvm/java-8-openjdk-amd64/bin</option>
 
   <tasks name="Termination-MainControlFlow">
     <includesfile>../sv-benchmarks/c/Termination-MainControlFlow.set</includesfile>
