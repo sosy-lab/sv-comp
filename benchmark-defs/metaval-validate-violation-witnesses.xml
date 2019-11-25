@@ -5,12 +5,12 @@
 <require cpuModel="Intel Xeon E3-1230 v5 @ 3.40 GHz" cpuCores="2"/>
 
   <resultfiles>**.graphml</resultfiles>
+  <option name="--metavalWitnessType">violation_witness</option>
 
 <rundefinition name="sv-comp20_prop-reachsafety">
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</requiredfiles>
   <option name="--metavalWitness">../../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</option>
   <option name="--metaval">cpachecker</option>
-  <option name="--metavalWitnessType">violation_witness</option>
 
 
   <tasks name="ReachSafety-Arrays">
