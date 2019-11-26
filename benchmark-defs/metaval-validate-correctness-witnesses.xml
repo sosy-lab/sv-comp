@@ -6,7 +6,6 @@
 
   <resultfiles>**.graphml</resultfiles>
   <option name="--metaval">cpachecker</option>
-  <option name="--metavalWitnessType">correctness_witness</option>
 
 <rundefinition name="sv-comp20_prop-reachsafety">
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</requiredfiles>

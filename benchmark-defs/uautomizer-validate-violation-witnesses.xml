@@ -6,7 +6,6 @@
 
   <resultfiles>**.graphml</resultfiles>
 
-  <option name="--witness-type">violation_witness</option>
   <option name="--full-output"/>
 
 <rundefinition name="sv-comp20_prop-reachsafety">

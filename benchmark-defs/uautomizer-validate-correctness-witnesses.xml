@@ -4,7 +4,6 @@
 
 <require cpuModel="Intel Xeon E3-1230 v5 @ 3.40 GHz" cpuCores="2"/>
 
-  <option name="--witness-type">correctness_witness</option>
   <resultfiles>**.graphml</resultfiles>
 
   <option name="--full-output"/>
