@@ -73,8 +73,8 @@
 
 <rundefinition name="sv-comp20_prop-memsafety">
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</requiredfiles>
-  <option name="-metavalWitness">../../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</option>
-  <option name="-metaval">symbiotic</option>
+  <option name="--metavalWitness">../../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</option>
+  <option name="--metaval">symbiotic</option>
 
   <tasks name="MemSafety-Arrays">
     <includesfile>../sv-benchmarks/c/MemSafety-Arrays.set</includesfile>
@@ -121,8 +121,8 @@
 
 <rundefinition name="sv-comp20_prop-nooverflow">
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</requiredfiles>
-  <option name="-metavalWitness">../../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</option>
-  <option name="-metaval">ultimateautomizer</option>
+  <option name="--metavalWitness">../../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</option>
+  <option name="--metaval">ultimateautomizer</option>
   <option name="--metavalAdditionalPATH">/usr/lib/jvm/java-8-openjdk-amd64/bin</option>
 
   <tasks name="NoOverflows-BitVectors">
@@ -144,8 +144,8 @@
 
 <rundefinition name="sv-comp20_prop-termination">
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</requiredfiles>
-  <option name="-metavalWitness">../../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</option>
-  <option name="-metaval">ultimateautomizer</option>
+  <option name="--metavalWitness">../../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</option>
+  <option name="--metaval">ultimateautomizer</option>
   <option name="--metavalAdditionalPATH">/usr/lib/jvm/java-8-openjdk-amd64/bin</option>
 
   <tasks name="Termination-MainControlFlow">
