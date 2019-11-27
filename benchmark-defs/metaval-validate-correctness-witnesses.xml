@@ -9,7 +9,7 @@
 <rundefinition name="sv-comp20_prop-reachsafety">
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</requiredfiles>
   <option name="--metavalWitness">../../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</option>
-  <option name="--metaval">cpachecker</option>
+  <option name="--metavalVerifierBackend">cpachecker</option>
 
   <tasks name="ReachSafety-Arrays">
     <includesfile>../sv-benchmarks/c/ReachSafety-Arrays.set</includesfile>
