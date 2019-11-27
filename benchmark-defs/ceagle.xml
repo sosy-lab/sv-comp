@@ -149,11 +149,6 @@
     <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
     <option name="--mem">64</option>
   </tasks>
-  <tasks name="SoftwareSystems-SQLite-MemSafety">
-    <includesfile>../sv-benchmarks/c/SoftwareSystems-SQLite-MemSafety.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
-    <option name="--mem">64</option>
-  </tasks>
 </rundefinition>
 
 </benchmark>
