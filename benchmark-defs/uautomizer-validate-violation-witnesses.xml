@@ -120,11 +120,6 @@
     <propertyfile expectedverdict="false">../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
     <option name="--architecture">64bit</option>
   </tasks>
-  <tasks name="SoftwareSystems-SQLite-MemSafety">
-    <includesfile>../sv-benchmarks/c/SoftwareSystems-SQLite-MemSafety.set</includesfile>
-    <propertyfile expectedverdict="false">../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
-    <option name="--architecture">64bit</option>
-  </tasks>
 </rundefinition>
 
 <rundefinition name="sv-comp20_prop-nooverflow">
