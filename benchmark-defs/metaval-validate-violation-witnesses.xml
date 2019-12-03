@@ -10,7 +10,10 @@
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</requiredfiles>
   <option name="--metavalWitness">../../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</option>
   <option name="--metavalVerifierBackend">cpachecker</option>
-
+  <option name="-svcomp19"/>
+  <option name="-heap">10000M</option>
+  <option name="-benchmark"/>
+  <option name="-timelimit">900 s</option>
 
   <tasks name="ReachSafety-Arrays">
     <includesfile>../sv-benchmarks/c/ReachSafety-Arrays.set</includesfile>
@@ -74,42 +77,45 @@
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</requiredfiles>
   <option name="--metavalWitness">../../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</option>
   <option name="--metavalVerifierBackend">symbiotic</option>
+  <option name="--sv-comp"/>
 
   <tasks name="MemSafety-Arrays">
     <includesfile>../sv-benchmarks/c/MemSafety-Arrays.set</includesfile>
     <propertyfile expectedverdict="false">../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
+    <option name="--32"/>
   </tasks>
   <tasks name="MemSafety-Heap">
     <includesfile>../sv-benchmarks/c/MemSafety-Heap.set</includesfile>
     <propertyfile expectedverdict="false">../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
+    <option name="--32"/>
   </tasks>
   <tasks name="MemSafety-LinkedLists">
     <includesfile>../sv-benchmarks/c/MemSafety-LinkedLists.set</includesfile>
     <propertyfile expectedverdict="false">../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
+    <option name="--32"/>
   </tasks>
   <tasks name="MemSafety-Other">
     <includesfile>../sv-benchmarks/c/MemSafety-Other.set</includesfile>
     <propertyfile expectedverdict="false">../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
+    <option name="--32"/>
   </tasks>
   <tasks name="MemSafety-TerminCrafted">
     <includesfile>../sv-benchmarks/c/MemSafety-TerminCrafted.set</includesfile>
     <propertyfile expectedverdict="false">../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
-    <option name="-64"/>
   </tasks>
   <tasks name="MemSafety-MemCleanup">
     <includesfile>../sv-benchmarks/c/MemSafety-MemCleanup.set</includesfile>
     <propertyfile expectedverdict="false">../sv-benchmarks/c/properties/valid-memcleanup.prp</propertyfile>
+    <option name="--32"/>
   </tasks>
 
   <tasks name="SoftwareSystems-BusyBox-MemSafety">
     <includesfile>../sv-benchmarks/c/SoftwareSystems-BusyBox-MemSafety.set</includesfile>
     <propertyfile expectedverdict="false">../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
-    <option name="-64"/>
   </tasks>
   <tasks name="SoftwareSystems-OpenBSD-MemSafety">
     <includesfile>../sv-benchmarks/c/SoftwareSystems-OpenBSD-MemSafety.set</includesfile>
     <propertyfile expectedverdict="false">../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
-    <option name="-64"/>
   </tasks>
 </rundefinition>
 
@@ -118,21 +124,23 @@
   <option name="--metavalWitness">../../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</option>
   <option name="--metavalVerifierBackend">ultimateautomizer</option>
   <option name="--metavalAdditionalPATH">/usr/lib/jvm/java-8-openjdk-amd64/bin</option>
+  <option name="--full-output"/>
 
   <tasks name="NoOverflows-BitVectors">
     <includesfile>../sv-benchmarks/c/NoOverflows-BitVectors.set</includesfile>
     <propertyfile expectedverdict="false">../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
-    <option name="-64"/>
+    <option name="--architecture">64bit</option>
   </tasks>
   <tasks name="NoOverflows-Other">
     <includesfile>../sv-benchmarks/c/NoOverflows-Other.set</includesfile>
     <propertyfile expectedverdict="false">../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
+    <option name="--architecture">32bit</option>
   </tasks>
 
   <tasks name="SoftwareSystems-BusyBox-NoOverflows">
     <includesfile>../sv-benchmarks/c/SoftwareSystems-BusyBox-NoOverflows.set</includesfile>
     <propertyfile expectedverdict="false">../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
-    <option name="-64"/>
+    <option name="--architecture">64bit</option>
   </tasks>
 </rundefinition>
 
@@ -141,20 +149,22 @@
   <option name="--metavalWitness">../../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</option>
   <option name="--metavalVerifierBackend">ultimateautomizer</option>
   <option name="--metavalAdditionalPATH">/usr/lib/jvm/java-8-openjdk-amd64/bin</option>
+  <option name="--full-output"/>
 
   <tasks name="Termination-MainControlFlow">
     <includesfile>../sv-benchmarks/c/Termination-MainControlFlow.set</includesfile>
     <propertyfile expectedverdict="false">../sv-benchmarks/c/properties/termination.prp</propertyfile>
-    <option name="-64"/>
+    <option name="--architecture">64bit</option>
   </tasks>
   <tasks name="Termination-MainHeap">
     <includesfile>../sv-benchmarks/c/Termination-MainHeap.set</includesfile>
     <propertyfile expectedverdict="false">../sv-benchmarks/c/properties/termination.prp</propertyfile>
-    <option name="-64"/>
+    <option name="--architecture">64bit</option>
   </tasks>
   <tasks name="Termination-Other">
     <includesfile>../sv-benchmarks/c/Termination-Other.set</includesfile>
     <propertyfile expectedverdict="false">../sv-benchmarks/c/properties/termination.prp</propertyfile>
+    <option name="--architecture">32bit</option>
   </tasks>
 </rundefinition>
 
