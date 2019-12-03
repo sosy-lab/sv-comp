@@ -10,6 +10,10 @@
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</requiredfiles>
   <option name="--metavalWitness">../../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</option>
   <option name="--metavalVerifierBackend">cpachecker</option>
+  <option name="-svcomp19"/>
+  <option name="-heap">10000M</option>
+  <option name="-benchmark"/>
+  <option name="-timelimit">900 s</option>
 
   <tasks name="ReachSafety-Arrays">
     <includesfile>../sv-benchmarks/c/ReachSafety-Arrays.set</includesfile>
