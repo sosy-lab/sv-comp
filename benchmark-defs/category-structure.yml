@@ -1,0 +1,358 @@
+competition: sv-comp20
+
+verifiers:
+  - 2ls
+  - brick
+  - cbmc
+  - cpa-bam-bnb
+  - cpa-seq
+  - cpa-lockator
+  - dartagnan
+  - divine
+  - esbmc
+  - gacal
+  - lazycseq
+  - map2check
+  - pesco
+  - pinaka
+  - predatorhp
+  - symbiotic
+  - uautomizer
+  - ukojak
+  - utaipan
+  - veriabs
+  - verifuzz
+  - yogar-cbmc
+  - coastal
+  - java-ranger
+  - jayhorn
+  - jbmc
+  - jdart
+  - spf
+
+categories:
+  ReachSafety:
+    categories:
+      - ReachSafety-Arrays
+      - ReachSafety-BitVectors
+      - ReachSafety-ControlFlow
+      - ReachSafety-ECA
+      - ReachSafety-Floats
+      - ReachSafety-Heap
+      - ReachSafety-Loops
+      - ReachSafety-ProductLines
+      - ReachSafety-Recursive
+      - ReachSafety-Sequentialized
+    verifiers:
+      - 2ls
+      - brick
+      - cbmc
+      - cpa-seq
+      - divine
+      - esbmc
+      - gacal
+      - map2check
+      - pesco
+      - pinaka
+      - predatorhp
+      - symbiotic
+      - uautomizer
+      - ukojak
+      - utaipan
+      - veriabs
+      - verifuzz
+    validators:
+      - cpa-seq-correctness
+      - cpa-seq-violation
+      - cpa-witness2test-violation
+      - fshell-witness2test-violation
+      - nitwit-violation
+      - uautomizer-correctness
+      - uautomizer-violation
+      - veriabs-correctness
+      - veriabs-violation
+      - metaval-violation
+      - metaval-correctness
+
+  MemSafety:
+    categories:
+      - MemSafety-Arrays
+      - MemSafety-Heap
+      - MemSafety-LinkedLists
+      - MemSafety-Other
+      - MemSafety-TerminCrafted
+      - MemSafety-MemCleanup
+    verifiers:
+      - 2ls
+      - cbmc
+      - cpa-seq
+      - divine
+      - esbmc
+      - map2check
+      - pesco
+      - predatorhp
+      - symbiotic
+      - uautomizer
+      - ukojak
+      - utaipan
+      - veriabs
+    validators:
+      - cpa-seq-violation
+      - cpa-witness2test-violation
+      - fshell-witness2test-violation
+      - uautomizer-correctness
+      - uautomizer-violation
+      - metaval-violation
+      - metaval-correctness
+
+  ConcurrencySafety:
+    categories:
+      - ConcurrencySafety-Main
+    verifiers:
+      - 2ls
+      - cbmc
+      - cpa-seq
+      - cpa-lockator
+      - dartagnan
+      - divine
+      - esbmc
+      - lazycseq
+      - pesco
+      - symbiotic
+      - uautomizer
+      - ukojak
+      - utaipan
+      - veriabs
+      - yogar-cbmc
+
+  NoOverflows:
+    categories:
+      - NoOverflows-BitVectors
+      - NoOverflows-Other
+    verifiers:
+      - 2ls
+      - cbmc
+      - cpa-seq
+      - divine
+      - esbmc
+      - map2check
+      - pesco
+      - pinaka
+      - symbiotic
+      - uautomizer
+      - ukojak
+      - utaipan
+      - veriabs
+      - verifuzz
+    validators:
+      - cpa-seq-violation
+      - cpa-witness2test-violation
+      - fshell-witness2test-violation
+      - uautomizer-correctness
+      - uautomizer-violation
+      - metaval-violation
+      - metaval-correctness
+
+  Termination:
+    categories:
+      - Termination-MainControlFlow
+      - Termination-MainHeap
+      - Termination-Other
+    verifiers:
+      - 2ls
+      - cbmc
+      - cpa-seq
+      - divine
+      - esbmc
+      - pesco
+      - pinaka
+      - symbiotic
+      - uautomizer
+      - ukojak
+      - utaipan
+      - veriabs
+    validators:
+      - cpa-seq-violation
+      - uautomizer-violation
+      - metaval-violation
+
+  SoftwareSystems:
+    categories:
+      - SoftwareSystems-AWS-C-Common-ReachSafety
+      - SoftwareSystems-BusyBox-MemSafety
+      - SoftwareSystems-BusyBox-NoOverflows
+      - SoftwareSystems-DeviceDriversLinux64-ReachSafety
+      - SoftwareSystems-OpenBSD-MemSafety
+    verifiers:
+      - 2ls
+      - cbmc
+      - cpa-bam-bnb
+      - cpa-seq
+      - divine
+      - esbmc
+      - pesco
+      - symbiotic
+      - uautomizer
+      - ukojak
+      - utaipan
+      - veriabs
+    validators:
+      - cpa-seq-correctness
+      - cpa-seq-violation
+      - cpa-witness2test-violation
+      - fshell-witness2test-violation
+      - uautomizer-correctness
+      - uautomizer-violation
+      - metaval-violation
+      - metaval-correctness
+
+  Overall:
+    categories:
+      - ReachSafety
+      - MemSafety
+      - ConcurrencySafety
+      - NoOverflows
+      - Termination
+      - SoftwareSystems
+    verifiers:
+      - 2ls
+      - cbmc
+      - cpa-seq
+      - divine
+      - esbmc
+      - pesco
+      - pinaka
+      - symbiotic
+      - uautomizer
+      - ukojak
+      - utaipan
+      - veriabs
+
+  FalsificationOverall:
+    categories:
+      - ReachSafety
+      - MemSafety
+      - ConcurrencySafety
+      - NoOverflows
+      - SoftwareSystems
+    verifiers:
+      - 2ls
+      - cbmc
+      - cpa-seq
+      - divine
+      - esbmc
+      - pesco
+      - pinaka
+      - symbiotic
+      - uautomizer
+      - ukojak
+      - utaipan
+      - veriabs
+
+  JavaOverall:
+    categories:
+      - ReachSafety-Java
+    verifiers:
+      - coastal
+      - java-ranger
+      - jayhorn
+      - jbmc
+      - jdart
+      - spf
+
+categories_process_order:
+  - ReachSafety-Arrays
+  - ReachSafety-BitVectors
+  - ReachSafety-ControlFlow
+  - ReachSafety-ECA
+  - ReachSafety-Floats
+  - ReachSafety-Heap
+  - ReachSafety-Loops
+  - ReachSafety-ProductLines
+  - ReachSafety-Recursive
+  - ReachSafety-Sequentialized
+  - ReachSafety
+  - MemSafety-Arrays
+  - MemSafety-Heap
+  - MemSafety-LinkedLists
+  - MemSafety-Other
+  - MemSafety-TerminCrafted
+  - MemSafety-MemCleanup
+  - MemSafety
+  - ConcurrencySafety-Main
+  - ConcurrencySafety
+  - NoOverflows-BitVectors
+  - NoOverflows-Other
+  - NoOverflows
+  - Termination-MainControlFlow
+  - Termination-MainHeap
+  - Termination-Other
+  - Termination
+  - SoftwareSystems-BusyBox-MemSafety
+  - SoftwareSystems-BusyBox-NoOverflows
+  - SoftwareSystems-DeviceDriversLinux64-ReachSafety
+  - SoftwareSystems-OpenBSD-MemSafety
+  - SoftwareSystems
+  - FalsificationOverall
+  - Overall
+  - ReachSafety-Java
+  - JavaOverall
+
+categories_table_order:
+  - ReachSafety
+  - ReachSafety-Arrays
+  - ReachSafety-BitVectors
+  - ReachSafety-ControlFlow
+  - ReachSafety-ECA
+  - ReachSafety-Floats
+  - ReachSafety-Heap
+  - ReachSafety-Loops
+  - ReachSafety-ProductLines
+  - ReachSafety-Recursive
+  - ReachSafety-Sequentialized
+  - MemSafety
+  - MemSafety-Arrays
+  - MemSafety-Heap
+  - MemSafety-LinkedLists
+  - MemSafety-Other
+  - MemSafety-TerminCrafted
+  - MemSafety-MemCleanup
+  - ConcurrencySafety
+  - ConcurrencySafety-Main
+  - NoOverflows
+  - NoOverflows-BitVectors
+  - NoOverflows-Other
+  - Termination
+  - Termination-MainControlFlow
+  - Termination-MainHeap
+  - Termination-Other
+  - SoftwareSystems
+  - SoftwareSystems-BusyBox-MemSafety
+  - SoftwareSystems-BusyBox-NoOverflows
+  - SoftwareSystems-DeviceDriversLinux64-ReachSafety
+  - SoftwareSystems-OpenBSD-MemSafety
+  - FalsificationOverall
+  - Overall
+  - JavaOverall
+  - ReachSafety-Java
+
+opt_out:
+  pesco:
+    - MemSafety
+    - ConcurrencySafety
+    - NoOverflows
+    - Termination
+    - SoftwareSystems
+  brick:
+    - ReachSafety
+  gacal:
+    - ReachSafety
+  map2check:
+    - ReachSafety
+  pinaka:
+    - FalsificationOverall
+    - Overall
+  predatorhp:
+    - ReachSafety
+
+opt_in: 
