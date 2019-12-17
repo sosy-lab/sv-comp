@@ -288,6 +288,7 @@ categories_process_order:
   - Termination-MainHeap
   - Termination-Other
   - Termination
+  - SoftwareSystems-AWS-C-Common-ReachSafety
   - SoftwareSystems-BusyBox-MemSafety
   - SoftwareSystems-BusyBox-NoOverflows
   - SoftwareSystems-DeviceDriversLinux64-ReachSafety
@@ -327,6 +328,7 @@ categories_table_order:
   - Termination-MainHeap
   - Termination-Other
   - SoftwareSystems
+  - SoftwareSystems-AWS-C-Common-ReachSafety
   - SoftwareSystems-BusyBox-MemSafety
   - SoftwareSystems-BusyBox-NoOverflows
   - SoftwareSystems-DeviceDriversLinux64-ReachSafety
