@@ -69,8 +69,6 @@ categories:
       - nitwit-violation
       - uautomizer-correctness
       - uautomizer-violation
-      - veriabs-correctness
-      - veriabs-violation
       - metaval-violation
       - metaval-correctness
 
