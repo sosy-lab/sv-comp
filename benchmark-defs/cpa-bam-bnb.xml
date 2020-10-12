@@ -6,7 +6,7 @@
 
   <resultfiles>**.graphml</resultfiles>
   
-  <option name="-svcomp19-bam-bnb"/>
+  <option name="-svcomp21-bam-bnb"/>
   <option name="-disable-java-assertions"/>
   <option name="-heap">10000m</option>
 
