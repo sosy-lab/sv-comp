@@ -9,7 +9,7 @@
   <!-- No options, the starter script handles everything. The only possible option would be the output flag, without that the witnesses and test harnesses are generated into the working directory -->
 
   <!-- ReachSafety only and opting out from sub-categories Sequentialized, Heaps, Arrays -->
-<rundefinition name="sv-comp20_prop-reachsafety">
+<rundefinition name="sv-comp21_prop-reachsafety">
   <tasks name="ReachSafety-BitVectors">
     <includesfile>../sv-benchmarks/c/ReachSafety-BitVectors.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
