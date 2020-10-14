@@ -13,6 +13,7 @@ that has mostly the same packages installed as the competition machines:
 - Docker image: `registry.gitlab.com/sosy-lab/sv-comp/archives-2020/user:latest`
 - Test if the tool works with the installation:
   - Unzip tool archive to temporary directory `<TOOL>` (`<TOOL>` must be an absolute path)
+  - `docker pull registry.gitlab.com/sosy-lab/sv-comp/archives-2020/user:latest`
   - `docker run --rm -i -t --volume=<TOOL>:/tool --workdir=/tool registry.gitlab.com/sosy-lab/sv-comp/archives-2020/user:latest bash`
   - Start tool
 

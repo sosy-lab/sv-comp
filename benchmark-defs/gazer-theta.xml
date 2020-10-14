@@ -1,16 +1,15 @@
 <?xml version="1.0"?>
 <!DOCTYPE benchmark PUBLIC "+//IDN sosy-lab.org//DTD BenchExec benchmark 1.9//EN" "https://www.sosy-lab.org/benchexec/benchmark-1.9.dtd">
-<benchmark tool="veriabs" timelimit="15 min" memlimit="15 GB" cpuCores="8">
+<benchmark tool="gazer-theta" timelimit="15 min" hardtimelimit="16 min" memlimit="15 GB" cpuCores="8">
 
 <require cpuModel="Intel Xeon E3-1230 v5 @ 3.40 GHz" cpuCores="8"/>
 
   <resultfiles>**.graphml</resultfiles>
-  
-<rundefinition name="sv-comp20_prop-reachsafety">
-  <tasks name="ReachSafety-Arrays">
-    <includesfile>../sv-benchmarks/c/ReachSafety-Arrays.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
-  </tasks>
+
+  <!-- No options, the starter script handles everything. The only possible option would be the output flag, without that the witnesses and test harnesses are generated into the working directory -->
+
+  <!-- ReachSafety only and opting out from sub-categories Sequentialized, Heaps, Arrays -->
+<rundefinition name="sv-comp21_prop-reachsafety">
   <tasks name="ReachSafety-BitVectors">
     <includesfile>../sv-benchmarks/c/ReachSafety-BitVectors.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
@@ -27,10 +26,6 @@
     <includesfile>../sv-benchmarks/c/ReachSafety-Floats.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
   </tasks>
-  <tasks name="ReachSafety-Heap">
-    <includesfile>../sv-benchmarks/c/ReachSafety-Heap.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
-  </tasks>
   <tasks name="ReachSafety-Loops">
     <includesfile>../sv-benchmarks/c/ReachSafety-Loops.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
@@ -43,14 +38,6 @@
     <includesfile>../sv-benchmarks/c/ReachSafety-Recursive.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
   </tasks>
-  <tasks name="ReachSafety-Sequentialized">
-    <includesfile>../sv-benchmarks/c/ReachSafety-Sequentialized.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
-  </tasks>
-  <tasks name="ReachSafety-XCSP">
-    <includesfile>../sv-benchmarks/c/ReachSafety-XCSP.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
-  </tasks>
 </rundefinition>
-  
+
 </benchmark>

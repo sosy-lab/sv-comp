@@ -1,15 +1,15 @@
-<!DOCTYPE benchmark PUBLIC "+//IDN sosy-lab.org//DTD BenchExec benchmark 1.9//EN" "http://www.sosy-lab.org/benchexec/benchmark-1.9.dtd">
+<!DOCTYPE benchmark PUBLIC "+//IDN sosy-lab.org//DTD BenchExec benchmark 1.9//EN" "https://www.sosy-lab.org/benchexec/benchmark-1.9.dtd">
 <benchmark tool="consequence" timelimit="15 min" hardtimelimit="16 min" memlimit="15 GB" cpuCores="8">
 
 <require cpuModel="Intel Xeon E3-1230 v5 @ 3.40 GHz" cpuCores="8"/>
 
   <resultfiles>**.graphml</resultfiles>
 
-  <rundefinition name="sv-comp20"></rundefinition>
-
+<rundefinition name="sv-comp20">
   <tasks name="ConcurrencySafety-Main">
     <includesfile>../sv-benchmarks/c/ConcurrencySafety-Main.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
   </tasks>
+</rundefinition>
 
 </benchmark>

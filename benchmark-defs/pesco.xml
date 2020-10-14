@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<!DOCTYPE benchmark PUBLIC "+//IDN sosy-lab.org//DTD BenchExec benchmark 1.9//EN" "http://www.sosy-lab.org/benchexec/benchmark-1.9.dtd">
+<!DOCTYPE benchmark PUBLIC "+//IDN sosy-lab.org//DTD BenchExec benchmark 1.9//EN" "https://www.sosy-lab.org/benchexec/benchmark-1.9.dtd">
 <benchmark tool="pesco" timelimit="15 min" hardtimelimit="16 min" memlimit="15 GB" cpuCores="8">
 
 <require cpuModel="Intel Xeon E3-1230 v5 @ 3.40 GHz" cpuCores="8"/>
@@ -59,8 +59,13 @@
     <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
   </tasks>
 
-  <tasks name="Systems_DeviceDriversLinux64_ReachSafety">
-    <includesfile>../sv-benchmarks/c/Systems_DeviceDriversLinux64_ReachSafety.set</includesfile>
+  <tasks name="SoftwareSystems-AWS-C-Common-ReachSafety">
+    <includesfile>../sv-benchmarks/c/SoftwareSystems-AWS-C-Common-ReachSafety.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+    <option name="-64"/>
+  </tasks>
+  <tasks name="SoftwareSystems-DeviceDriversLinux64-ReachSafety">
+    <includesfile>../sv-benchmarks/c/SoftwareSystems-DeviceDriversLinux64-ReachSafety.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
     <option name="-64"/>
   </tasks>
@@ -83,13 +88,23 @@
     <includesfile>../sv-benchmarks/c/MemSafety-Other.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
   </tasks>
+  <tasks name="MemSafety-TerminCrafted">
+    <includesfile>../sv-benchmarks/c/MemSafety-TerminCrafted.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
+    <option name="-64"/>
+  </tasks>
   <tasks name="MemSafety-MemCleanup">
     <includesfile>../sv-benchmarks/c/MemSafety-MemCleanup.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/valid-memcleanup.prp</propertyfile>
   </tasks>
 
-  <tasks name="Systems_BusyBox_MemSafety">
-    <includesfile>../sv-benchmarks/c/Systems_BusyBox_MemSafety.set</includesfile>
+  <tasks name="SoftwareSystems-BusyBox-MemSafety">
+    <includesfile>../sv-benchmarks/c/SoftwareSystems-BusyBox-MemSafety.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
+    <option name="-64"/>
+  </tasks>
+  <tasks name="SoftwareSystems-OpenBSD-MemSafety">
+    <includesfile>../sv-benchmarks/c/SoftwareSystems-OpenBSD-MemSafety.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
     <option name="-64"/>
   </tasks>
@@ -106,8 +121,8 @@
     <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
   </tasks>
 
-  <tasks name="Systems_BusyBox_NoOverflows">
-    <includesfile>../sv-benchmarks/c/Systems_BusyBox_NoOverflows.set</includesfile>
+  <tasks name="SoftwareSystems-BusyBox-NoOverflows">
+    <includesfile>../sv-benchmarks/c/SoftwareSystems-BusyBox-NoOverflows.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
     <option name="-64"/>
   </tasks>

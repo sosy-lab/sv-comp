@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!DOCTYPE benchmark PUBLIC "+//IDN sosy-lab.org//DTD BenchExec benchmark 1.4//EN"
-        "http://www.sosy-lab.org/benchexec/benchmark-1.4.dtd">
+        "https://www.sosy-lab.org/benchexec/benchmark-1.4.dtd">
 <benchmark tool="nitwit" timelimit="90 s" hardtimelimit="96 s" memlimit="7 GB" cpuCores="2">
 
     <require cpuModel="Intel Xeon E3-1230 v5 @ 3.40 GHz" cpuCores="2"/>
@@ -9,57 +9,48 @@
 
     <rundefinition name="sv-comp20_prop-reachsafety">
         <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</requiredfiles>
-        <option name="">../../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</option>
+        <option name="-w">../../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</option>
+        <!-- <option name="-rf">output/refined.witness.graphml</option> -->
 
         <tasks name="ReachSafety-Arrays">
-            <exclude>../sv-benchmarks/c/*/*_true-unreach-call*</exclude>
             <includesfile>../sv-benchmarks/c/ReachSafety-Arrays.set</includesfile>
-            <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+            <propertyfile expectedverdict="false">../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
         </tasks>
         <tasks name="ReachSafety-BitVectors">
-            <exclude>../sv-benchmarks/c/*/*_true-unreach-call*</exclude>
             <includesfile>../sv-benchmarks/c/ReachSafety-BitVectors.set</includesfile>
-            <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+            <propertyfile expectedverdict="false">../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
         </tasks>
         <tasks name="ReachSafety-ControlFlow">
-            <exclude>../sv-benchmarks/c/*/*_true-unreach-call*</exclude>
             <includesfile>../sv-benchmarks/c/ReachSafety-ControlFlow.set</includesfile>
-            <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+            <propertyfile expectedverdict="false">../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
         </tasks>
         <tasks name="ReachSafety-ECA">
-            <exclude>../sv-benchmarks/c/*/*_true-unreach-call*</exclude>
             <includesfile>../sv-benchmarks/c/ReachSafety-ECA.set</includesfile>
-            <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+            <propertyfile expectedverdict="false">../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
         </tasks>
         <tasks name="ReachSafety-Floats">
-            <exclude>../sv-benchmarks/c/*/*_true-unreach-call*</exclude>
             <includesfile>../sv-benchmarks/c/ReachSafety-Floats.set</includesfile>
-            <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+            <propertyfile expectedverdict="false">../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
         </tasks>
         <tasks name="ReachSafety-Heap">
-            <exclude>../sv-benchmarks/c/*/*_true-unreach-call*</exclude>
             <includesfile>../sv-benchmarks/c/ReachSafety-Heap.set</includesfile>
-            <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+            <propertyfile expectedverdict="false">../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
         </tasks>
         <tasks name="ReachSafety-Loops">
-            <exclude>../sv-benchmarks/c/*/*_true-unreach-call*</exclude>
             <includesfile>../sv-benchmarks/c/ReachSafety-Loops.set</includesfile>
-            <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+            <propertyfile expectedverdict="false">../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
         </tasks>
         <tasks name="ReachSafety-ProductLines">
-            <exclude>../sv-benchmarks/c/*/*_true-unreach-call*</exclude>
             <includesfile>../sv-benchmarks/c/ReachSafety-ProductLines.set</includesfile>
-            <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+            <propertyfile expectedverdict="false">../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
         </tasks>
         <tasks name="ReachSafety-Recursive">
-            <exclude>../sv-benchmarks/c/*/*_true-unreach-call*</exclude>
             <includesfile>../sv-benchmarks/c/ReachSafety-Recursive.set</includesfile>
-            <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+            <propertyfile expectedverdict="false">../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
         </tasks>
         <tasks name="ReachSafety-Sequentialized">
-            <exclude>../sv-benchmarks/c/*/*_true-unreach-call*</exclude>
             <includesfile>../sv-benchmarks/c/ReachSafety-Sequentialized.set</includesfile>
-            <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+            <propertyfile expectedverdict="false">../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
         </tasks>
     </rundefinition>
 
