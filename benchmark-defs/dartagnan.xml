@@ -51,5 +51,6 @@
     <option name="-incrementalSolver"></option>
     <option name="-w"></option>
     <option name="-i"></option>
-  </tasks></rundefinition>
+  </tasks>
+</rundefinition>
 </benchmark>
