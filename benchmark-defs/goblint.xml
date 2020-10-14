@@ -70,4 +70,11 @@
   </tasks>
 </rundefinition>
 
+<rundefinition name="sv-comp21_prop-nodatarace">
+  <tasks name="NoDataRace-Main">
+    <includesfile>../sv-benchmarks/c/NoDataRace-Main.set</includesfile>
+    <propertyfile>../sv-benchmarks/c/properties/no-data-race.prp</propertyfile>
+  </tasks>
+</rundefinition>
+
 </benchmark>
