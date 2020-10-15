@@ -6,7 +6,7 @@
 
   <resultfiles>**.graphml</resultfiles>
 
-  <option name="-svcomp19-lockator"/>
+  <option name="-svcomp21-lockator"/>
   <option name="-disable-java-assertions"/>
   <option name="-heap">12000m</option>
 
