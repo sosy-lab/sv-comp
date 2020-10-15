@@ -47,7 +47,7 @@
     <includesfile>../sv-benchmarks/c/NoDataRace-Main.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/no-data-race.prp</propertyfile>
     <option name="-cat">cat/svcomp.cat</option>
-    <option name="-races"></option>
+    <option name="-analysis">races</option>
     <option name="-incrementalSolver"></option>
     <option name="-w"></option>
     <option name="-i"></option>
