@@ -23,7 +23,6 @@ that has mostly the same packages installed as the competition machines:
 --container
 --read-only-dir /
 --hidden-dir /home
---overlay-dir /etc
 --hidden-dir /var/lib/cloudy # environment-specific
 --set-cgroup-value pids.max=5000
 --output-directory <work-dir>
