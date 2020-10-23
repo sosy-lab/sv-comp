@@ -79,22 +79,18 @@
   <tasks name="MemSafety-Arrays">
     <includesfile>../sv-benchmarks/c/MemSafety-Arrays.set</includesfile>
     <propertyfile expectedverdict="false">../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
-    <option name="--32"/>
   </tasks>
   <tasks name="MemSafety-Heap">
     <includesfile>../sv-benchmarks/c/MemSafety-Heap.set</includesfile>
     <propertyfile expectedverdict="false">../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
-    <option name="--32"/>
   </tasks>
   <tasks name="MemSafety-LinkedLists">
     <includesfile>../sv-benchmarks/c/MemSafety-LinkedLists.set</includesfile>
     <propertyfile expectedverdict="false">../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
-    <option name="--32"/>
   </tasks>
   <tasks name="MemSafety-Other">
     <includesfile>../sv-benchmarks/c/MemSafety-Other.set</includesfile>
     <propertyfile expectedverdict="false">../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
-    <option name="--32"/>
   </tasks>
   <tasks name="MemSafety-TerminCrafted">
     <includesfile>../sv-benchmarks/c/MemSafety-TerminCrafted.set</includesfile>
@@ -103,7 +99,6 @@
   <tasks name="MemSafety-MemCleanup">
     <includesfile>../sv-benchmarks/c/MemSafety-MemCleanup.set</includesfile>
     <propertyfile expectedverdict="false">../sv-benchmarks/c/properties/valid-memcleanup.prp</propertyfile>
-    <option name="--32"/>
   </tasks>
 
   <tasks name="SoftwareSystems-BusyBox-MemSafety">

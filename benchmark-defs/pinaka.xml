@@ -12,52 +12,42 @@
    <tasks name="ReachSafety-Arrays">
     <includesfile>../sv-benchmarks/c/ReachSafety-Arrays.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
-    <option name="--32"/>
   </tasks>
   <tasks name="ReachSafety-BitVectors">
     <includesfile>../sv-benchmarks/c/ReachSafety-BitVectors.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
-    <option name="--32"/>
   </tasks>
   <tasks name="ReachSafety-ControlFlow">
     <includesfile>../sv-benchmarks/c/ReachSafety-ControlFlow.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
-    <option name="--32"/>
   </tasks>
   <tasks name="ReachSafety-ECA">
     <includesfile>../sv-benchmarks/c/ReachSafety-ECA.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
-    <option name="--32"/>
   </tasks>
   <tasks name="ReachSafety-Floats">
     <includesfile>../sv-benchmarks/c/ReachSafety-Floats.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
-    <option name="--32"/>
   </tasks>
   <tasks name="ReachSafety-Heap">
     <includesfile>../sv-benchmarks/c/ReachSafety-Heap.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
-    <option name="--32"/>
   </tasks>
   <tasks name="ReachSafety-Loops">
     <includesfile>../sv-benchmarks/c/ReachSafety-Loops.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
-    <option name="--32"/>
   </tasks>
   <tasks name="ReachSafety-ProductLines">
     <includesfile>../sv-benchmarks/c/ReachSafety-ProductLines.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
-    <option name="--32"/>
   </tasks>
   <tasks name="ReachSafety-Recursive">
     <includesfile>../sv-benchmarks/c/ReachSafety-Recursive.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
-    <option name="--32"/>
   </tasks>
   <tasks name="ReachSafety-Sequentialized">
     <includesfile>../sv-benchmarks/c/ReachSafety-Sequentialized.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
-    <option name="--32"/>
   </tasks>
 </rundefinition>
 
@@ -65,12 +55,10 @@
   <tasks name="NoOverflows-BitVectors">
     <includesfile>../sv-benchmarks/c/NoOverflows-BitVectors.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
-    <option name="--64"/>
   </tasks>
   <tasks name="NoOverflows-Other">
     <includesfile>../sv-benchmarks/c/NoOverflows-Other.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
-    <option name="--32"/>
   </tasks>
 </rundefinition>
 
@@ -78,17 +66,14 @@
   <tasks name="Termination-MainControlFlow">
     <includesfile>../sv-benchmarks/c/Termination-MainControlFlow.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
-    <option name="--64"/>
   </tasks>
   <tasks name="Termination-MainHeap">
     <includesfile>../sv-benchmarks/c/Termination-MainHeap.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
-    <option name="--64"/>
   </tasks>
   <tasks name="Termination-Other">
     <includesfile>../sv-benchmarks/c/Termination-Other.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/termination.prp</propertyfile>
-    <option name="--32"/>
   </tasks>
 </rundefinition>
 </benchmark>
