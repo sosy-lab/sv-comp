@@ -15,63 +15,51 @@
   <tasks name="ReachSafety-Arrays">
     <includesfile>../sv-benchmarks/c/ReachSafety-Arrays.set</includesfile>
     <propertyfile expectedverdict="true">../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
-    <option name="--architecture">32bit</option>
   </tasks>
   <tasks name="ReachSafety-BitVectors">
     <includesfile>../sv-benchmarks/c/ReachSafety-BitVectors.set</includesfile>
     <propertyfile expectedverdict="true">../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
-    <option name="--architecture">32bit</option>
   </tasks>
   <tasks name="ReachSafety-ControlFlow">
     <includesfile>../sv-benchmarks/c/ReachSafety-ControlFlow.set</includesfile>
     <propertyfile expectedverdict="true">../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
-    <option name="--architecture">32bit</option>
   </tasks>
   <tasks name="ReachSafety-ECA">
     <includesfile>../sv-benchmarks/c/ReachSafety-ECA.set</includesfile>
     <propertyfile expectedverdict="true">../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
-    <option name="--architecture">32bit</option>
   </tasks>
   <tasks name="ReachSafety-Floats">
     <includesfile>../sv-benchmarks/c/ReachSafety-Floats.set</includesfile>
     <propertyfile expectedverdict="true">../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
-    <option name="--architecture">32bit</option>
   </tasks>
   <tasks name="ReachSafety-Heap">
     <includesfile>../sv-benchmarks/c/ReachSafety-Heap.set</includesfile>
     <propertyfile expectedverdict="true">../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
-    <option name="--architecture">32bit</option>
   </tasks>
   <tasks name="ReachSafety-Loops">
     <includesfile>../sv-benchmarks/c/ReachSafety-Loops.set</includesfile>
     <propertyfile expectedverdict="true">../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
-    <option name="--architecture">32bit</option>
   </tasks>
   <tasks name="ReachSafety-ProductLines">
     <includesfile>../sv-benchmarks/c/ReachSafety-ProductLines.set</includesfile>
     <propertyfile expectedverdict="true">../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
-    <option name="--architecture">32bit</option>
   </tasks>
   <tasks name="ReachSafety-Recursive">
     <includesfile>../sv-benchmarks/c/ReachSafety-Recursive.set</includesfile>
     <propertyfile expectedverdict="true">../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
-    <option name="--architecture">32bit</option>
   </tasks>
   <tasks name="ReachSafety-Sequentialized">
     <includesfile>../sv-benchmarks/c/ReachSafety-Sequentialized.set</includesfile>
     <propertyfile expectedverdict="true">../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
-    <option name="--architecture">32bit</option>
   </tasks>
 
   <tasks name="SoftwareSystems-AWS-C-Common-ReachSafety">
     <includesfile>../sv-benchmarks/c/SoftwareSystems-AWS-C-Common-ReachSafety.set</includesfile>
     <propertyfile expectedverdict="true">../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
-    <option name="--architecture">64bit</option>
   </tasks>
   <tasks name="SoftwareSystems-DeviceDriversLinux64-ReachSafety">
     <includesfile>../sv-benchmarks/c/SoftwareSystems-DeviceDriversLinux64-ReachSafety.set</includesfile>
     <propertyfile expectedverdict="true">../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
-    <option name="--architecture">64bit</option>
   </tasks>
 </rundefinition>
 
@@ -82,43 +70,35 @@
   <tasks name="MemSafety-Arrays">
     <includesfile>../sv-benchmarks/c/MemSafety-Arrays.set</includesfile>
     <propertyfile expectedverdict="true">../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
-    <option name="--architecture">32bit</option>
   </tasks>
   <tasks name="MemSafety-Heap">
     <includesfile>../sv-benchmarks/c/MemSafety-Heap.set</includesfile>
     <propertyfile expectedverdict="true">../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
-    <option name="--architecture">32bit</option>
   </tasks>
   <tasks name="MemSafety-LinkedLists">
     <includesfile>../sv-benchmarks/c/MemSafety-LinkedLists.set</includesfile>
     <propertyfile expectedverdict="true">../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
-    <option name="--architecture">32bit</option>
   </tasks>
   <tasks name="MemSafety-Other">
     <includesfile>../sv-benchmarks/c/MemSafety-Other.set</includesfile>
     <propertyfile expectedverdict="true">../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
-    <option name="--architecture">32bit</option>
   </tasks>
   <tasks name="MemSafety-TerminCrafted">
     <includesfile>../sv-benchmarks/c/MemSafety-TerminCrafted.set</includesfile>
     <propertyfile expectedverdict="true">../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
-    <option name="--architecture">64bit</option>
   </tasks>
   <tasks name="MemSafety-MemCleanup">
     <includesfile>../sv-benchmarks/c/MemSafety-MemCleanup.set</includesfile>
     <propertyfile expectedverdict="true">../sv-benchmarks/c/properties/valid-memcleanup.prp</propertyfile>
-    <option name="--architecture">32bit</option>
   </tasks>
 
   <tasks name="SoftwareSystems-BusyBox-MemSafety">
     <includesfile>../sv-benchmarks/c/SoftwareSystems-BusyBox-MemSafety.set</includesfile>
     <propertyfile expectedverdict="true">../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
-    <option name="--architecture">64bit</option>
   </tasks>
   <tasks name="SoftwareSystems-OpenBSD-MemSafety">
     <includesfile>../sv-benchmarks/c/SoftwareSystems-OpenBSD-MemSafety.set</includesfile>
     <propertyfile expectedverdict="true">../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
-    <option name="--architecture">64bit</option>
   </tasks>
 </rundefinition>
 
@@ -129,18 +109,15 @@
   <tasks name="NoOverflows-BitVectors">
     <includesfile>../sv-benchmarks/c/NoOverflows-BitVectors.set</includesfile>
     <propertyfile expectedverdict="true">../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
-    <option name="--architecture">64bit</option>
   </tasks>
   <tasks name="NoOverflows-Other">
     <includesfile>../sv-benchmarks/c/NoOverflows-Other.set</includesfile>
     <propertyfile expectedverdict="true">../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
-    <option name="--architecture">32bit</option>
   </tasks>
 
   <tasks name="SoftwareSystems-BusyBox-NoOverflows">
     <includesfile>../sv-benchmarks/c/SoftwareSystems-BusyBox-NoOverflows.set</includesfile>
     <propertyfile expectedverdict="true">../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
-    <option name="--architecture">64bit</option>
   </tasks>
 </rundefinition>
 
