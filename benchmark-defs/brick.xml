@@ -10,7 +10,6 @@
   <tasks name="ReachSafety-Floats">
     <includesfile>../sv-benchmarks/c/ReachSafety-Floats.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
-    <option name="--32"></option>
   </tasks>
 </rundefinition>
 

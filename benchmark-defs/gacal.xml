@@ -12,7 +12,6 @@
   <tasks name="ReachSafety-Loops">
     <includesfile>../sv-benchmarks/c/ReachSafety-Loops.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
-    <option name="--architecture">32</option>
   </tasks>
 </rundefinition>
 
