@@ -50,11 +50,9 @@
   <tasks name="SoftwareSystems-AWS-C-Common-ReachSafety">
     <includesfile>../sv-benchmarks/c/SoftwareSystems-AWS-C-Common-ReachSafety.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
-    <option name="-64"/>
   </tasks>
   <tasks name="SoftwareSystems-DeviceDriversLinux64-ReachSafety">
     <includesfile>../sv-benchmarks/c/SoftwareSystems-DeviceDriversLinux64-ReachSafety.set</includesfile>
-    <option name="-64"/>
   </tasks>
 </rundefinition>
 
@@ -80,19 +78,16 @@
 
   <tasks name="SoftwareSystems-BusyBox-MemSafety">
     <includesfile>../sv-benchmarks/c/SoftwareSystems-BusyBox-MemSafety.set</includesfile>
-    <option name="-64"/>
   </tasks>
   <tasks name="SoftwareSystems-OpenBSD-MemSafety">
     <includesfile>../sv-benchmarks/c/SoftwareSystems-OpenBSD-MemSafety.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
-    <option name="-64"/>
   </tasks>
 </rundefinition>
 
 <rundefinition name="sv-comp20_prop-nooverflow_undef-func">
   <tasks name="NoOverflows-BitVectors">
     <includesfile>../sv-benchmarks/c/NoOverflows-BitVectors.set</includesfile>
-    <option name="-64"/>
   </tasks>
   <tasks name="NoOverflows-Other">
     <includesfile>../sv-benchmarks/c/NoOverflows-Other.set</includesfile>
@@ -100,18 +95,15 @@
 
   <tasks name="SoftwareSystems-BusyBox-NoOverflows">
     <includesfile>../sv-benchmarks/c/SoftwareSystems-BusyBox-NoOverflows.set</includesfile>
-    <option name="-64"/>
   </tasks>
 </rundefinition>
 
 <rundefinition name="sv-comp20_prop-termination_undef-func">
   <tasks name="Termination-MainControlFlow">
     <includesfile>../sv-benchmarks/c/Termination-MainControlFlow.set</includesfile>
-    <option name="-64"/>
   </tasks>
   <tasks name="Termination-MainHeap">
     <includesfile>../sv-benchmarks/c/Termination-MainHeap.set</includesfile>
-    <option name="-64"/>
   </tasks>
   <tasks name="Termination-Other">
     <includesfile>../sv-benchmarks/c/Termination-Other.set</includesfile>

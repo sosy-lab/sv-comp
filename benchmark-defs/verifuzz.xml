@@ -53,7 +53,6 @@
   <tasks name="NoOverflows-BitVectors">
     <includesfile>../sv-benchmarks/c/NoOverflows-BitVectors.set</includesfile>
     <propertyfile>../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
-    <option name="--bit">64</option>
   </tasks>
   <tasks name="NoOverflows-Other">
     <includesfile>../sv-benchmarks/c/NoOverflows-Other.set</includesfile>

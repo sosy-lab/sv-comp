@@ -59,12 +59,10 @@
   <tasks name="SoftwareSystems-AWS-C-Common-ReachSafety">
     <includesfile>../sv-benchmarks/c/SoftwareSystems-AWS-C-Common-ReachSafety.set</includesfile>
     <propertyfile expectedverdict="true">../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
-    <option name="-64"/>
   </tasks>
   <tasks name="SoftwareSystems-DeviceDriversLinux64-ReachSafety">
     <includesfile>../sv-benchmarks/c/SoftwareSystems-DeviceDriversLinux64-ReachSafety.set</includesfile>
     <propertyfile expectedverdict="true">../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
-    <option name="-64"/>
   </tasks>
 </rundefinition>
 
@@ -76,22 +74,18 @@
   <tasks name="MemSafety-Arrays">
     <includesfile>../sv-benchmarks/c/MemSafety-Arrays.set</includesfile>
     <propertyfile expectedverdict="true">../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
-    <option name="--32"/>
   </tasks>
   <tasks name="MemSafety-Heap">
     <includesfile>../sv-benchmarks/c/MemSafety-Heap.set</includesfile>
     <propertyfile expectedverdict="true">../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
-    <option name="--32"/>
   </tasks>
   <tasks name="MemSafety-LinkedLists">
     <includesfile>../sv-benchmarks/c/MemSafety-LinkedLists.set</includesfile>
     <propertyfile expectedverdict="true">../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
-    <option name="--32"/>
   </tasks>
   <tasks name="MemSafety-Other">
     <includesfile>../sv-benchmarks/c/MemSafety-Other.set</includesfile>
     <propertyfile expectedverdict="true">../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
-    <option name="--32"/>
   </tasks>
   <tasks name="MemSafety-TerminCrafted">
     <includesfile>../sv-benchmarks/c/MemSafety-TerminCrafted.set</includesfile>
@@ -100,7 +94,6 @@
   <tasks name="MemSafety-MemCleanup">
     <includesfile>../sv-benchmarks/c/MemSafety-MemCleanup.set</includesfile>
     <propertyfile expectedverdict="true">../sv-benchmarks/c/properties/valid-memcleanup.prp</propertyfile>
-    <option name="--32"/>
   </tasks>
 
   <tasks name="SoftwareSystems-BusyBox-MemSafety">
@@ -123,18 +116,15 @@
   <tasks name="NoOverflows-BitVectors">
     <includesfile>../sv-benchmarks/c/NoOverflows-BitVectors.set</includesfile>
     <propertyfile expectedverdict="true">../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
-    <option name="--architecture">64bit</option>
   </tasks>
   <tasks name="NoOverflows-Other">
     <includesfile>../sv-benchmarks/c/NoOverflows-Other.set</includesfile>
     <propertyfile expectedverdict="true">../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
-    <option name="--architecture">32bit</option>
   </tasks>
 
   <tasks name="SoftwareSystems-BusyBox-NoOverflows">
     <includesfile>../sv-benchmarks/c/SoftwareSystems-BusyBox-NoOverflows.set</includesfile>
     <propertyfile expectedverdict="true">../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
-    <option name="--architecture">64bit</option>
   </tasks>
 </rundefinition>
 
