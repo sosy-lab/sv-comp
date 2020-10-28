@@ -6,7 +6,7 @@
 
   <resultfiles>**.graphml</resultfiles>
 
-<rundefinition name="sv-comp20_unreach-call">
+<rundefinition name="SV-COMP21_unreach-call">
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</requiredfiles>
   <option name="--graphml-witness">../../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</option>
 
@@ -61,7 +61,7 @@
   </tasks>
 </rundefinition>
 
-<rundefinition name="sv-comp20_valid-memsafety">
+<rundefinition name="SV-COMP21_valid-memsafety">
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</requiredfiles>
   <option name="--graphml-witness">../../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</option>
 
@@ -100,7 +100,7 @@
   </tasks>
 </rundefinition>
 
-<rundefinition name="sv-comp20_no-overflow">
+<rundefinition name="SV-COMP21_no-overflow">
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</requiredfiles>
   <option name="--graphml-witness">../../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</option>
 

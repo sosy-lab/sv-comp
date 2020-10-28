@@ -10,7 +10,7 @@
   <option name="-disable-java-assertions"/>
   <option name="-heap">10000m</option>
 
-<rundefinition name="sv-comp20_unreach-call">
+<rundefinition name="SV-COMP21_unreach-call">
   <tasks name="SoftwareSystems-AWS-C-Common-ReachSafety">
     <includesfile>../../sv-benchmarks/c/SoftwareSystems-AWS-C-Common-ReachSafety.set</includesfile>
     <propertyfile>../../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
@@ -21,7 +21,7 @@
   </tasks>
 </rundefinition>
 
-<rundefinition name="sv-comp20_valid-memsafety">
+<rundefinition name="SV-COMP21_valid-memsafety">
   <tasks name="SoftwareSystems-BusyBox-MemSafety">
     <includesfile>../../sv-benchmarks/c/SoftwareSystems-BusyBox-MemSafety.set</includesfile>
     <propertyfile>../../sv-benchmarks/c/properties/valid-memsafety.prp</propertyfile>
@@ -32,7 +32,7 @@
   </tasks>
 </rundefinition>
 
-<rundefinition name="sv-comp20_no-overflow">
+<rundefinition name="SV-COMP21_no-overflow">
   <tasks name="SoftwareSystems-BusyBox-NoOverflows">
     <includesfile>../../sv-benchmarks/c/SoftwareSystems-BusyBox-NoOverflows.set</includesfile>
     <propertyfile>../../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>

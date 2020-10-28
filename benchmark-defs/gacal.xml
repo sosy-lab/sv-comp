@@ -8,7 +8,7 @@
   
   <option name="--witness">witness.graphml</option>
 
-<rundefinition name="sv-comp20_unreach-call">
+<rundefinition name="SV-COMP21_unreach-call">
   <tasks name="ReachSafety-Loops">
     <includesfile>../../sv-benchmarks/c/ReachSafety-Loops.set</includesfile>
     <propertyfile>../../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>

@@ -6,7 +6,7 @@
 
   <resultfiles>**.graphml</resultfiles>
 
-<rundefinition name="sv-comp20">
+<rundefinition name="SV-COMP21">
   <tasks name="ConcurrencySafety-Main">
     <includesfile>../../sv-benchmarks/c/ConcurrencySafety-Main.set</includesfile>
     <propertyfile>../../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>

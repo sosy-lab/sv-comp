@@ -6,11 +6,11 @@
 
   <resultfiles>**.graphml</resultfiles>
 
-  <option name="-sv-comp20-interpcpachecker"/>
+  <option name="-SV-COMP21-interpcpachecker"/>
   <option name="-heap">10000M</option>
   <option name="-disable-java-assertions"/>
 
-<rundefinition name="sv-comp20">
+<rundefinition name="SV-COMP21">
   <tasks name="ReachSafety-Arrays">
     <includesfile>../../sv-benchmarks/c/ReachSafety-Arrays.set</includesfile>
     <propertyfile>../../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>

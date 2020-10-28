@@ -16,7 +16,7 @@
   <option name="-nosserr"/>
   <option name="-svcomp-witness">error-witness.graphml</option>
   
-<rundefinition name="sv-comp20">
+<rundefinition name="SV-COMP21">
   <tasks name="ReachSafety-Arrays">
     <includesfile>../../sv-benchmarks/c/ReachSafety-Arrays.set</includesfile>
     <propertyfile>../../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
