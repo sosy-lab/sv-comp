@@ -6,7 +6,7 @@
 
   <resultfiles>**.graphml</resultfiles>
 
-<rundefinition name="sv-comp20_prop-reachsafety">
+<rundefinition name="sv-comp20_unreach-call">
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</requiredfiles>
   <option name="--metavalWitness">../../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</option>
   <option name="--metavalVerifierBackend">cpachecker</option>
@@ -71,7 +71,7 @@
   </tasks>
 </rundefinition>
 
-<rundefinition name="sv-comp20_prop-memsafety">
+<rundefinition name="sv-comp20_valid-memsafety">
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</requiredfiles>
   <option name="--metavalWitness">../../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</option>
   <option name="--metavalVerifierBackend">symbiotic</option>
@@ -111,7 +111,7 @@
   </tasks>
 </rundefinition>
 
-<rundefinition name="sv-comp20_prop-nooverflow">
+<rundefinition name="sv-comp20_no-overflow">
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</requiredfiles>
   <option name="--metavalWitness">../../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</option>
   <option name="--metavalVerifierBackend">ultimateautomizer</option>
@@ -133,7 +133,7 @@
   </tasks>
 </rundefinition>
 
-<rundefinition name="sv-comp20_prop-termination">
+<rundefinition name="sv-comp20_termination">
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</requiredfiles>
   <option name="--metavalWitness">../../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</option>
   <option name="--metavalVerifierBackend">ultimateautomizer</option>

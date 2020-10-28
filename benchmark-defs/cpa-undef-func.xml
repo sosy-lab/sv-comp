@@ -11,7 +11,7 @@
   <option name="-benchmark"/>
   <option name="-timelimit">900 s</option>
 
-<rundefinition name="sv-comp20_prop-reachsafety_undef-func">
+<rundefinition name="sv-comp20_unreach-call_undef-func">
   <tasks name="ReachSafety-Arrays">
     <includesfile>../../sv-benchmarks/c/ReachSafety-Arrays.set</includesfile>
   </tasks>
@@ -98,7 +98,7 @@
   </tasks>
 </rundefinition>
 
-<rundefinition name="sv-comp20_prop-termination_undef-func">
+<rundefinition name="sv-comp20_termination_undef-func">
   <tasks name="Termination-MainControlFlow">
     <includesfile>../../sv-benchmarks/c/Termination-MainControlFlow.set</includesfile>
   </tasks>

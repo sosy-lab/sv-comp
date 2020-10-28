@@ -8,7 +8,7 @@
 
   <option name="--conf">conf/svcomp21.json</option>
 
-<rundefinition name="sv-comp21_prop-reachsafety">
+<rundefinition name="sv-comp21_unreach-call">
   <tasks name="ReachSafety-Arrays">
     <includesfile>../../sv-benchmarks/c/ReachSafety-Arrays.set</includesfile>
     <propertyfile>../../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>

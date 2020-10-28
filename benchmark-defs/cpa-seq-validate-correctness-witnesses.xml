@@ -12,7 +12,7 @@
   <option name="-benchmark"/>
   <option name="-setprop">cpa.predicate.memoryAllocationsAlwaysSucceed=true</option>
 
-<rundefinition name="sv-comp21_prop-reachsafety">
+<rundefinition name="sv-comp21_unreach-call">
   <requiredfiles>../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</requiredfiles>
   <option name="-witness">../../results-verified/LOGDIR/${rundefinition_name}.${taskdef_name}/witness.graphml</option>
 

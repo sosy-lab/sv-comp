@@ -6,7 +6,7 @@
 
   <resultfiles>**.graphml</resultfiles>
 
-<rundefinition name="sv-comp21_prop-reachsafety">
+<rundefinition name="sv-comp21_unreach-call">
     <tasks name="ReachSafety-Loops">
       <includesfile>../../sv-benchmarks/c/ReachSafety-Loops.set</includesfile>
       <propertyfile>../../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
