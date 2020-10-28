@@ -30,8 +30,18 @@ verifiers:
   - jdart
   - spf
 
+# Properties used in the competition
+properties:
+    - no-overflow
+    - termination
+    - unreach-call
+    - valid-memcleanup
+    - valid-memsafety
+    - assert
+
 categories:
   ReachSafety:
+    properties: unreach-call
     categories:
       - ReachSafety-Arrays
       - ReachSafety-BitVectors
@@ -73,6 +83,9 @@ categories:
       - metaval-correctness
 
   MemSafety:
+    properties:
+      - valid-memsafety
+      - valid-memcleanup
     categories:
       - MemSafety-Arrays
       - MemSafety-Heap
@@ -104,6 +117,7 @@ categories:
       - metaval-correctness
 
   ConcurrencySafety:
+    properties: unreach-call
     categories:
       - ConcurrencySafety-Main
     verifiers:
@@ -124,6 +138,7 @@ categories:
       - yogar-cbmc
 
   NoOverflows:
+    properties: no-overflow
     categories:
       - NoOverflows-BitVectors
       - NoOverflows-Other
@@ -152,6 +167,7 @@ categories:
       - metaval-correctness
 
   Termination:
+    properties: termination
     categories:
       - Termination-MainControlFlow
       - Termination-MainHeap
@@ -175,6 +191,10 @@ categories:
       - metaval-violation
 
   SoftwareSystems:
+    properties:
+      - unreach-call
+      - no-overflow
+      - valid-memsafety
     categories:
       - SoftwareSystems-AWS-C-Common-ReachSafety
       - SoftwareSystems-BusyBox-MemSafety
@@ -205,6 +225,12 @@ categories:
       - metaval-correctness
 
   Overall:
+    properties:
+        - no-overflow
+        - termination
+        - unreach-call
+        - valid-memcleanup
+        - valid-memsafety
     categories:
       - ReachSafety
       - MemSafety
@@ -227,6 +253,11 @@ categories:
       - veriabs
 
   FalsificationOverall:
+    properties:
+        - no-overflow
+        - unreach-call
+        - valid-memcleanup
+        - valid-memsafety
     categories:
       - ReachSafety
       - MemSafety
@@ -248,6 +279,8 @@ categories:
       - veriabs
 
   JavaOverall:
+    properties:
+      - assert
     categories:
       - ReachSafety-Java
     verifiers:
