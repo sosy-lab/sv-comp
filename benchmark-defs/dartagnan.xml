@@ -8,8 +8,8 @@
 
 <rundefinition name="sv-comp21_prop-reachsafety">
     <tasks name="ReachSafety-Loops">
-      <includesfile>../sv-benchmarks/c/ReachSafety-Loops.set</includesfile>
-      <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+      <includesfile>../../sv-benchmarks/c/ReachSafety-Loops.set</includesfile>
+      <propertyfile>../../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
       <option name="-o">O3</option>
       <option name="-bp"></option>
       <option name="-cat">cat/sc.cat</option>
@@ -18,16 +18,16 @@
       <option name="-i"></option>
     </tasks>
     <tasks name="ReachSafety-Arrays">
-      <includesfile>../sv-benchmarks/c/ReachSafety-Arrays.set</includesfile>
-      <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+      <includesfile>../../sv-benchmarks/c/ReachSafety-Arrays.set</includesfile>
+      <propertyfile>../../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
       <option name="-o">O3</option>
       <option name="-cat">cat/sc.cat</option>
       <option name="-w"></option>
       <option name="-i"></option>
     </tasks>
   <tasks name="ReachSafety-BitVectors">
-    <includesfile>../sv-benchmarks/c/ReachSafety-BitVectors.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+    <includesfile>../../sv-benchmarks/c/ReachSafety-BitVectors.set</includesfile>
+    <propertyfile>../../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
     <option name="-o">O3</option>
     <option name="-bp"></option>
     <option name="-cat">cat/sc.cat</option>
@@ -36,8 +36,8 @@
     <option name="-i"></option>
   </tasks>
   <tasks name="ConcurrencySafety-Main">
-    <includesfile>../sv-benchmarks/c/ConcurrencySafety-Main.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+    <includesfile>../../sv-benchmarks/c/ConcurrencySafety-Main.set</includesfile>
+    <propertyfile>../../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
     <option name="-cat">cat/svcomp.cat</option>
     <option name="-incrementalSolver"></option>
     <option name="-w"></option>
@@ -46,8 +46,8 @@
 </rundefinition>
 <rundefinition name="sv-comp21_prop-no-data-race">
   <tasks name="NoDataRace-Main">
-    <includesfile>../sv-benchmarks/c/NoDataRace-Main.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/properties/no-data-race.prp</propertyfile>
+    <includesfile>../../sv-benchmarks/c/NoDataRace-Main.set</includesfile>
+    <propertyfile>../../sv-benchmarks/c/properties/no-data-race.prp</propertyfile>
     <option name="-cat">cat/svcomp.cat</option>
     <option name="-analysis">races</option>
     <option name="-incrementalSolver"></option>

@@ -19,8 +19,8 @@
   <option name="-svcomp-witness">error-witness.graphml</option>
   
   <tasks name="ReachSafety-Arrays" stopAfter="1">
-    <includesfile>../sv-benchmarks/c/ReachSafety-Arrays-new.set</includesfile>
-    <propertyfile>../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
+    <includesfile>../../sv-benchmarks/c/ReachSafety-Arrays-new.set</includesfile>
+    <propertyfile>../../sv-benchmarks/c/properties/unreach-call.prp</propertyfile>
   </tasks>
 
 </benchmark>
